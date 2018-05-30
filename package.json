@@ -21,6 +21,17 @@
   "license": "MIT",
   "devDependencies": {
     "bootstrap": "^4.1.1",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglifyjs": "^0.6.2",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikerdean/wmbuilder.git"
   }
 }

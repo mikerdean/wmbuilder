@@ -1,10 +1,25 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
 		<title>{{#if title}}{{title}} - {{/if}}wmbuilder</title>
+		<link rel="stylesheet" type="text/css" href="/css/default.css" />
 	</head>
 	<body>
 
-		{{{body}}}
+		<nav class="navbar navbar-dark bg-dark mb-3">
+			<a class="navbar-brand" tabindex="1">wmbuilder</a>
+			<form class="form-inline">
+				<button class="btn btn-secondary">A</button>
+				<button class="btn btn-secondary ml-2">B</button>
+				<button class="btn btn-secondary ml-2">C</button>
+			</form>	
+		</nav>
+
+		<article>
+			{{{body}}}
+		</article>
+
+		<script type="text/javascript" src="/js/default.js"></script>
 
 	</body>
 </html>
