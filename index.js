@@ -18,7 +18,7 @@ app.use('/css', express.static('./content/css'));
 app.use('/js', express.static('./content/js'));
 
 app.get('/', function(request, response) {
-	response.render('index', { message: 'ride the walrus' });
+	response.render('index');
 });
 
 app.listen(port, function() {

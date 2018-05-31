@@ -28,6 +28,7 @@
     "gulp-sass": "^4.0.1",
     "gulp-uglifyjs": "^0.6.2",
     "jquery": "^3.3.1",
+    "knockout": "^3.4.2",
     "popper.js": "^1.14.3"
   },
   "repository": {
