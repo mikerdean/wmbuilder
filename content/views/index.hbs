@@ -24,12 +24,40 @@
 <script type="text/javascript" src="/js/default.js"></script>
 
 <script>
-	'use strict';
+	
 
-	var viewModel = function() {
-		var self = this;
-	};
+	(function($, ko) {
+		'use strict';
 
-	ko.applyBindings(new viewModel(), document.getElementById('wmbuilder'));
+		var viewModel = function() {
+			var self = this;
+
+			var send = function(url, data) {
+
+				if (!url) {
+					throw new Error('Please provide a valid URL for the ajax request.');
+				}
+
+				return $.ajax({
+					contentType: 'application/json',
+					data: data ? ko.toJSON(data) : null,
+					dataType: 'json',
+					type: 'POST',
+					url: url
+				}).promise();
+
+			};
+
+			send('api/factions', null);
+
+
+		};
+
+		ko.applyBindings(new viewModel(), document.getElementById('wmbuilder'));
+
+
+	})(jQuery, ko);
+
+	
 
 </script>
