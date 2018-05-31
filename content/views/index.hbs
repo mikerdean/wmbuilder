@@ -1,7 +1,35 @@
-<div class="container">
-	<div class="row">
-		<div class="col">
+<article id="wmbuilder">
 
+	<nav class="navbar navbar-dark bg-dark mb-3">
+		<div class="container">
+			<a class="navbar-brand" tabindex="1">wmbuilder</a>
+			<form class="form-inline">
+				<button class="btn btn-secondary">A</button>
+				<button class="btn btn-secondary ml-2">B</button>
+				<button class="btn btn-secondary ml-2">C</button>
+			</form>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col">
+
+			</div>
 		</div>
 	</div>
-</div>
+
+</article>
+
+<script type="text/javascript" src="/js/default.js"></script>
+
+<script>
+	'use strict';
+
+	var viewModel = function() {
+		var self = this;
+	};
+
+	ko.applyBindings(new viewModel(), document.getElementById('wmbuilder'));
+
+</script>

@@ -21,14 +21,22 @@ gulp.task('css', function() {
 		.pipe(gulp.dest('./content/css/'));
 });
 
-gulp.task('js', function() {
+gulp.task('js-app', function() {
+	return gulp.src(['./src/js/*.js'])
+		.pipe(uglifyjs())
+		.pipe(gulp.dest('./content/js'));
+});
+
+gulp.task('js-lib', function() {
 	return gulp.src([
 			'./node_modules/jquery/dist/jquery.js',
-			'./node_modules/knockout/build/knockout-latest.js',
+			'./node_modules/knockout/build/output/knockout-latest.js',
 		])
 		.pipe(concat('default.js'))
 		.pipe(uglifyjs())
 		.pipe(gulp.dest('./content/js'));
 });
+
+gulp.task('js', ['js-lib', 'js-app']);
 
 gulp.task('default', ['css', 'js']);
