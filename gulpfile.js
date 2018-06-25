@@ -1,8 +1,11 @@
 const gulp = require('gulp');
 
 const autoprefixer = require('gulp-autoprefixer');
+const cardIndexer = require('./gulp-cardIndexer')
 const concat = require('gulp-concat');
 const cleanCss = require('gulp-clean-css');
+const imageMin = require('gulp-imagemin');
+const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const uglifyjs = require('gulp-uglifyjs');
 
@@ -18,25 +21,33 @@ gulp.task('css', function() {
 				}
 			}
 		}))
-		.pipe(gulp.dest('./content/css/'));
+		.pipe(gulp.dest('./dist/css/'));
 });
 
-gulp.task('js-app', function() {
-	return gulp.src(['./src/js/*.js'])
-		.pipe(uglifyjs())
-		.pipe(gulp.dest('./content/js'));
-});
-
-gulp.task('js-lib', function() {
+gulp.task('js', function() {
 	return gulp.src([
 			'./node_modules/jquery/dist/jquery.js',
 			'./node_modules/knockout/build/output/knockout-latest.js',
+			'./src/js/index.js'
 		])
 		.pipe(concat('default.js'))
 		.pipe(uglifyjs())
-		.pipe(gulp.dest('./content/js'));
+		.pipe(gulp.dest('./dist/js'));
 });
 
-gulp.task('js', ['js-lib', 'js-app']);
+gulp.task('cardindex', function() {
+	return gulp.src(['./src/cards/**/*.json'])
+		.pipe(cardIndexer('__cardindex.json'))
+		.pipe(gulp.dest('./dist/cards'));
+});
 
-gulp.task('default', ['css', 'js']);
+gulp.task('cardimage', function() {
+	return gulp.src(['./src/cards/**/*.jpg'])
+		.pipe(rename({
+			dirname: ''
+		}))
+		.pipe(imageMin())
+		.pipe(gulp.dest('./dist/cards'));
+});
+
+gulp.task('default', ['css', 'js', 'cardindex', 'cardimage']);

@@ -1,3 +1,4 @@
 node_modules/
 .npm
-/content/cards/*/*.jpg
+/src/cards/*/*.jpg
+/dist/cards/*.jpg
