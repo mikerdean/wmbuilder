@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>wmbuilder</title>
+		<link rel="stylesheet" type="text/css" href="/css/default.css" />
+	</head>
+	<body>
+
+		<div id="wmbuilder">
+
+			<div class="loading" data-bind="css: { 'd-none': !$root.indicators.loading() }">
+				Loading...
+			</div>
+
+			<article class="d-none" data-bind="css: { 'd-none': $root.indicators.loading }">
+				
+				<nav class="navbar navbar-dark bg-dark text-light">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<span class="navbar-brand">wmbuilder</span>
+							</div>
+						</div>
+					</div>
+				</nav>
+
+			</article>
+
+		</article>
+
+		<script src="js/default.js"></script>
+
+	</body>
+</html>
