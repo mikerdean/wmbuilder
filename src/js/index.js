@@ -155,7 +155,13 @@
 			}
 
 			arrayPushAndNotify(self.images, unit.images, true);
+			document.body.style.overflow = 'hidden';
 
+		};
+
+		self.unitDisplayClear = function() {
+			self.images.removeAll();
+			document.body.style.overflow = 'visible';	
 		};
 
 		(function init() {

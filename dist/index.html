@@ -101,7 +101,7 @@
 			<footer class="mb-5"></footer>
 
 			<!-- ko if: $root.images().length > 0 -->
-			<div class="card-image-overlay">
+			<div class="card-image-overlay" data-bind="click: $root.unitDisplayClear">
 				<div class="container-fluid mt-3 mb-3">
 					<div class="row" data-bind="foreach: $root.images">
 						<div class="col">
