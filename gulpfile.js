@@ -51,3 +51,10 @@ gulp.task('cardimage', function() {
 });
 
 gulp.task('default', ['css', 'js', 'cardindex', 'cardimage']);
+
+// watch tasks
+
+gulp.task('watch', function() {
+	gulp.watch('./src/js/**/*.js', ['js']);
+	gulp.watch('./src/scss/**/*.scss', ['css']);
+});

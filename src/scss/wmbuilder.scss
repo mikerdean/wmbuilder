@@ -1,1 +1,88 @@
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@font-face
+{
+	font-family: 'Noto Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: 	url(/fonts/NotoSans-Regular.eot);
+	src: 	url(/fonts/NotoSans-Regular.woff2) format('woff2'),
+			url(/fonts/NotoSans-Regular.woff) format('woff'),
+			url(/fonts/NotoSans-Regular.eot?#iefix) format('embedded-opentype'), 
+			url(/fonts/NotoSans-Regular.ttf) format('truetype'),
+			url(/fonts/NotoSans-Regular.svg) format('svg');
+}
+
+$font-family-base: "Noto Sans", sans-serif;
+$font-size-base: 0.85rem;
+$list-group-item-padding-y: .25rem;
+$list-group-item-padding-x: .5rem;
+
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+.btn-xs {
+	padding: .15rem .3rem;
+    font-size: .7rem;
+    line-height: 1;
+    border-radius: .2rem;
+}
+
+.card-image-overlay {
+	background-color: rgba(0,0,0,.5);
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.unit-card-header, .unit-card-details {
+	padding: $list-group-item-padding-y $list-group-item-padding-x;
+}
+
+.unit-card-set {
+	@extend .border-left;
+	@extend .border-bottom;
+}
+
+.unit-card-details {
+	cursor: pointer;
+
+	&:hover {
+		background-color: $gray-100;
+	}
+}
+
+.unit-card-button
+{
+	background-color: $info;
+	border-left: $border-width solid $border-color;
+	color: $light;
+	cursor: pointer;
+	display: flex;
+	text-align: center;
+
+	&:hover {
+		background-color: $info - 50;
+	}
+
+	&:last-child {
+		border-left: $border-width solid $border-color;
+	}
+
+	> * {
+		width: 2rem;
+	}
+}
+
+.close.text-white {
+	line-height: .9;
+	opacity: 1;
+	text-shadow: none;
+}
+
+.form-group > label {
+	font-style: italic;
+}
+
+.font-sm {
+	font-size: $font-size-base - 0.15;
+}
