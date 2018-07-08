@@ -67,7 +67,7 @@
 							<!-- ko with: $root.selected.list -->
 							<section>
 
-								<h1 class="h4">
+								<h1 class="h4 mb-3">
 									<span data-bind="text: faction.factionName"></span>
 									<span>-</span>
 									<span data-bind="text: points.fullDescription"></span>
@@ -76,17 +76,59 @@
 								<div class="row">
 									<div class="col">
 
-										<div data-bind="template: { name: 'unitCard', if: faction.warcasters, data: { name: 'Warcasters', units: faction.warcasters, } }"></div>
-										<div data-bind="template: { name: 'unitCard', if: faction.warjacks, data: { name: 'Warjacks', units: faction.warjacks } }"></div>
-
-										<div data-bind="template: { name: 'unitCard', if: faction.warlocks, data: { name: 'Warlocks', units: faction.warlocks } }"></div>
-										<div data-bind="template: { name: 'unitCard', if: faction.warbeasts, data: { name: 'Warbeasts', units: faction.warbeasts } }"></div>
-
-										<div data-bind="template: { name: 'unitCard', data: { name: 'Units', units: faction.units } }"></div>
-										<div data-bind="template: { name: 'unitCard', data: { name: 'Solos', units: faction.solos } }"></div>
+										<div class="row">
+											<div class="col-3">
+												<div class="list-group sticky-top" data-bind="foreach: unitTypes">
+													<a href="#" class="list-group-item list-group-action" data-bind="click: $parent.unitTypeSelect, css: { active: $parent.unitTypeSelected() === $data }, text: name"></a>
+												</div>
+											</div>
+											<div class="col-9" data-bind="foreach: unitTypes">
+												<div data-bind="template: { name: 'unitCard', if: $parent.unitTypeSelected() === $data, data: { name: name, units: $parent.faction[propertyName] } }"></div>
+											</div>
+										</div>
 
 									</div>
-									<div class="col"></div>
+									<div class="col">
+
+										<div class="row sticky-top">
+											<div class="col">
+
+												<aside class="alert alert-success">
+													<strong>Points Remaining</strong>: <span data-bind="text: pointsRemaining"></span>
+												</aside>
+		
+												<!-- ko if: unitsSelected().length > 0 -->
+												<div class="unit-card">
+													<div class="unit-card-header">Selected Units</div>
+													<div class="unit-card-wrapper" data-bind="foreach: unitsSelected">
+														<div class="d-flex unit-card-set">
+															<div class="flex-grow-1 unit-card-details" data-bind="click: $root.unitDisplayCards, text: title"></div>
+															<div class="unit-card-button">
+																<div class="align-self-center" data-bind="text: points"></div>
+															</div>
+															<div class="unit-card-button-red" data-bind="click: $parent.unitRemove">
+																<div class="align-self-center">&times;</div>
+															</div>
+														</div>
+														<!-- ko foreach: attachments -->
+														<div class="d-flex unit-card-set-indent">
+															<div class="flex-grow-1 unit-card-details" data-bind="text: title"></div>
+															<div class="unit-card-button">
+																<div class="align-self-center" data-bind="text: points"></div>
+															</div>
+															<div class="unit-card-button-red" data-bind="click: $parent.remove">
+																<div class="align-self-center">&times;</div>
+															</div>
+														</div>
+														<!-- /ko -->
+													</div>
+												</div>
+												<!-- /ko -->
+
+											</div>
+										</div>
+
+									</div>
 								</div>
 
 							</section>
@@ -117,11 +159,9 @@
 		<script src="js/default.js"></script>
 
 		<script id="unitCard" type="text/html">
-			<div class="unit-card mt-3">
-				<div class="unit-card-header bg-dark text-light">
-					<span data-bind="text: name"></span>
-				</div>
-				<div data-bind="foreach: units">
+			<div class="unit-card mb-3">
+				<div class="unit-card-header" data-bind="text: name"></div>
+				<div class="unit-card-wrapper" data-bind="foreach: units">
 					<div class="d-flex unit-card-set">
 						<div class="flex-grow-1 unit-card-details" data-bind="click: $root.unitDisplayCards">
 							<div data-bind="text: title"></div>
@@ -134,17 +174,17 @@
 							</div>
 						</div>
 						<!-- ko ifnot: $data.sizeMinimum -->
-						<div class="unit-card-button">
+						<div class="unit-card-button" data-bind="click: $parents[2].unitAdd">
 							<div class="align-self-center">+</div>
 						</div>
 						<!-- /ko -->
 						<!-- ko if: $data.sizeMinimum -->
-						<div class="unit-card-button">
+						<div class="unit-card-button" data-bind="click: $parents[2].unitAddMinimum">
 							<div class="align-self-center" data-bind="text: '+' + sizeMinimum"></div>
 						</div>
 						<!-- /ko -->
 						<!-- ko if: $data.sizeMinimum -->
-						<div class="unit-card-button">
+						<div class="unit-card-button" data-bind="click: $parents[2].unitAddMaximum">
 							<div class="align-self-center" data-bind="text: '+' + sizeMaximum"></div>
 						</div>
 						<!-- /ko  -->

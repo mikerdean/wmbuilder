@@ -18,6 +18,28 @@ $list-group-item-padding-x: .5rem;
 
 @import "./node_modules/bootstrap/scss/bootstrap";
 
+.font-lg {
+	font-size: $font-size-base * 1.25;
+}
+
+.o-transition {
+	transition: opacity .5s, height .25s;
+}
+
+.o-0 {
+	height: 0;
+	opacity: 0;
+}
+
+.o-1 {
+	height: 100%;
+	opacity: 1;
+}
+
+.sticky-top {
+	top: 1rem;
+}
+
 .btn-xs {
 	padding: .15rem .3rem;
     font-size: .7rem;
@@ -32,19 +54,34 @@ $list-group-item-padding-x: .5rem;
 	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: $zindex-modal-backdrop;
 }
 
-.unit-card-header, .unit-card-details {
+.unit-card-header {
+	background-color: $dark;
+	color: $light;
+	cursor: pointer;
 	padding: $list-group-item-padding-y $list-group-item-padding-x;
 }
 
-.unit-card-set {
+.unit-card-set, 
+.unit-card-set-indent {
 	@extend .border-left;
 	@extend .border-bottom;
 }
 
+.unit-card-set-indent {
+	margin-left: 3rem;
+
+	+ .unit-card-set {
+		@extend .border-top;
+		margin-top: 1rem;
+	}
+}
+
 .unit-card-details {
 	cursor: pointer;
+	padding: $list-group-item-padding-y $list-group-item-padding-x;
 
 	&:hover {
 		background-color: $gray-100;
@@ -58,7 +95,9 @@ $list-group-item-padding-x: .5rem;
 	color: $light;
 	cursor: pointer;
 	display: flex;
+	font-size: 1rem;
 	text-align: center;
+	transition: background-color .125s ease-in;
 
 	&:hover {
 		background-color: $info - 50;
@@ -69,7 +108,16 @@ $list-group-item-padding-x: .5rem;
 	}
 
 	> * {
-		width: 2rem;
+		width: 2.5rem;
+	}
+}
+
+.unit-card-button-red {
+	@extend .unit-card-button;
+	background-color: $danger;
+
+	&:hover {
+		background-color: $danger - 50;
 	}
 }
 
@@ -85,4 +133,12 @@ $list-group-item-padding-x: .5rem;
 
 .font-sm {
 	font-size: $font-size-base - 0.15;
+}
+
+.rotate-90-anti {
+	transform: rotate(-90deg);
+}
+
+.rotate-90 {
+	transform: rotate(90deg);
 }
