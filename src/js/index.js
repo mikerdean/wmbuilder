@@ -114,6 +114,12 @@
 
 		// getters
 
+		Object.defineProperty(self, 'id', { 
+			get: function() {
+				return _unit.id;
+			}
+		});
+
 		Object.defineProperty(self, 'images', { 
 			get: function() {
 				return _unit.images;
@@ -174,7 +180,36 @@
 			return new WMList();
 		}
 
-		var _faction = faction;
+		var _faction = (function(f) {
+
+			var output = $.extend({}, f);
+
+			for(var key in output) {
+
+				if (!$.isArray(output[key])) {
+					continue;
+				}
+
+				$.each(output[key], function(i, u) {
+					if (u.hasOwnProperty('pointsMinimum')) {
+						u.disabled = ko.pureComputed({ 
+							read: function() { return this.disabledMinimum() && this.disabledMaximum(); },
+							write: function(value) { this.disabledMinimum(true); this.disabledMaximum(true); },
+							owner: u
+						});
+						u.disabledMinimum = ko.observable(true);
+						u.disabledMaximum = ko.observable(true);
+					} else {
+						u.disabled = ko.observable(!(u.type & (UnitType.WARLOCK | UnitType.WARCASTER)));
+					}
+				});
+
+			}
+
+			return output;
+
+		})(faction);
+
 		var _points = points;
 
 		var _unitEntries = (function() {
@@ -194,13 +229,13 @@
 			return first + key.substr(1);
 		};
 
-		var _unitTypes = (function() {
+		var _unitTypes = (function(f) {
 
 			var output = [];
 
-			for(var key in _faction) {
+			for(var key in f) {
 
-				if (key.substr(0, 7) === 'faction') {
+				if (!$.isArray(f[key])) {
 					continue;
 				}
 
@@ -210,7 +245,7 @@
 
 			return output;
 
-		})();
+		})(_faction);
 
 		var _unitAttachmentLocator = function(unit, attachTo) {
 
@@ -236,15 +271,96 @@
 
 		};
 
-		var _unitAdd = function(unit, unitSize) {
+		var _enableDisableUnits = function() {
 
-			if (!unit) {
-				return;
+			// disable/enable units in the faction
+
+			var selected = $.map(ko.unwrap(self.unitsSelected), function(u) {
+				var output = [ u ];
+				$.each(ko.unwrap(u.attachments), function(i, a) {
+					output.push(a);
+				});
+				return output;
+			});
+
+			var pointsRemaining = ko.unwrap(self.pointsRemaining);
+			var allow = {};
+
+			for(var key in UnitType) {
+				allow[UnitType[key]] = false;
 			}
 
-			// I think I need another class type for this
-			// to store a reference to the real unit but
-			// to also store what is "attached" to it
+			// 1. if we have a warcaster/warlock then enable warjacks/warbeasts, units and solos
+
+			var casters = ko.utils.arrayFilter(selected, function(u) {
+				return u.type & (UnitType.WARCASTER | UnitType.WARLOCK);
+			});
+
+			if (ko.utils.arrayFirst(casters, function(u) { return u.type & UnitType.WARLOCK})) {
+				allow[UnitType.WARBEAST] = true;
+				allow[UnitType.UNIT] = true;
+				allow[UnitType.SOLO] = true;
+			}
+
+			if (ko.utils.arrayFirst(casters, function(u) { return u.type & UnitType.WARCASTER})) {
+				allow[UnitType.WARJACK] = true;
+				allow[UnitType.UNIT] = true;
+				allow[UnitType.SOLO] = true;
+			}
+
+			// 2. check the caster allowance and enable warlocks/warcasters if necessary
+
+			if (casters.length < _points.casterAllowance) {
+				allow[UnitType.WARCASTER] = true;
+				allow[UnitType.WARLOCK] = true;
+			}
+
+			// 3. calculate a field allowance map from the selected units
+			
+			var fa = {};
+
+			$.each(selected, function(i, u) {
+				if (fa.hasOwnProperty(u.id)) {
+					fa[u.id] += 1;
+				} else {
+					fa[u.id] = 1;
+				}
+			});
+
+			// 4. loop through the units and enable/disable them based on the settings, FA and points remaining
+
+			for(var key in _faction) {
+
+				if (!$.isArray(_faction[key])) {
+					continue;
+				}
+
+				$.each(_faction[key], function(i, u) {
+
+					if (allow[u.type] === false) {
+						u.disabled(true);
+					} else if (fa.hasOwnProperty(u.id) && fa[u.id] >= u.fieldAllowance) {
+						u.disabled(true);
+					} else if (u.hasOwnProperty('points') && u.points > pointsRemaining) {
+						u.disabled(true);
+					} else if (u.hasOwnProperty('pointsMinimum')) {
+						u.disabledMinimum(u.pointsMinimum > pointsRemaining);
+						u.disabledMaximum(u.pointsMaximum > pointsRemaining);
+					} else {
+						u.disabled(false);
+					}
+
+				});
+
+			}
+
+		};
+
+		var _unitAdd = function(unit, unitSize) {
+
+			if (!unit || unit.disabled()) {
+				return;
+			}
 
 			var toAttach = undefined;
 
@@ -256,8 +372,6 @@
 				toAttach = _unitAttachmentLocator(unit, UnitType.UNITATTACHMENT);
 			}
 
-			// validation check
-
 			var unitEntry = new WMUnitEntry(unit, unitSize);
 
 			if (toAttach) {
@@ -265,6 +379,8 @@
 			} else {
 				_unitEntries[unit.type].push(unitEntry);
 			}
+
+			_enableDisableUnits();
 
 		};
 
@@ -344,20 +460,6 @@
 
 		});
 
-		self.unitsAvailable = ko.pureComputed(function() {
-
-			var selected = ko.unwrap(self.unitsSelected);
-			if (selected.length === 0) {
-				// only allow warcasters and warlocks
-			} else {
-				// if you have a warcaster, allow warjacks, units, solos
-				// if you have a warlock, allow warbeasts, units, solos
-				// if you have a warcaster/warlock and the casterAllowance is available, allow other warcasters/warlocks
-				// disable warjacks/warbeasts/units/solos if you do not have the points (how to deal with bonus points? hmmm)
-			}
-
-		});
-
 		self.unitsSelected = ko.pureComputed(function() {
 
 			var units = [];
@@ -374,19 +476,38 @@
 		// public methods
 
 		self.unitAdd = function(unit) {
+
+			if (unit.disabled()) {
+				return;
+			}
+
 			_unitAdd(unit);
+
 		};
 
 		self.unitAddMaximum = function(unit) {
+
+			if (unit.hasOwnProperty('disabledMaximum') && unit.disabledMaximum()) {
+				return;
+			}
+
 			_unitAdd(unit, UnitSize.MAX);
+
 		};
 
 		self.unitAddMinimum = function(unit) {
+
+			if (unit.hasOwnProperty('disabledMinimum') && unit.disabledMinimum()) {
+				return;
+			}
+
 			_unitAdd(unit, UnitSize.MIN);
+			
 		};
 
 		self.unitRemove = function(unitEntry) {
 			_unitEntries[unitEntry.type].remove(unitEntry);
+			_enableDisableUnits();
 		};
 
 		self.unitTypeSelect = function(unitType) {
@@ -519,6 +640,8 @@
 
 					// process the faction units to add a semantic type property
 
+					var id = 0;
+
 					var addUnitType = function(faction, propertyName, type) {
 						
 						if (!faction.hasOwnProperty(propertyName)) {
@@ -526,6 +649,7 @@
 						}
 
 						$.each(faction[propertyName], function(i, u) {
+							u.id = ++id;
 							u.type = type;
 						});
 
