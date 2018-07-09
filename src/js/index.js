@@ -510,6 +510,11 @@
 			_enableDisableUnits();
 		};
 
+		self.unitRemoveAttachment = function(unitEntry, unitAttachment) {
+			unitEntry.remove(unitAttachment);
+			_enableDisableUnits();
+		};
+
 		self.unitTypeSelect = function(unitType) {
 			self.unitTypeSelected(unitType);
 			window.scrollTo(0, 0);
