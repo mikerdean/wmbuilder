@@ -37,7 +37,7 @@ gulp.task('js', function() {
 
 gulp.task('cardindex', function() {
 	return gulp.src(['./src/cards/**/*.json'])
-		.pipe(cardIndexer('./src/cards/__card-index-amendments.json', '__cardindex.json'))
+		.pipe(cardIndexer('./src/cards-amend/__card-index-amendments.json', '__cardindex.json'))
 		.pipe(gulp.dest('./dist/cards'));
 });
 

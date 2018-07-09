@@ -670,7 +670,7 @@
 
 					// remove me
 					// ###
-					self.selected.faction(factions[10]);
+					self.selected.faction(factions[7]);
 					self.selected.points(self.lookups.points[3]);
 					self.listCreate();
 					// ###
