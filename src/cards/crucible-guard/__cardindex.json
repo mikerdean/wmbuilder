@@ -1,0 +1,297 @@
+{
+  "factionName": "Crucible Guard",
+  "warcasters": [
+    {
+      "id": 4142,
+      "images": [
+        "aurum-adeptus-syvestro-1.jpg",
+        "aurum-adeptus-syvestro-2.jpg",
+        "aurum-adeptus-syvestro-3.jpg",
+        "aurum-adeptus-syvestro-4.jpg"
+      ],
+      "title": "Aurum Adeptus Syvestro",
+      "bonusPoints": 28,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 4143,
+      "images": [
+        "aurum-legate-lukas-di-morray-1.jpg",
+        "aurum-legate-lukas-di-morray-2.jpg",
+        "aurum-legate-lukas-di-morray-3.jpg",
+        "aurum-legate-lukas-di-morray-4.jpg"
+      ],
+      "title": "Aurum Legate Lukas di Morray",
+      "bonusPoints": 29,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 4144,
+      "images": [
+        "aurum-lucanum-athanor-locke-1.jpg",
+        "aurum-lucanum-athanor-locke-2.jpg",
+        "aurum-lucanum-athanor-locke-3.jpg",
+        "aurum-lucanum-athanor-locke-4.jpg"
+      ],
+      "title": "Aurum Lucanum Athanor Locke",
+      "bonusPoints": 29,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 4145,
+      "images": [
+        "captain-eira-mackay-1.jpg",
+        "captain-eira-mackay-2.jpg",
+        "captain-eira-mackay-3.jpg",
+        "captain-eira-mackay-4.jpg"
+      ],
+      "title": "Captain Eira Mackay",
+      "bonusPoints": 19,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 4146,
+      "images": [
+        "marshal-general-baldwin-gearhart-mr-clogg-1.jpg",
+        "marshal-general-baldwin-gearhart-mr-clogg-2.jpg",
+        "marshal-general-baldwin-gearhart-mr-clogg-3.jpg",
+        "marshal-general-baldwin-gearhart-mr-clogg-4.jpg",
+        "marshal-general-baldwin-gearhart-mr-clogg-5.jpg",
+        "marshal-general-baldwin-gearhart-mr-clogg-6.jpg"
+      ],
+      "title": "Marshal General Baldwin Gearhart & Mr. Clogg",
+      "bonusPoints": 27,
+      "points": 0,
+      "fieldAllowance": 1
+    }
+  ],
+  "warjacks": [
+    {
+      "id": 4147,
+      "images": [
+        "liberator-1.jpg",
+        "liberator-2.jpg"
+      ],
+      "title": "Liberator",
+      "points": 10,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 4148,
+      "images": [
+        "retaliator-1.jpg",
+        "retaliator-2.jpg"
+      ],
+      "title": "Retaliator",
+      "points": 9,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 4149,
+      "images": [
+        "suppressor-1.jpg",
+        "suppressor-2.jpg"
+      ],
+      "title": "Suppressor",
+      "points": 13,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 4150,
+      "images": [
+        "vindicator-1.jpg",
+        "vindicator-2.jpg"
+      ],
+      "title": "Vindicator",
+      "points": 15,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 4167,
+      "images": [
+        "vulcan-1.jpg",
+        "vulcan-2.jpg",
+        "vulcan-3.jpg",
+        "vulcan-4.jpg"
+      ],
+      "title": "Vulcan",
+      "points": 35,
+      "fieldAllowance": 2
+    }
+  ],
+  "units": [
+    {
+      "id": 4151,
+      "title": "Combat Alchemists",
+      "images": [
+	"combat-alchemists-1.jpg",
+	"combat-alchemists-2.jpg"
+      ],
+      "points": 7,
+      "fieldAllowance": 3,
+    },
+    {
+      "id": 4152,
+      "images": [
+        "crucible-guard-assault-troopers-1.jpg",
+        "crucible-guard-assault-troopers-2.jpg"
+      ],
+      "title": "Crucible Guard Assault Troopers",
+      "pointsMinimum": 8,
+      "pointsMaximum": 13,
+      "fieldAllowance": 3
+    },
+    {
+      "id": 4153,
+      "images": [
+        "crucible-guard-infantry-1.jpg",
+        "crucible-guard-infantry-2.jpg"
+      ],
+      "title": "Crucible Guard Infantry",
+      "pointsMinimum": 9,
+      "pointsMaximum": 15,
+      "sizeMinimum": 6,
+      "sizeMaximum": 10,
+      "fieldAllowance": 3
+    },
+    {
+      "id": 4154,
+      "images": [
+        "crucible-guard-infantry-officer-standard-1.jpg",
+        "crucible-guard-infantry-officer-standard-2.jpg"
+      ],
+      "title": "Crucible Guard Infantry Officer & Standard",
+      "attachment": true,
+      "points": 4,
+      "fieldAllowance": 3
+    },
+    {
+      "id": 4155,
+      "images": [
+        "crucible-guard-rocketman-captain-1.jpg",
+        "crucible-guard-rocketman-captain-2.jpg"
+      ],
+      "title": "Crucible Guard Rocketman Captain",
+      "attachment": true,
+      "points": 4,
+      "fieldAllowance": 3
+    },
+    {
+      "id": 4156,
+      "images": [
+        "crucible-guard-rocketmen-1.jpg",
+        "crucible-guard-rocketmen-2.jpg"
+      ],
+      "title": "Crucible Guard Rocketmen",
+      "pointsMinimum": 9,
+      "pointsMaximum": 15,
+      "sizeMinimum": 6,
+      "sizeMaximum": 10,
+      "fieldAllowance": 3
+    },
+    {
+      "id": 4157,
+      "images": [
+        "crucible-guard-storm-troopers-1.jpg",
+        "crucible-guard-storm-troopers-2.jpg"
+      ],
+      "title": "Crucible Guard Storm Troopers",
+      "pointsMinimum": 10,
+      "pointsMaximum": 16,
+      "sizeMinimum": 3,
+      "sizeMaximum": 10,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 4158,
+      "images": [
+        "doctor-adolpheus-morley-1.jpg",
+        "doctor-adolpheus-morley-2.jpg"
+      ],
+      "title": "Doctor Adolpheus Morley",
+      "attachment": true,
+      "points": 4,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 4159,
+      "images": [
+        "dragons-breath-rocket-1.jpg",
+        "dragons-breath-rocket-2.jpg"
+      ],
+      "title": "Dragon's Breath Rocket",
+      "points": 5,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 4160,
+      "images": [
+        "rocketman-gunner-1.jpg",
+        "rocketman-gunner-2.jpg"
+      ],
+      "title": "Rocketman Gunner",
+      "attachment": true,
+      "points": 2,
+      "fieldAllowance": 999
+    }
+  ],
+  "solos": [
+    {
+      "id": 4161,
+      "images": [
+        "aurum-ominus-alyce-marc-1.jpg",
+        "aurum-ominus-alyce-marc-2.jpg",
+        "aurum-ominus-alyce-marc-3.jpg",
+        "aurum-ominus-alyce-marc-4.jpg"
+      ],
+      "title": "Aurum Ominus Alyce Marc",
+      "points": 5,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 4162,
+      "images": [
+        "crucible-guard-mechanik-1.jpg",
+        "crucible-guard-mechanik-2.jpg"
+      ],
+      "title": "Crucible Guard Mechanik",
+      "points": 2,
+      "fieldAllowance": 4
+    },
+    {
+      "id": 4163,
+      "images": [
+        "prospero-1.jpg",
+        "prospero-2.jpg"
+      ],
+      "title": "Prospero",
+      "points": 5,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 4164,
+      "images": [
+        "rocketman-ace-1.jpg",
+        "rocketman-ace-2.jpg"
+      ],
+      "title": "Rocketman Ace",
+      "points": 4,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 4165,
+      "images": [
+	"trancer-1.jpg",
+	"trancer-2.jpg"
+      ],
+      "title": "Trancer",
+      "points": 3,
+      "fieldAllowance": 4
+    }
+  ],
+  "factionType": "Warmachine"
+}

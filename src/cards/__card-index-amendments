@@ -1,0 +1,48 @@
+circle
+	3105
+		attachTo:2892
+	3108
+		attachTo:3024
+	2897
+		attachTo:2990
+		points:4
+	3111
+		attachTo:3005
+	3024
+		fieldAllowance:1
+	3030
+		attachTo:3039
+	3058
+		attachTo:3061
+	3093
+		attachTo:3090
+		points:4
+
+crucible-guard
+	4148
+		points:9
+	4151
+		images:["combat-alchemists-1.jpg","combat-alchemists-2.jpg"]
+		points:7
+		fieldAllowance:3
+	4154
+		attachTo:4153
+		points:3
+	4155
+		attachTo:4156
+	4158
+		attachToType:2
+	4160
+		attachTo:4156
+	4161
+		points:5
+	4162
+		points:2
+		fieldAllowance:4
+	4163
+		marshal: true
+		points:5
+	4165
+		images:["trancer-1.jpg","trancer-2.jpg"]
+		points:3
+		fieldAllowance:4

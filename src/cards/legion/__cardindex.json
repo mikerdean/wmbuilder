@@ -1,1 +1,936 @@
-{"factionName":"Legion of Everblight","warlocks":[{"images":["absylonia-daughter-of-everblight-1.jpg","absylonia-daughter-of-everblight-2.jpg","absylonia-daughter-of-everblight-3.jpg","absylonia-daughter-of-everblight-4.jpg"],"title":"Absylonia, Daughter of Everblight","bonusPoints":28,"points":0,"fieldAllowance":1},{"images":["absylonia-terror-of-everblight-1.jpg","absylonia-terror-of-everblight-2.jpg","absylonia-terror-of-everblight-3.jpg","absylonia-terror-of-everblight-4.jpg"],"title":"Absylonia, Terror of Everblight","bonusPoints":31,"points":0,"fieldAllowance":1},{"images":["anamag-the-doom-feaster-1.jpg","anamag-the-doom-feaster-2.jpg","anamag-the-doom-feaster-3.jpg","anamag-the-doom-feaster-4.jpg"],"title":"Anamag the Doom Feaster","bonusPoints":27,"points":0,"fieldAllowance":1},{"images":["bethayne-voice-of-everblight-1.jpg","bethayne-voice-of-everblight-2.jpg","bethayne-voice-of-everblight-3.jpg","bethayne-voice-of-everblight-4.jpg","bethayne-voice-of-everblight-5.jpg","bethayne-voice-of-everblight-6.jpg"],"title":"Bethayne, Voice of Everblight","bonusPoints":20,"points":0,"fieldAllowance":1},{"images":["fyanna-torment-of-everblight-1.jpg","fyanna-torment-of-everblight-2.jpg","fyanna-torment-of-everblight-3.jpg","fyanna-torment-of-everblight-4.jpg"],"title":"Fyanna, Torment of Everblight","bonusPoints":28,"points":0,"fieldAllowance":1},{"images":["kallus-devastation-of-everblight-1.jpg","kallus-devastation-of-everblight-2.jpg","kallus-devastation-of-everblight-3.jpg","kallus-devastation-of-everblight-4.jpg"],"title":"Kallus, Devastation of Everblight","bonusPoints":28,"points":0,"fieldAllowance":1},{"images":["kallus-wrath-of-everblight-1.jpg","kallus-wrath-of-everblight-2.jpg","kallus-wrath-of-everblight-3.jpg","kallus-wrath-of-everblight-4.jpg"],"title":"Kallus, Wrath of Everblight","bonusPoints":30,"points":0,"fieldAllowance":1},{"images":["kryssa-conviction-of-everblight-1.jpg","kryssa-conviction-of-everblight-2.jpg","kryssa-conviction-of-everblight-3.jpg","kryssa-conviction-of-everblight-4.jpg"],"title":"Kryssa, Conviction of Everblight","bonusPoints":31,"points":0,"fieldAllowance":1},{"images":["lylyth-herald-of-everblight-1.jpg","lylyth-herald-of-everblight-2.jpg","lylyth-herald-of-everblight-3.jpg","lylyth-herald-of-everblight-4.jpg"],"title":"Lylyth, Herald of Everblight","bonusPoints":30,"points":0,"fieldAllowance":1},{"images":["lylyth-reckoning-of-everblight-1.jpg","lylyth-reckoning-of-everblight-2.jpg","lylyth-reckoning-of-everblight-3.jpg","lylyth-reckoning-of-everblight-4.jpg"],"title":"Lylyth, Reckoning of Everblight","bonusPoints":29,"points":0,"fieldAllowance":1},{"images":["lylyth-shadow-of-everblight-1.jpg","lylyth-shadow-of-everblight-2.jpg","lylyth-shadow-of-everblight-3.jpg","lylyth-shadow-of-everblight-4.jpg"],"title":"Lylyth, Shadow of Everblight","bonusPoints":28,"points":0,"fieldAllowance":1},{"images":["rhyas-sigil-of-everblight-1.jpg","rhyas-sigil-of-everblight-2.jpg","rhyas-sigil-of-everblight-3.jpg","rhyas-sigil-of-everblight-4.jpg"],"title":"Rhyas, Sigil of Everblight","bonusPoints":30,"points":0,"fieldAllowance":1},{"images":["saeryn-rhyas-talons-of-everblight-1.jpg","saeryn-rhyas-talons-of-everblight-2.jpg","saeryn-rhyas-talons-of-everblight-3.jpg","saeryn-rhyas-talons-of-everblight-4.jpg","saeryn-rhyas-talons-of-everblight-5.jpg","saeryn-rhyas-talons-of-everblight-6.jpg"],"title":"Saeryn & Rhyas, Talons of Everblight","bonusPoints":24,"points":0,"fieldAllowance":1},{"images":["saeryn-omen-of-everblight-1.jpg","saeryn-omen-of-everblight-2.jpg","saeryn-omen-of-everblight-3.jpg","saeryn-omen-of-everblight-4.jpg"],"title":"Saeryn, Omen of Everblight","bonusPoints":28,"points":0,"fieldAllowance":1},{"images":["thagrosh-prophet-of-everblight-1.jpg","thagrosh-prophet-of-everblight-2.jpg","thagrosh-prophet-of-everblight-3.jpg","thagrosh-prophet-of-everblight-4.jpg"],"title":"Thagrosh, Prophet of Everblight","bonusPoints":28,"points":0,"fieldAllowance":1},{"images":["thagrosh-the-messiah-1.jpg","thagrosh-the-messiah-2.jpg","thagrosh-the-messiah-3.jpg","thagrosh-the-messiah-4.jpg"],"title":"Thagrosh, the Messiah","bonusPoints":25,"points":0,"fieldAllowance":1},{"images":["vayl-consul-of-everblight-1.jpg","vayl-consul-of-everblight-2.jpg","vayl-consul-of-everblight-3.jpg","vayl-consul-of-everblight-4.jpg"],"title":"Vayl, Consul of Everblight","bonusPoints":28,"points":0,"fieldAllowance":1},{"images":["vayl-disciple-of-everblight-1.jpg","vayl-disciple-of-everblight-2.jpg","vayl-disciple-of-everblight-3.jpg","vayl-disciple-of-everblight-4.jpg"],"title":"Vayl, Disciple of Everblight","bonusPoints":27,"points":0,"fieldAllowance":1}],"warbeasts":[{"images":["afflictor-1.jpg","afflictor-2.jpg"],"title":"Afflictor","points":6,"fieldAllowance":999},{"images":["angelius-1.jpg","angelius-2.jpg"],"title":"Angelius","points":17,"fieldAllowance":999},{"images":["archangel-1.jpg","archangel-2.jpg","archangel-3.jpg","archangel-4.jpg"],"title":"Archangel","points":37,"fieldAllowance":2},{"images":["azrael-1.jpg","azrael-2.jpg"],"title":"Azrael","points":21,"fieldAllowance":1},{"images":["blight-wasps-1.jpg","blight-wasps-2.jpg"],"title":"Blight Wasps","fieldAllowance":999},{"images":["blightbringer-1.jpg","blightbringer-2.jpg","blightbringer-3.jpg","blightbringer-4.jpg"],"title":"Blightbringer","points":32,"fieldAllowance":2},{"images":["carnivean-1.jpg","carnivean-2.jpg"],"title":"Carnivean","points":18,"fieldAllowance":999},{"images":["golab-1.jpg","golab-2.jpg"],"title":"Golab","points":17,"fieldAllowance":1},{"images":["harrier-1.jpg","harrier-2.jpg"],"title":"Harrier","points":3,"fieldAllowance":999},{"images":["naga-nightlurker-1.jpg","naga-nightlurker-2.jpg"],"title":"Naga Nightlurker","points":8,"fieldAllowance":999},{"images":["nephilim-bloodseer-1.jpg","nephilim-bloodseer-2.jpg"],"title":"Nephilim Bloodseer","points":8,"fieldAllowance":999},{"images":["nephilim-bolt-thrower-1.jpg","nephilim-bolt-thrower-2.jpg"],"title":"Nephilim Bolt Thrower","points":11,"fieldAllowance":999},{"images":["nephilim-protector-1.jpg","nephilim-protector-2.jpg"],"title":"Nephilim Protector","points":10,"fieldAllowance":999},{"images":["nephilim-soldier-1.jpg","nephilim-soldier-2.jpg"],"title":"Nephilim Soldier","points":9,"fieldAllowance":999},{"images":["neraph-1.jpg","neraph-2.jpg"],"title":"Neraph","points":12,"fieldAllowance":999},{"images":["proteus-1.jpg","proteus-2.jpg"],"title":"Proteus","points":19,"fieldAllowance":1},{"images":["raek-1.jpg","raek-2.jpg"],"title":"Raek","points":8,"fieldAllowance":999},{"images":["ravagore-1.jpg","ravagore-2.jpg"],"title":"Ravagore","points":16,"fieldAllowance":999},{"images":["scythean-1.jpg","scythean-2.jpg"],"title":"Scythean","points":16,"fieldAllowance":999},{"images":["seraph-1.jpg","seraph-2.jpg"],"title":"Seraph","points":14,"fieldAllowance":999},{"images":["shredder-1.jpg","shredder-2.jpg"],"title":"Shredder","points":4,"fieldAllowance":999},{"images":["stinger-1.jpg","stinger-2.jpg"],"title":"Stinger","points":4,"fieldAllowance":999},{"images":["teraph-1.jpg","teraph-2.jpg"],"title":"Teraph","points":10,"fieldAllowance":999},{"images":["typhon-1.jpg","typhon-2.jpg"],"title":"Typhon","points":20,"fieldAllowance":1},{"images":["zuriel-1.jpg","zuriel-2.jpg"],"title":"Zuriel","points":18,"fieldAllowance":1}],"units":[{"images":["bayal-hound-of-everblight-1.jpg","bayal-hound-of-everblight-2.jpg"],"title":"Bayal, Hound of Everblight","attachment":true,"points":6,"fieldAllowance":1},{"images":["blackfrost-shard-1.jpg","blackfrost-shard-2.jpg","blackfrost-shard-3.jpg","blackfrost-shard-4.jpg"],"title":"Blackfrost Shard","points":9,"fieldAllowance":1},{"images":["blighted-nyss-archer-officer-ammo-porter-1.jpg","blighted-nyss-archer-officer-ammo-porter-2.jpg"],"title":"Blighted Nyss Archer Officer & Ammo Porter","attachment":true,"fieldAllowance":2},{"images":["blighted-nyss-archers-1.jpg","blighted-nyss-archers-2.jpg"],"title":"Blighted Nyss Archers","pointsMinimum":8,"pointsMaximum":13,"sizeMinimum":6,"sizeMaximum":10,"fieldAllowance":2},{"images":["blighted-nyss-hex-hunters-1.jpg","blighted-nyss-hex-hunters-2.jpg"],"title":"Blighted Nyss Hex Hunters","pointsMinimum":9,"pointsMaximum":15,"sizeMinimum":6,"sizeMaximum":10,"fieldAllowance":2},{"images":["blighted-nyss-legionnaires-1.jpg","blighted-nyss-legionnaires-2.jpg"],"title":"Blighted Nyss Legionnaires","pointsMinimum":9,"pointsMaximum":15,"sizeMinimum":6,"sizeMaximum":10,"fieldAllowance":2},{"images":["blighted-nyss-raptors-1.jpg","blighted-nyss-raptors-2.jpg"],"title":"Blighted Nyss Raptors","pointsMinimum":11,"pointsMaximum":18,"sizeMinimum":3,"sizeMaximum":5,"fieldAllowance":2},{"images":["blighted-nyss-scather-crew-1.jpg","blighted-nyss-scather-crew-2.jpg"],"title":"Blighted Nyss Scather Crew","points":5,"fieldAllowance":2},{"images":["blighted-nyss-swordsman-abbot-champion-1.jpg","blighted-nyss-swordsman-abbot-champion-2.jpg"],"title":"Blighted Nyss Swordsman Abbot & Champion","attachment":true,"fieldAllowance":2},{"images":["blighted-nyss-swordsmen-1.jpg","blighted-nyss-swordsmen-2.jpg"],"title":"Blighted Nyss Swordsmen","pointsMinimum":9,"pointsMaximum":15,"sizeMinimum":6,"sizeMaximum":10,"fieldAllowance":2},{"images":["blighted-ogrun-warmongers-1.jpg","blighted-ogrun-warmongers-2.jpg"],"title":"Blighted Ogrun Warmongers","pointsMinimum":8,"pointsMaximum":13,"sizeMinimum":3,"sizeMaximum":5,"fieldAllowance":3},{"images":["blighted-ogrun-warspears-1.jpg","blighted-ogrun-warspears-2.jpg"],"title":"Blighted Ogrun Warspears","pointsMinimum":9,"pointsMaximum":15,"sizeMinimum":3,"sizeMaximum":5,"fieldAllowance":3},{"images":["blighted-rotwings-1.jpg","blighted-rotwings-2.jpg"],"title":"Blighted Rotwings","pointsMinimum":7,"pointsMaximum":12,"sizeMinimum":6,"sizeMaximum":10,"fieldAllowance":2},{"images":["captain-farilor-standard-1.jpg","captain-farilor-standard-2.jpg"],"title":"Captain Farilor & Standard","attachment":true,"fieldAllowance":1},{"images":["gorag-rotteneye-1.jpg","gorag-rotteneye-2.jpg"],"title":"Gorag Rotteneye","attachment":true,"points":6,"fieldAllowance":1},{"images":["grotesque-banshees-1.jpg","grotesque-banshees-2.jpg"],"title":"Grotesque Banshees","pointsMinimum":8,"pointsMaximum":13,"sizeMinimum":6,"sizeMaximum":10,"fieldAllowance":2},{"images":["grotesque-raiders-1.jpg","grotesque-raiders-2.jpg"],"title":"Grotesque Raiders","pointsMinimum":8,"pointsMaximum":12,"sizeMinimum":6,"sizeMaximum":10,"fieldAllowance":2},{"images":["hellmouth-1.jpg","hellmouth-2.jpg"],"title":"Hellmouth","points":6,"fieldAllowance":2},{"images":["ice-witches-1.jpg","ice-witches-2.jpg"],"title":"Ice Witches","points":7,"fieldAllowance":3},{"images":["spawning-vessel-1.jpg","spawning-vessel-2.jpg"],"title":"Spawning Vessel","pointsMinimum":5,"pointsMaximum":7,"sizeMinimum":5,"sizeMaximum":7,"fieldAllowance":2},{"images":["strider-blightblades-1.jpg","strider-blightblades-2.jpg"],"title":"Strider Blightblades","points":10,"fieldAllowance":2},{"images":["strider-scout-officer-musician-1.jpg","strider-scout-officer-musician-2.jpg"],"title":"Strider Scout Officer & Musician","attachment":true,"fieldAllowance":2},{"images":["strider-scouts-1.jpg","strider-scouts-2.jpg"],"title":"Strider Scouts","points":9,"fieldAllowance":2},{"images":["warspear-chieftain-1.jpg","warspear-chieftain-2.jpg"],"title":"Warspear Chieftain","attachment":true,"points":5,"fieldAllowance":3}],"solos":[{"images":["ammok-the-truthbearer-1.jpg","ammok-the-truthbearer-2.jpg"],"title":"Ammok the Truthbearer","points":4,"fieldAllowance":1},{"images":["annyssa-ryvaal-1.jpg","annyssa-ryvaal-2.jpg"],"title":"Annyssa Ryvaal","points":8,"fieldAllowance":1},{"images":["beast-mistress-1.jpg","beast-mistress-2.jpg"],"title":"Beast Mistress","points":4,"fieldAllowance":2},{"images":["blighted-nyss-shepherd-1.jpg","blighted-nyss-shepherd-2.jpg"],"title":"Blighted Nyss Shepherd","points":1,"fieldAllowance":3},{"images":["blighted-nyss-sorceress-hellion-1.jpg","blighted-nyss-sorceress-hellion-2.jpg"],"title":"Blighted Nyss Sorceress & Hellion","points":6,"fieldAllowance":2},{"images":["blighted-nyss-warlord-1.jpg","blighted-nyss-warlord-2.jpg"],"title":"Blighted Nyss Warlord","points":5,"fieldAllowance":2},{"images":["craelix-fang-of-everblight-1.jpg","craelix-fang-of-everblight-2.jpg"],"title":"Craelix, Fang of Everblight","points":6,"fieldAllowance":1},{"images":["fyanna-the-lash-1.jpg","fyanna-the-lash-2.jpg"],"title":"Fyanna the Lash","points":5,"fieldAllowance":1},{"images":["grotesque-assassin-1.jpg","grotesque-assassin-2.jpg"],"title":"Grotesque Assassin","points":4,"fieldAllowance":2},{"images":["incubus-1.jpg","incubus-2.jpg"],"title":"Incubus","fieldAllowance":3},{"images":["spell-martyr-1.jpg","spell-martyr-2.jpg"],"title":"Spell Martyr","points":1,"fieldAllowance":3},{"images":["strider-deathstalker-1.jpg","strider-deathstalker-2.jpg"],"title":"Strider Deathstalker","points":4,"fieldAllowance":2},{"images":["succubus-1.jpg","succubus-2.jpg"],"title":"Succubus","points":4},{"images":["the-forsaken-1.jpg","the-forsaken-2.jpg"],"title":"The Forsaken","points":4,"fieldAllowance":2},{"images":["warmonger-war-chief-1.jpg","warmonger-war-chief-2.jpg"],"title":"Warmonger War Chief","points":5,"fieldAllowance":2}],"factionType":"Hordes"}
+{
+  "factionName": "Legion of Everblight",
+  "warlocks": [
+    {
+      "id": 3119,
+      "images": [
+        "absylonia-daughter-of-everblight-1.jpg",
+        "absylonia-daughter-of-everblight-2.jpg",
+        "absylonia-daughter-of-everblight-3.jpg",
+        "absylonia-daughter-of-everblight-4.jpg"
+      ],
+      "title": "Absylonia, Daughter of Everblight",
+      "bonusPoints": 28,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3124,
+      "images": [
+        "absylonia-terror-of-everblight-1.jpg",
+        "absylonia-terror-of-everblight-2.jpg",
+        "absylonia-terror-of-everblight-3.jpg",
+        "absylonia-terror-of-everblight-4.jpg"
+      ],
+      "title": "Absylonia, Terror of Everblight",
+      "bonusPoints": 31,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3991,
+      "images": [
+        "anamag-the-doom-feaster-1.jpg",
+        "anamag-the-doom-feaster-2.jpg",
+        "anamag-the-doom-feaster-3.jpg",
+        "anamag-the-doom-feaster-4.jpg"
+      ],
+      "title": "Anamag the Doom Feaster",
+      "bonusPoints": 27,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3150,
+      "images": [
+        "bethayne-voice-of-everblight-1.jpg",
+        "bethayne-voice-of-everblight-2.jpg",
+        "bethayne-voice-of-everblight-3.jpg",
+        "bethayne-voice-of-everblight-4.jpg",
+        "bethayne-voice-of-everblight-5.jpg",
+        "bethayne-voice-of-everblight-6.jpg"
+      ],
+      "title": "Bethayne, Voice of Everblight",
+      "bonusPoints": 20,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3215,
+      "images": [
+        "fyanna-torment-of-everblight-1.jpg",
+        "fyanna-torment-of-everblight-2.jpg",
+        "fyanna-torment-of-everblight-3.jpg",
+        "fyanna-torment-of-everblight-4.jpg"
+      ],
+      "title": "Fyanna, Torment of Everblight",
+      "bonusPoints": 28,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3235,
+      "images": [
+        "kallus-devastation-of-everblight-1.jpg",
+        "kallus-devastation-of-everblight-2.jpg",
+        "kallus-devastation-of-everblight-3.jpg",
+        "kallus-devastation-of-everblight-4.jpg"
+      ],
+      "title": "Kallus, Devastation of Everblight",
+      "bonusPoints": 28,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3240,
+      "images": [
+        "kallus-wrath-of-everblight-1.jpg",
+        "kallus-wrath-of-everblight-2.jpg",
+        "kallus-wrath-of-everblight-3.jpg",
+        "kallus-wrath-of-everblight-4.jpg"
+      ],
+      "title": "Kallus, Wrath of Everblight",
+      "bonusPoints": 30,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3245,
+      "images": [
+        "kryssa-conviction-of-everblight-1.jpg",
+        "kryssa-conviction-of-everblight-2.jpg",
+        "kryssa-conviction-of-everblight-3.jpg",
+        "kryssa-conviction-of-everblight-4.jpg"
+      ],
+      "title": "Kryssa, Conviction of Everblight",
+      "bonusPoints": 31,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3250,
+      "images": [
+        "lylyth-herald-of-everblight-1.jpg",
+        "lylyth-herald-of-everblight-2.jpg",
+        "lylyth-herald-of-everblight-3.jpg",
+        "lylyth-herald-of-everblight-4.jpg"
+      ],
+      "title": "Lylyth, Herald of Everblight",
+      "bonusPoints": 30,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3255,
+      "images": [
+        "lylyth-reckoning-of-everblight-1.jpg",
+        "lylyth-reckoning-of-everblight-2.jpg",
+        "lylyth-reckoning-of-everblight-3.jpg",
+        "lylyth-reckoning-of-everblight-4.jpg"
+      ],
+      "title": "Lylyth, Reckoning of Everblight",
+      "bonusPoints": 29,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3260,
+      "images": [
+        "lylyth-shadow-of-everblight-1.jpg",
+        "lylyth-shadow-of-everblight-2.jpg",
+        "lylyth-shadow-of-everblight-3.jpg",
+        "lylyth-shadow-of-everblight-4.jpg"
+      ],
+      "title": "Lylyth, Shadow of Everblight",
+      "bonusPoints": 28,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3292,
+      "images": [
+        "rhyas-sigil-of-everblight-1.jpg",
+        "rhyas-sigil-of-everblight-2.jpg",
+        "rhyas-sigil-of-everblight-3.jpg",
+        "rhyas-sigil-of-everblight-4.jpg"
+      ],
+      "title": "Rhyas, Sigil of Everblight",
+      "bonusPoints": 30,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3297,
+      "images": [
+        "saeryn-rhyas-talons-of-everblight-1.jpg",
+        "saeryn-rhyas-talons-of-everblight-2.jpg",
+        "saeryn-rhyas-talons-of-everblight-3.jpg",
+        "saeryn-rhyas-talons-of-everblight-4.jpg",
+        "saeryn-rhyas-talons-of-everblight-5.jpg",
+        "saeryn-rhyas-talons-of-everblight-6.jpg"
+      ],
+      "title": "Saeryn & Rhyas, Talons of Everblight",
+      "bonusPoints": 24,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3304,
+      "images": [
+        "saeryn-omen-of-everblight-1.jpg",
+        "saeryn-omen-of-everblight-2.jpg",
+        "saeryn-omen-of-everblight-3.jpg",
+        "saeryn-omen-of-everblight-4.jpg"
+      ],
+      "title": "Saeryn, Omen of Everblight",
+      "bonusPoints": 28,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3345,
+      "images": [
+        "thagrosh-prophet-of-everblight-1.jpg",
+        "thagrosh-prophet-of-everblight-2.jpg",
+        "thagrosh-prophet-of-everblight-3.jpg",
+        "thagrosh-prophet-of-everblight-4.jpg"
+      ],
+      "title": "Thagrosh, Prophet of Everblight",
+      "bonusPoints": 28,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3350,
+      "images": [
+        "thagrosh-the-messiah-1.jpg",
+        "thagrosh-the-messiah-2.jpg",
+        "thagrosh-the-messiah-3.jpg",
+        "thagrosh-the-messiah-4.jpg"
+      ],
+      "title": "Thagrosh, the Messiah",
+      "bonusPoints": 25,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3364,
+      "images": [
+        "vayl-consul-of-everblight-1.jpg",
+        "vayl-consul-of-everblight-2.jpg",
+        "vayl-consul-of-everblight-3.jpg",
+        "vayl-consul-of-everblight-4.jpg"
+      ],
+      "title": "Vayl, Consul of Everblight",
+      "bonusPoints": 28,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3369,
+      "images": [
+        "vayl-disciple-of-everblight-1.jpg",
+        "vayl-disciple-of-everblight-2.jpg",
+        "vayl-disciple-of-everblight-3.jpg",
+        "vayl-disciple-of-everblight-4.jpg"
+      ],
+      "title": "Vayl, Disciple of Everblight",
+      "bonusPoints": 27,
+      "points": 0,
+      "fieldAllowance": 1
+    }
+  ],
+  "warbeasts": [
+    {
+      "id": 3129,
+      "images": [
+        "afflictor-1.jpg",
+        "afflictor-2.jpg"
+      ],
+      "title": "Afflictor",
+      "points": 6,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 3132,
+      "images": [
+        "angelius-1.jpg",
+        "angelius-2.jpg"
+      ],
+      "title": "Angelius",
+      "points": 17,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 3138,
+      "images": [
+        "archangel-1.jpg",
+        "archangel-2.jpg",
+        "archangel-3.jpg",
+        "archangel-4.jpg"
+      ],
+      "title": "Archangel",
+      "points": 37,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3143,
+      "images": [
+        "azrael-1.jpg",
+        "azrael-2.jpg"
+      ],
+      "title": "Azrael",
+      "points": 21,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3162,
+      "images": [
+        "blight-wasps-1.jpg",
+        "blight-wasps-2.jpg"
+      ],
+      "title": "Blight Wasps",
+      "fieldAllowance": 999
+    },
+    {
+      "id": 3165,
+      "images": [
+        "blightbringer-1.jpg",
+        "blightbringer-2.jpg",
+        "blightbringer-3.jpg",
+        "blightbringer-4.jpg"
+      ],
+      "title": "Blightbringer",
+      "points": 32,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3209,
+      "images": [
+        "carnivean-1.jpg",
+        "carnivean-2.jpg"
+      ],
+      "title": "Carnivean",
+      "points": 18,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 3996,
+      "images": [
+        "golab-1.jpg",
+        "golab-2.jpg"
+      ],
+      "title": "Golab",
+      "points": 17,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3226,
+      "images": [
+        "harrier-1.jpg",
+        "harrier-2.jpg"
+      ],
+      "title": "Harrier",
+      "points": 3,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 3265,
+      "images": [
+        "naga-nightlurker-1.jpg",
+        "naga-nightlurker-2.jpg"
+      ],
+      "title": "Naga Nightlurker",
+      "points": 8,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 3268,
+      "images": [
+        "nephilim-bloodseer-1.jpg",
+        "nephilim-bloodseer-2.jpg"
+      ],
+      "title": "Nephilim Bloodseer",
+      "points": 8,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 3271,
+      "images": [
+        "nephilim-bolt-thrower-1.jpg",
+        "nephilim-bolt-thrower-2.jpg"
+      ],
+      "title": "Nephilim Bolt Thrower",
+      "points": 11,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 3274,
+      "images": [
+        "nephilim-protector-1.jpg",
+        "nephilim-protector-2.jpg"
+      ],
+      "title": "Nephilim Protector",
+      "points": 10,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 3277,
+      "images": [
+        "nephilim-soldier-1.jpg",
+        "nephilim-soldier-2.jpg"
+      ],
+      "title": "Nephilim Soldier",
+      "points": 9,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 3280,
+      "images": [
+        "neraph-1.jpg",
+        "neraph-2.jpg"
+      ],
+      "title": "Neraph",
+      "points": 12,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 3283,
+      "images": [
+        "proteus-1.jpg",
+        "proteus-2.jpg"
+      ],
+      "title": "Proteus",
+      "points": 19,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3286,
+      "images": [
+        "raek-1.jpg",
+        "raek-2.jpg"
+      ],
+      "title": "Raek",
+      "points": 8,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 3289,
+      "images": [
+        "ravagore-1.jpg",
+        "ravagore-2.jpg"
+      ],
+      "title": "Ravagore",
+      "points": 16,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 3309,
+      "images": [
+        "scythean-1.jpg",
+        "scythean-2.jpg"
+      ],
+      "title": "Scythean",
+      "points": 16,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 3312,
+      "images": [
+        "seraph-1.jpg",
+        "seraph-2.jpg"
+      ],
+      "title": "Seraph",
+      "points": 14,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 3315,
+      "images": [
+        "shredder-1.jpg",
+        "shredder-2.jpg"
+      ],
+      "title": "Shredder",
+      "points": 4,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 3324,
+      "images": [
+        "stinger-1.jpg",
+        "stinger-2.jpg"
+      ],
+      "title": "Stinger",
+      "points": 4,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 3342,
+      "images": [
+        "teraph-1.jpg",
+        "teraph-2.jpg"
+      ],
+      "title": "Teraph",
+      "points": 10,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 3361,
+      "images": [
+        "typhon-1.jpg",
+        "typhon-2.jpg"
+      ],
+      "title": "Typhon",
+      "points": 20,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3377,
+      "images": [
+        "zuriel-1.jpg",
+        "zuriel-2.jpg"
+      ],
+      "title": "Zuriel",
+      "points": 18,
+      "fieldAllowance": 1
+    }
+  ],
+  "units": [
+    {
+      "id": 3146,
+      "images": [
+        "bayal-hound-of-everblight-1.jpg",
+        "bayal-hound-of-everblight-2.jpg"
+      ],
+      "title": "Bayal, Hound of Everblight",
+      "attachment": true,
+      "points": 6,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3157,
+      "images": [
+        "blackfrost-shard-1.jpg",
+        "blackfrost-shard-2.jpg",
+        "blackfrost-shard-3.jpg",
+        "blackfrost-shard-4.jpg"
+      ],
+      "title": "Blackfrost Shard",
+      "points": 9,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3170,
+      "images": [
+        "blighted-nyss-archer-officer-ammo-porter-1.jpg",
+        "blighted-nyss-archer-officer-ammo-porter-2.jpg"
+      ],
+      "title": "Blighted Nyss Archer Officer & Ammo Porter",
+      "attachment": true,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3173,
+      "images": [
+        "blighted-nyss-archers-1.jpg",
+        "blighted-nyss-archers-2.jpg"
+      ],
+      "title": "Blighted Nyss Archers",
+      "pointsMinimum": 8,
+      "pointsMaximum": 13,
+      "sizeMinimum": 6,
+      "sizeMaximum": 10,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3176,
+      "images": [
+        "blighted-nyss-hex-hunters-1.jpg",
+        "blighted-nyss-hex-hunters-2.jpg"
+      ],
+      "title": "Blighted Nyss Hex Hunters",
+      "pointsMinimum": 9,
+      "pointsMaximum": 15,
+      "sizeMinimum": 6,
+      "sizeMaximum": 10,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3179,
+      "images": [
+        "blighted-nyss-legionnaires-1.jpg",
+        "blighted-nyss-legionnaires-2.jpg"
+      ],
+      "title": "Blighted Nyss Legionnaires",
+      "pointsMinimum": 9,
+      "pointsMaximum": 15,
+      "sizeMinimum": 6,
+      "sizeMaximum": 10,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3182,
+      "images": [
+        "blighted-nyss-raptors-1.jpg",
+        "blighted-nyss-raptors-2.jpg"
+      ],
+      "title": "Blighted Nyss Raptors",
+      "pointsMinimum": 11,
+      "pointsMaximum": 18,
+      "sizeMinimum": 3,
+      "sizeMaximum": 5,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3185,
+      "images": [
+        "blighted-nyss-scather-crew-1.jpg",
+        "blighted-nyss-scather-crew-2.jpg"
+      ],
+      "title": "Blighted Nyss Scather Crew",
+      "points": 5,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3194,
+      "images": [
+        "blighted-nyss-swordsman-abbot-champion-1.jpg",
+        "blighted-nyss-swordsman-abbot-champion-2.jpg"
+      ],
+      "title": "Blighted Nyss Swordsman Abbot & Champion",
+      "attachment": true,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3197,
+      "images": [
+        "blighted-nyss-swordsmen-1.jpg",
+        "blighted-nyss-swordsmen-2.jpg"
+      ],
+      "title": "Blighted Nyss Swordsmen",
+      "pointsMinimum": 9,
+      "pointsMaximum": 15,
+      "sizeMinimum": 6,
+      "sizeMaximum": 10,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3203,
+      "images": [
+        "blighted-ogrun-warmongers-1.jpg",
+        "blighted-ogrun-warmongers-2.jpg"
+      ],
+      "title": "Blighted Ogrun Warmongers",
+      "pointsMinimum": 8,
+      "pointsMaximum": 13,
+      "sizeMinimum": 3,
+      "sizeMaximum": 5,
+      "fieldAllowance": 3
+    },
+    {
+      "id": 3206,
+      "images": [
+        "blighted-ogrun-warspears-1.jpg",
+        "blighted-ogrun-warspears-2.jpg"
+      ],
+      "title": "Blighted Ogrun Warspears",
+      "pointsMinimum": 9,
+      "pointsMaximum": 15,
+      "sizeMinimum": 3,
+      "sizeMaximum": 5,
+      "fieldAllowance": 3
+    },
+    {
+      "id": 3999,
+      "images": [
+        "blighted-rotwings-1.jpg",
+        "blighted-rotwings-2.jpg"
+      ],
+      "title": "Blighted Rotwings",
+      "pointsMinimum": 7,
+      "pointsMaximum": 12,
+      "sizeMinimum": 6,
+      "sizeMaximum": 10,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3382,
+      "images": [
+        "captain-farilor-standard-1.jpg",
+        "captain-farilor-standard-2.jpg"
+      ],
+      "title": "Captain Farilor & Standard",
+      "attachment": true,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 4070,
+      "images": [
+        "chosen-of-everblight-1.jpg",
+        "chosen-of-everblight-2.jpg"
+      ],
+      "title": "Chosen of Everblight",
+      "pointsMinimum": 12,
+      "pointsMaximum": 20,
+      "sizeMinimum": 3,
+      "sizeMaximum": 5,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3988,
+      "images": [
+        "gorag-rotteneye-1.jpg",
+        "gorag-rotteneye-2.jpg"
+      ],
+      "title": "Gorag Rotteneye",
+      "attachment": true,
+      "points": 6,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3223,
+      "images": [
+        "grotesque-banshees-1.jpg",
+        "grotesque-banshees-2.jpg"
+      ],
+      "title": "Grotesque Banshees",
+      "pointsMinimum": 8,
+      "pointsMaximum": 13,
+      "sizeMinimum": 6,
+      "sizeMaximum": 10,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3598,
+      "images": [
+        "grotesque-raiders-1.jpg",
+        "grotesque-raiders-2.jpg"
+      ],
+      "title": "Grotesque Raiders",
+      "pointsMinimum": 8,
+      "pointsMaximum": 12,
+      "sizeMinimum": 6,
+      "sizeMaximum": 10,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3229,
+      "images": [
+        "hellmouth-1.jpg",
+        "hellmouth-2.jpg"
+      ],
+      "title": "Hellmouth",
+      "points": 6,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3893,
+      "images": [
+        "ice-witches-1.jpg",
+        "ice-witches-2.jpg"
+      ],
+      "title": "Ice Witches",
+      "points": 7,
+      "fieldAllowance": 3
+    },
+    {
+      "id": 3318,
+      "images": [
+        "spawning-vessel-1.jpg",
+        "spawning-vessel-2.jpg"
+      ],
+      "title": "Spawning Vessel",
+      "pointsMinimum": 5,
+      "pointsMaximum": 7,
+      "sizeMinimum": 5,
+      "sizeMaximum": 7,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3327,
+      "images": [
+        "strider-blightblades-1.jpg",
+        "strider-blightblades-2.jpg"
+      ],
+      "title": "Strider Blightblades",
+      "points": 10,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3333,
+      "images": [
+        "strider-scout-officer-musician-1.jpg",
+        "strider-scout-officer-musician-2.jpg"
+      ],
+      "title": "Strider Scout Officer & Musician",
+      "attachment": true,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3336,
+      "images": [
+        "strider-scouts-1.jpg",
+        "strider-scouts-2.jpg"
+      ],
+      "title": "Strider Scouts",
+      "points": 9,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3385,
+      "images": [
+        "warspear-chieftain-1.jpg",
+        "warspear-chieftain-2.jpg"
+      ],
+      "title": "Warspear Chieftain",
+      "attachment": true,
+      "points": 5,
+      "fieldAllowance": 3
+    }
+  ],
+  "solos": [
+    {
+      "id": 4002,
+      "images": [
+        "ammok-the-truthbearer-1.jpg",
+        "ammok-the-truthbearer-2.jpg"
+      ],
+      "title": "Ammok the Truthbearer",
+      "points": 4,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3135,
+      "images": [
+        "annyssa-ryvaal-1.jpg",
+        "annyssa-ryvaal-2.jpg"
+      ],
+      "title": "Annyssa Ryvaal",
+      "points": 8,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3147,
+      "images": [
+        "beast-mistress-1.jpg",
+        "beast-mistress-2.jpg"
+      ],
+      "title": "Beast Mistress",
+      "points": 4,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3188,
+      "images": [
+        "blighted-nyss-shepherd-1.jpg",
+        "blighted-nyss-shepherd-2.jpg"
+      ],
+      "title": "Blighted Nyss Shepherd",
+      "points": 1,
+      "fieldAllowance": 3
+    },
+    {
+      "id": 3191,
+      "images": [
+        "blighted-nyss-sorceress-hellion-1.jpg",
+        "blighted-nyss-sorceress-hellion-2.jpg"
+      ],
+      "title": "Blighted Nyss Sorceress & Hellion",
+      "points": 6,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3200,
+      "images": [
+        "blighted-nyss-warlord-1.jpg",
+        "blighted-nyss-warlord-2.jpg"
+      ],
+      "title": "Blighted Nyss Warlord",
+      "points": 5,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3814,
+      "images": [
+        "craelix-fang-of-everblight-1.jpg",
+        "craelix-fang-of-everblight-2.jpg"
+      ],
+      "title": "Craelix, Fang of Everblight",
+      "points": 6,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3212,
+      "images": [
+        "fyanna-the-lash-1.jpg",
+        "fyanna-the-lash-2.jpg"
+      ],
+      "title": "Fyanna the Lash",
+      "points": 5,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3220,
+      "images": [
+        "grotesque-assassin-1.jpg",
+        "grotesque-assassin-2.jpg"
+      ],
+      "title": "Grotesque Assassin",
+      "points": 4,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3232,
+      "images": [
+        "incubus-1.jpg",
+        "incubus-2.jpg"
+      ],
+      "title": "Incubus",
+      "fieldAllowance": 3
+    },
+    {
+      "id": 3321,
+      "images": [
+        "spell-martyr-1.jpg",
+        "spell-martyr-2.jpg"
+      ],
+      "title": "Spell Martyr",
+      "points": 1,
+      "fieldAllowance": 3
+    },
+    {
+      "id": 3330,
+      "images": [
+        "strider-deathstalker-1.jpg",
+        "strider-deathstalker-2.jpg"
+      ],
+      "title": "Strider Deathstalker",
+      "points": 4,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3339,
+      "images": [
+        "succubus-1.jpg",
+        "succubus-2.jpg"
+      ],
+      "title": "Succubus",
+      "points": 4
+    },
+    {
+      "id": 3355,
+      "images": [
+        "the-forsaken-1.jpg",
+        "the-forsaken-2.jpg"
+      ],
+      "title": "The Forsaken",
+      "points": 4,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3374,
+      "title": "Warmonger War Chief"
+    }
+  ],
+  "factionType": "Hordes"
+}

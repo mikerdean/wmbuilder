@@ -1,1 +1,1015 @@
-{"factionName":"Khador","warcasters":[{"images":["assault-kommander-strakhov-kommandos-1.jpg","assault-kommander-strakhov-kommandos-2.jpg","assault-kommander-strakhov-kommandos-3.jpg","assault-kommander-strakhov-kommandos-4.jpg","assault-kommander-strakhov-kommandos-5.jpg","assault-kommander-strakhov-kommandos-6.jpg"],"title":"Assault Kommander Strakhov & Kommandos","bonusPoints":22,"points":0,"fieldAllowance":1},{"images":["forward-kommander-sorscha-1.jpg","forward-kommander-sorscha-2.jpg","forward-kommander-sorscha-3.jpg","forward-kommander-sorscha-4.jpg"],"title":"Forward Kommander Sorscha","bonusPoints":27,"points":0,"fieldAllowance":1},{"images":["karchev-the-terrible-1.jpg","karchev-the-terrible-2.jpg","karchev-the-terrible-3.jpg","karchev-the-terrible-4.jpg"],"title":"Karchev the Terrible","bonusPoints":30,"points":0,"fieldAllowance":1},{"images":["koldun-kommander-aleksandra-zerkova-1.jpg","koldun-kommander-aleksandra-zerkova-2.jpg","koldun-kommander-aleksandra-zerkova-3.jpg","koldun-kommander-aleksandra-zerkova-4.jpg"],"title":"Koldun Kommander Aleksandra Zerkova","bonusPoints":28,"points":0,"fieldAllowance":1},{"images":["kommandant-irusk-1.jpg","kommandant-irusk-2.jpg","kommandant-irusk-3.jpg","kommandant-irusk-4.jpg"],"title":"Kommandant Irusk","bonusPoints":27,"points":0,"fieldAllowance":1},{"images":["kommandant-sorscha-kratikoff-1.jpg","kommandant-sorscha-kratikoff-2.jpg","kommandant-sorscha-kratikoff-3.jpg","kommandant-sorscha-kratikoff-4.jpg"],"title":"Kommandant Sorscha Kratikoff","bonusPoints":28,"points":0,"fieldAllowance":1},{"images":["kommander-andrei-malakov-1.jpg","kommander-andrei-malakov-2.jpg","kommander-andrei-malakov-3.jpg","kommander-andrei-malakov-4.jpg"],"title":"Kommander Andrei Malakov","bonusPoints":28,"points":0,"fieldAllowance":1},{"images":["kommander-harkevich-the-iron-wolf-1.jpg","kommander-harkevich-the-iron-wolf-2.jpg","kommander-harkevich-the-iron-wolf-3.jpg","kommander-harkevich-the-iron-wolf-4.jpg"],"title":"Kommander Harkevich, the Iron Wolf","bonusPoints":28,"points":0,"fieldAllowance":1},{"images":["kommander-oleg-strakhov-1.jpg","kommander-oleg-strakhov-2.jpg","kommander-oleg-strakhov-3.jpg","kommander-oleg-strakhov-4.jpg"],"title":"Kommander Oleg Strakhov","bonusPoints":28,"points":0,"fieldAllowance":1},{"images":["kommander-orsus-zoktavir-1.jpg","kommander-orsus-zoktavir-2.jpg","kommander-orsus-zoktavir-3.jpg","kommander-orsus-zoktavir-4.jpg"],"title":"Kommander Orsus Zoktavir","bonusPoints":28,"points":0,"fieldAllowance":1},{"images":["kommander-sorscha-1.jpg","kommander-sorscha-2.jpg","kommander-sorscha-3.jpg","kommander-sorscha-4.jpg"],"title":"Kommander Sorscha","bonusPoints":29,"points":0,"fieldAllowance":1},{"images":["kommander-zoktavir-the-butcher-unleashed-1.jpg","kommander-zoktavir-the-butcher-unleashed-2.jpg","kommander-zoktavir-the-butcher-unleashed-3.jpg","kommander-zoktavir-the-butcher-unleashed-4.jpg","kommander-zoktavir-the-butcher-unleashed-5.jpg","kommander-zoktavir-the-butcher-unleashed-6.jpg"],"title":"Kommander Zoktavir, the Butcher Unleashed","bonusPoints":22,"points":0,"fieldAllowance":1},{"images":["lord-kozlov-viscount-of-scarsgrad-1.jpg","lord-kozlov-viscount-of-scarsgrad-2.jpg","lord-kozlov-viscount-of-scarsgrad-3.jpg","lord-kozlov-viscount-of-scarsgrad-4.jpg"],"title":"Lord Kozlov, Viscount of Scarsgrad","bonusPoints":28,"points":0,"fieldAllowance":1},{"images":["obavnik-kommander-zerkova-reaver-guard-1.jpg","obavnik-kommander-zerkova-reaver-guard-2.jpg","obavnik-kommander-zerkova-reaver-guard-3.jpg","obavnik-kommander-zerkova-reaver-guard-4.jpg","obavnik-kommander-zerkova-reaver-guard-5.jpg","obavnik-kommander-zerkova-reaver-guard-6.jpg"],"title":"Obavnik Kommander Zerkova & Reaver Guard","bonusPoints":24,"points":0,"fieldAllowance":1},{"images":["orsus-zoktavir-the-butcher-of-khardov-1.jpg","orsus-zoktavir-the-butcher-of-khardov-2.jpg","orsus-zoktavir-the-butcher-of-khardov-3.jpg","orsus-zoktavir-the-butcher-of-khardov-4.jpg"],"title":"Orsus Zoktavir, The Butcher of Khardov","bonusPoints":28,"points":0,"fieldAllowance":1},{"images":["supreme-kommandant-irusk-1.jpg","supreme-kommandant-irusk-2.jpg","supreme-kommandant-irusk-3.jpg","supreme-kommandant-irusk-4.jpg"],"title":"Supreme Kommandant Irusk","bonusPoints":27,"points":0,"fieldAllowance":1},{"images":["the-old-witch-of-khador-1.jpg","the-old-witch-of-khador-2.jpg","the-old-witch-of-khador-3.jpg","the-old-witch-of-khador-4.jpg","the-old-witch-of-khador-5.jpg","the-old-witch-of-khador-6.jpg"],"title":"The Old Witch of Khador","bonusPoints":18,"points":0,"fieldAllowance":1},{"images":["vladimir-tzepesci-great-prince-of-umbrey-1.jpg","vladimir-tzepesci-great-prince-of-umbrey-2.jpg","vladimir-tzepesci-great-prince-of-umbrey-3.jpg","vladimir-tzepesci-great-prince-of-umbrey-4.jpg"],"title":"Vladimir Tzepesci, Great Prince of Umbrey","bonusPoints":27,"points":0,"fieldAllowance":1},{"images":["vladimir-tzepesci-the-dark-champion-1.jpg","vladimir-tzepesci-the-dark-champion-2.jpg","vladimir-tzepesci-the-dark-champion-3.jpg","vladimir-tzepesci-the-dark-champion-4.jpg"],"title":"Vladimir Tzepesci, the Dark Champion","bonusPoints":27,"points":0,"fieldAllowance":1},{"images":["vladimir-tzepesci-the-dark-prince-1.jpg","vladimir-tzepesci-the-dark-prince-2.jpg","vladimir-tzepesci-the-dark-prince-3.jpg","vladimir-tzepesci-the-dark-prince-4.jpg"],"title":"Vladimir Tzepesci, the Dark Prince","bonusPoints":28,"points":0,"fieldAllowance":1},{"images":["zevanna-agha-the-fate-keeper-1.jpg","zevanna-agha-the-fate-keeper-2.jpg","zevanna-agha-the-fate-keeper-3.jpg","zevanna-agha-the-fate-keeper-4.jpg"],"title":"Zevanna Agha, the Fate Keeper","bonusPoints":27,"points":0,"fieldAllowance":1}],"warjacks":[{"images":["beast-09-1.jpg","beast-09-2.jpg"],"title":"Beast 09","points":18,"fieldAllowance":1},{"images":["behemoth-1.jpg","behemoth-2.jpg"],"title":"Behemoth","points":25,"fieldAllowance":1},{"images":["berserker-1.jpg","berserker-2.jpg"],"title":"Berserker","points":8,"fieldAllowance":999},{"images":["black-ivan-1.jpg","black-ivan-2.jpg"],"title":"Black Ivan","points":19,"fieldAllowance":1},{"images":["conquest-1.jpg","conquest-2.jpg","conquest-3.jpg","conquest-4.jpg"],"title":"Conquest","points":35,"fieldAllowance":2},{"images":["decimator-1.jpg","decimator-2.jpg"],"title":"Decimator","points":15,"fieldAllowance":999},{"images":["demolisher-1.jpg","demolisher-2.jpg"],"title":"Demolisher","points":16,"fieldAllowance":999},{"images":["destroyer-1.jpg","destroyer-2.jpg"],"title":"Destroyer","points":14,"fieldAllowance":999},{"images":["devastator-1.jpg","devastator-2.jpg"],"title":"Devastator","points":14,"fieldAllowance":999},{"images":["drago-1.jpg","drago-2.jpg"],"title":"Drago","points":14,"fieldAllowance":1},{"images":["grolar-1.jpg","grolar-2.jpg"],"title":"Grolar","points":18,"fieldAllowance":999},{"images":["juggernaut-1.jpg","juggernaut-2.jpg"],"title":"Juggernaut","points":13,"fieldAllowance":999},{"images":["kodiak-1.jpg","kodiak-2.jpg"],"title":"Kodiak","points":13,"fieldAllowance":999},{"images":["mad-dog-1.jpg","mad-dog-2.jpg"],"title":"Mad Dog","points":8,"fieldAllowance":999},{"images":["marauder-1.jpg","marauder-2.jpg"],"title":"Marauder","points":11,"fieldAllowance":999},{"images":["rager-1.jpg","rager-2.jpg"],"title":"Rager","points":10,"fieldAllowance":999},{"images":["ruin-1.jpg","ruin-2.jpg"],"title":"Ruin","points":17,"fieldAllowance":1},{"images":["spriggan-1.jpg","spriggan-2.jpg"],"title":"Spriggan","points":17,"fieldAllowance":999},{"images":["torch-1.jpg","torch-2.jpg"],"title":"Torch","points":18,"fieldAllowance":1},{"images":["victor-1.jpg","victor-2.jpg","victor-3.jpg","victor-4.jpg"],"title":"Victor","points":34,"fieldAllowance":2}],"units":[{"images":["assault-kommando-flame-thrower-1.jpg","assault-kommando-flame-thrower-2.jpg"],"title":"Assault Kommando Flame Thrower","attachment":true,"points":2,"fieldAllowance":999},{"images":["assault-kommandos-1.jpg","assault-kommandos-2.jpg"],"title":"Assault Kommandos","pointsMinimum":10,"pointsMaximum":16,"sizeMinimum":6,"sizeMaximum":10,"fieldAllowance":2},{"images":["battle-mechanik-officer-1.jpg","battle-mechanik-officer-2.jpg"],"title":"Battle Mechanik Officer","attachment":true,"points":3,"fieldAllowance":3},{"images":["battle-mechaniks-1.jpg","battle-mechaniks-2.jpg"],"title":"Battle Mechaniks","pointsMinimum":3,"pointsMaximum":5,"sizeMinimum":4,"sizeMaximum":6,"fieldAllowance":3},{"images":["black-dragon-officer-standard-1.jpg","black-dragon-officer-standard-2.jpg"],"title":"Black Dragon Officer & Standard","attachment":true,"fieldAllowance":2},{"images":["black-dragons-1.jpg","black-dragons-2.jpg"],"title":"Black Dragons","pointsMinimum":10,"pointsMaximum":17,"sizeMinimum":6,"sizeMaximum":10,"fieldAllowance":2},{"images":["doom-reaver-swordsmen-1.jpg","doom-reaver-swordsmen-2.jpg"],"title":"Doom Reaver Swordsmen","points":13,"fieldAllowance":999},{"images":["great-bears-of-the-gallowswood-1.jpg","great-bears-of-the-gallowswood-2.jpg"],"title":"Great Bears of the Gallowswood","points":9,"fieldAllowance":1},{"images":["greylord-escort-1.jpg","greylord-escort-2.jpg"],"title":"Greylord Escort","attachment":true,"points":3,"fieldAllowance":999},{"images":["greylord-outriders-1.jpg","greylord-outriders-2.jpg"],"title":"Greylord Outriders","pointsMinimum":12,"pointsMaximum":20,"sizeMinimum":3,"sizeMaximum":5,"fieldAllowance":2},{"images":["greylord-ternion-1.jpg","greylord-ternion-2.jpg"],"title":"Greylord Ternion","points":7,"fieldAllowance":3},{"images":["iron-fang-pikemen-1.jpg","iron-fang-pikemen-2.jpg"],"title":"Iron Fang Pikemen","pointsMinimum":9,"pointsMaximum":15,"sizeMinimum":6,"sizeMaximum":10,"fieldAllowance":999},{"images":["iron-fang-pikemen-officer-standard-1.jpg","iron-fang-pikemen-officer-standard-2.jpg"],"title":"Iron Fang Pikemen Officer & Standard","attachment":true,"fieldAllowance":999},{"images":["iron-fang-uhlans-1.jpg","iron-fang-uhlans-2.jpg"],"title":"Iron Fang Uhlans","pointsMinimum":12,"pointsMaximum":20,"sizeMinimum":3,"sizeMaximum":5,"fieldAllowance":2},{"images":["koldun-kapitan-valachev-1.jpg","koldun-kapitan-valachev-2.jpg"],"title":"Koldun Kapitan Valachev","attachment":true,"points":4,"fieldAllowance":1},{"images":["kommandant-atanas-arconovich-standard-1.jpg","kommandant-atanas-arconovich-standard-2.jpg"],"title":"Kommandant Atanas Arconovich & Standard","points":7,"fieldAllowance":1},{"images":["kossite-woodsmen-1.jpg","kossite-woodsmen-2.jpg"],"title":"Kossite Woodsmen","pointsMinimum":7,"pointsMaximum":11,"sizeMinimum":6,"sizeMaximum":10,"fieldAllowance":2},{"images":["man-o-war-bombardier-officer-1.jpg","man-o-war-bombardier-officer-2.jpg"],"title":"Man-O-War Bombardier Officer","attachment":true,"points":5,"fieldAllowance":3},{"images":["man-o-war-bombardiers-1.jpg","man-o-war-bombardiers-2.jpg"],"title":"Man-O-War Bombardiers","pointsMinimum":10,"pointsMaximum":16,"sizeMinimum":3,"sizeMaximum":5,"fieldAllowance":3},{"images":["man-o-war-demolition-corps-1.jpg","man-o-war-demolition-corps-2.jpg"],"title":"Man-O-War Demolition Corps","pointsMinimum":8,"pointsMaximum":14,"sizeMinimum":3,"sizeMaximum":5,"fieldAllowance":3},{"images":["man-o-war-shocktrooper-officer-1.jpg","man-o-war-shocktrooper-officer-2.jpg"],"title":"Man-O-War Shocktrooper Officer","attachment":true,"points":4,"fieldAllowance":3},{"images":["man-o-war-shocktroopers-1.jpg","man-o-war-shocktroopers-2.jpg"],"title":"Man-O-War Shocktroopers","pointsMinimum":10,"pointsMaximum":16,"sizeMinimum":3,"sizeMaximum":5,"fieldAllowance":3},{"images":["sergeant-dragos-dragadovich-1.jpg","sergeant-dragos-dragadovich-2.jpg"],"title":"Sergeant Dragos Dragadovich","attachment":true,"points":6,"fieldAllowance":1},{"images":["widowmaker-scouts-1.jpg","widowmaker-scouts-2.jpg"],"title":"Widowmaker Scouts","points":8,"fieldAllowance":1},{"images":["winter-guard-field-gun-crew-1.jpg","winter-guard-field-gun-crew-2.jpg"],"title":"Winter Guard Field Gun Crew","points":4,"fieldAllowance":2},{"images":["winter-guard-infantry-1.jpg","winter-guard-infantry-2.jpg"],"title":"Winter Guard Infantry","pointsMinimum":6,"pointsMaximum":10,"sizeMinimum":6,"sizeMaximum":10,"fieldAllowance":999},{"images":["winter-guard-infantry-officer-standard-1.jpg","winter-guard-infantry-officer-standard-2.jpg"],"title":"Winter Guard Infantry Officer & Standard","attachment":true,"fieldAllowance":999},{"images":["winter-guard-mortar-crew-1.jpg","winter-guard-mortar-crew-2.jpg"],"title":"Winter Guard Mortar Crew","points":5,"fieldAllowance":2},{"images":["winter-guard-rifle-corps-1.jpg","winter-guard-rifle-corps-2.jpg"],"title":"Winter Guard Rifle Corps","pointsMinimum":8,"pointsMaximum":13,"sizeMinimum":6,"sizeMaximum":10,"fieldAllowance":999},{"images":["winter-guard-rocketeer-1.jpg","winter-guard-rocketeer-2.jpg"],"title":"Winter Guard Rocketeer","attachment":true,"points":2,"fieldAllowance":999}],"solos":[{"images":["fenris-1.jpg","fenris-2.jpg","fenris-3.jpg","fenris-4.jpg"],"title":"Fenris","points":7,"fieldAllowance":1},{"images":["greylord-forge-seer-1.jpg","greylord-forge-seer-2.jpg"],"title":"Greylord Forge Seer","points":4,"fieldAllowance":2},{"images":["iron-fang-kovnik-1.jpg","iron-fang-kovnik-2.jpg"],"title":"Iron Fang Kovnik","points":4,"fieldAllowance":2},{"images":["kapitan-sofya-skirova-1.jpg","kapitan-sofya-skirova-2.jpg"],"title":"Kapitan Sofya Skirova","points":5,"fieldAllowance":1},{"images":["koldun-lord-1.jpg","koldun-lord-2.jpg"],"title":"Koldun Lord","points":4,"fieldAllowance":2},{"images":["kovnik-andrei-malakov-1.jpg","kovnik-andrei-malakov-2.jpg"],"title":"Kovnik Andrei Malakov","points":4,"fieldAllowance":1},{"images":["kovnik-jozef-grigorovich-1.jpg","kovnik-jozef-grigorovich-2.jpg"],"title":"Kovnik Jozef Grigorovich","points":4,"fieldAllowance":1},{"images":["man-o-war-drakhun-1.jpg","man-o-war-drakhun-2.jpg","man-o-war-drakhun-3.jpg","man-o-war-drakhun-4.jpg"],"title":"Man-O-War Drakhun","points":7,"fieldAllowance":2},{"images":["man-o-war-kovnik-1.jpg","man-o-war-kovnik-2.jpg"],"title":"Man-O-War Kovnik","points":4,"fieldAllowance":2},{"images":["man-o-war-strike-tanker-1.jpg","man-o-war-strike-tanker-2.jpg"],"title":"Man-O-War Strike Tanker","points":5,"fieldAllowance":2},{"images":["man-o-war-suppression-tanker-1.jpg","man-o-war-suppression-tanker-2.jpg"],"title":"Man-O-War Suppression Tanker","points":6,"fieldAllowance":2},{"images":["manhunter-1.jpg","manhunter-2.jpg"],"title":"Manhunter","points":4,"fieldAllowance":2},{"images":["uhlan-kovnik-markov-1.jpg","uhlan-kovnik-markov-2.jpg"],"title":"Uhlan Kovnik Markov","points":7,"fieldAllowance":1},{"images":["war-dog-1.jpg","war-dog-2.jpg"],"title":"War Dog","points":3,"fieldAllowance":1},{"images":["widowmaker-marksman-1.jpg","widowmaker-marksman-2.jpg"],"title":"Widowmaker Marksman","points":4,"fieldAllowance":1},{"images":["winter-guard-artillery-kapitan-1.jpg","winter-guard-artillery-kapitan-2.jpg"],"title":"Winter Guard Artillery Kapitan","points":3,"fieldAllowance":2},{"images":["yuri-the-axe-1.jpg","yuri-the-axe-2.jpg"],"title":"Yuri the Axe","points":6,"fieldAllowance":1}],"factionType":"Warmachine"}
+{
+  "factionName": "Khador",
+  "warcasters": [
+    {
+      "id": 479,
+      "images": [
+        "assault-kommander-strakhov-kommandos-1.jpg",
+        "assault-kommander-strakhov-kommandos-2.jpg",
+        "assault-kommander-strakhov-kommandos-3.jpg",
+        "assault-kommander-strakhov-kommandos-4.jpg",
+        "assault-kommander-strakhov-kommandos-5.jpg",
+        "assault-kommander-strakhov-kommandos-6.jpg"
+      ],
+      "title": "Assault Kommander Strakhov & Kommandos",
+      "bonusPoints": 22,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1353,
+      "images": [
+        "forward-kommander-sorscha-1.jpg",
+        "forward-kommander-sorscha-2.jpg",
+        "forward-kommander-sorscha-3.jpg",
+        "forward-kommander-sorscha-4.jpg"
+      ],
+      "title": "Forward Kommander Sorscha",
+      "bonusPoints": 27,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1385,
+      "images": [
+        "karchev-the-terrible-1.jpg",
+        "karchev-the-terrible-2.jpg",
+        "karchev-the-terrible-3.jpg",
+        "karchev-the-terrible-4.jpg"
+      ],
+      "title": "Karchev the Terrible",
+      "bonusPoints": 30,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1393,
+      "images": [
+        "koldun-kommander-aleksandra-zerkova-1.jpg",
+        "koldun-kommander-aleksandra-zerkova-2.jpg",
+        "koldun-kommander-aleksandra-zerkova-3.jpg",
+        "koldun-kommander-aleksandra-zerkova-4.jpg"
+      ],
+      "title": "Koldun Kommander Aleksandra Zerkova",
+      "bonusPoints": 28,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1401,
+      "images": [
+        "kommandant-irusk-1.jpg",
+        "kommandant-irusk-2.jpg",
+        "kommandant-irusk-3.jpg",
+        "kommandant-irusk-4.jpg"
+      ],
+      "title": "Kommandant Irusk",
+      "bonusPoints": 27,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 4035,
+      "images": [
+        "kommandant-sorscha-kratikoff-1.jpg",
+        "kommandant-sorscha-kratikoff-2.jpg",
+        "kommandant-sorscha-kratikoff-3.jpg",
+        "kommandant-sorscha-kratikoff-4.jpg"
+      ],
+      "title": "Kommandant Sorscha Kratikoff",
+      "bonusPoints": 28,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 471,
+      "images": [
+        "kommander-andrei-malakov-1.jpg",
+        "kommander-andrei-malakov-2.jpg",
+        "kommander-andrei-malakov-3.jpg",
+        "kommander-andrei-malakov-4.jpg"
+      ],
+      "title": "Kommander Andrei Malakov",
+      "bonusPoints": 28,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1406,
+      "images": [
+        "kommander-harkevich-the-iron-wolf-1.jpg",
+        "kommander-harkevich-the-iron-wolf-2.jpg",
+        "kommander-harkevich-the-iron-wolf-3.jpg",
+        "kommander-harkevich-the-iron-wolf-4.jpg"
+      ],
+      "title": "Kommander Harkevich, the Iron Wolf",
+      "bonusPoints": 28,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1411,
+      "images": [
+        "kommander-oleg-strakhov-1.jpg",
+        "kommander-oleg-strakhov-2.jpg",
+        "kommander-oleg-strakhov-3.jpg",
+        "kommander-oleg-strakhov-4.jpg"
+      ],
+      "title": "Kommander Oleg Strakhov",
+      "bonusPoints": 28,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1416,
+      "images": [
+        "kommander-orsus-zoktavir-1.jpg",
+        "kommander-orsus-zoktavir-2.jpg",
+        "kommander-orsus-zoktavir-3.jpg",
+        "kommander-orsus-zoktavir-4.jpg"
+      ],
+      "title": "Kommander Orsus Zoktavir",
+      "bonusPoints": 28,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1421,
+      "images": [
+        "kommander-sorscha-1.jpg",
+        "kommander-sorscha-2.jpg",
+        "kommander-sorscha-3.jpg",
+        "kommander-sorscha-4.jpg"
+      ],
+      "title": "Kommander Sorscha",
+      "bonusPoints": 29,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1426,
+      "images": [
+        "kommander-zoktavir-the-butcher-unleashed-1.jpg",
+        "kommander-zoktavir-the-butcher-unleashed-2.jpg",
+        "kommander-zoktavir-the-butcher-unleashed-3.jpg",
+        "kommander-zoktavir-the-butcher-unleashed-4.jpg",
+        "kommander-zoktavir-the-butcher-unleashed-5.jpg",
+        "kommander-zoktavir-the-butcher-unleashed-6.jpg"
+      ],
+      "title": "Kommander Zoktavir, the Butcher Unleashed",
+      "bonusPoints": 22,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1442,
+      "images": [
+        "lord-kozlov-viscount-of-scarsgrad-1.jpg",
+        "lord-kozlov-viscount-of-scarsgrad-2.jpg",
+        "lord-kozlov-viscount-of-scarsgrad-3.jpg",
+        "lord-kozlov-viscount-of-scarsgrad-4.jpg"
+      ],
+      "title": "Lord Kozlov, Viscount of Scarsgrad",
+      "bonusPoints": 28,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1471,
+      "images": [
+        "obavnik-kommander-zerkova-reaver-guard-1.jpg",
+        "obavnik-kommander-zerkova-reaver-guard-2.jpg",
+        "obavnik-kommander-zerkova-reaver-guard-3.jpg",
+        "obavnik-kommander-zerkova-reaver-guard-4.jpg",
+        "obavnik-kommander-zerkova-reaver-guard-5.jpg",
+        "obavnik-kommander-zerkova-reaver-guard-6.jpg"
+      ],
+      "title": "Obavnik Kommander Zerkova & Reaver Guard",
+      "bonusPoints": 24,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1478,
+      "images": [
+        "orsus-zoktavir-the-butcher-of-khardov-1.jpg",
+        "orsus-zoktavir-the-butcher-of-khardov-2.jpg",
+        "orsus-zoktavir-the-butcher-of-khardov-3.jpg",
+        "orsus-zoktavir-the-butcher-of-khardov-4.jpg"
+      ],
+      "title": "Orsus Zoktavir, The Butcher of Khardov",
+      "bonusPoints": 28,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1492,
+      "images": [
+        "supreme-kommandant-irusk-1.jpg",
+        "supreme-kommandant-irusk-2.jpg",
+        "supreme-kommandant-irusk-3.jpg",
+        "supreme-kommandant-irusk-4.jpg"
+      ],
+      "title": "Supreme Kommandant Irusk",
+      "bonusPoints": 27,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1497,
+      "images": [
+        "the-old-witch-of-khador-1.jpg",
+        "the-old-witch-of-khador-2.jpg",
+        "the-old-witch-of-khador-3.jpg",
+        "the-old-witch-of-khador-4.jpg",
+        "the-old-witch-of-khador-5.jpg",
+        "the-old-witch-of-khador-6.jpg"
+      ],
+      "title": "The Old Witch of Khador",
+      "bonusPoints": 18,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1515,
+      "images": [
+        "vladimir-tzepesci-great-prince-of-umbrey-1.jpg",
+        "vladimir-tzepesci-great-prince-of-umbrey-2.jpg",
+        "vladimir-tzepesci-great-prince-of-umbrey-3.jpg",
+        "vladimir-tzepesci-great-prince-of-umbrey-4.jpg"
+      ],
+      "title": "Vladimir Tzepesci, Great Prince of Umbrey",
+      "bonusPoints": 27,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1520,
+      "images": [
+        "vladimir-tzepesci-the-dark-champion-1.jpg",
+        "vladimir-tzepesci-the-dark-champion-2.jpg",
+        "vladimir-tzepesci-the-dark-champion-3.jpg",
+        "vladimir-tzepesci-the-dark-champion-4.jpg"
+      ],
+      "title": "Vladimir Tzepesci, the Dark Champion",
+      "bonusPoints": 27,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1525,
+      "images": [
+        "vladimir-tzepesci-the-dark-prince-1.jpg",
+        "vladimir-tzepesci-the-dark-prince-2.jpg",
+        "vladimir-tzepesci-the-dark-prince-3.jpg",
+        "vladimir-tzepesci-the-dark-prince-4.jpg"
+      ],
+      "title": "Vladimir Tzepesci, the Dark Prince",
+      "bonusPoints": 28,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3747,
+      "images": [
+        "zevanna-agha-the-fate-keeper-1.jpg",
+        "zevanna-agha-the-fate-keeper-2.jpg",
+        "zevanna-agha-the-fate-keeper-3.jpg",
+        "zevanna-agha-the-fate-keeper-4.jpg"
+      ],
+      "title": "Zevanna Agha, the Fate Keeper",
+      "bonusPoints": 27,
+      "points": 0,
+      "fieldAllowance": 1
+    }
+  ],
+  "warjacks": [
+    {
+      "id": 1312,
+      "images": [
+        "beast-09-1.jpg",
+        "beast-09-2.jpg"
+      ],
+      "title": "Beast 09",
+      "points": 18,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1315,
+      "images": [
+        "behemoth-1.jpg",
+        "behemoth-2.jpg"
+      ],
+      "title": "Behemoth",
+      "points": 25,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1318,
+      "images": [
+        "berserker-1.jpg",
+        "berserker-2.jpg"
+      ],
+      "title": "Berserker",
+      "points": 8,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 1327,
+      "images": [
+        "black-ivan-1.jpg",
+        "black-ivan-2.jpg"
+      ],
+      "title": "Black Ivan",
+      "points": 19,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1330,
+      "images": [
+        "conquest-1.jpg",
+        "conquest-2.jpg",
+        "conquest-3.jpg",
+        "conquest-4.jpg"
+      ],
+      "title": "Conquest",
+      "points": 35,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 1335,
+      "images": [
+        "decimator-1.jpg",
+        "decimator-2.jpg"
+      ],
+      "title": "Decimator",
+      "points": 15,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 1338,
+      "images": [
+        "demolisher-1.jpg",
+        "demolisher-2.jpg"
+      ],
+      "title": "Demolisher",
+      "points": 16,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 1341,
+      "images": [
+        "destroyer-1.jpg",
+        "destroyer-2.jpg"
+      ],
+      "title": "Destroyer",
+      "points": 14,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 1344,
+      "images": [
+        "devastator-1.jpg",
+        "devastator-2.jpg"
+      ],
+      "title": "Devastator",
+      "points": 14,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 1350,
+      "images": [
+        "drago-1.jpg",
+        "drago-2.jpg"
+      ],
+      "title": "Drago",
+      "points": 14,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 514,
+      "images": [
+        "grolar-1.jpg",
+        "grolar-2.jpg"
+      ],
+      "title": "Grolar",
+      "points": 18,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 1382,
+      "images": [
+        "juggernaut-1.jpg",
+        "juggernaut-2.jpg"
+      ],
+      "title": "Juggernaut",
+      "points": 13,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 517,
+      "images": [
+        "kodiak-1.jpg",
+        "kodiak-2.jpg"
+      ],
+      "title": "Kodiak",
+      "points": 13,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 1447,
+      "images": [
+        "mad-dog-1.jpg",
+        "mad-dog-2.jpg"
+      ],
+      "title": "Mad Dog",
+      "points": 8,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 1468,
+      "images": [
+        "marauder-1.jpg",
+        "marauder-2.jpg"
+      ],
+      "title": "Marauder",
+      "points": 11,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 1483,
+      "images": [
+        "rager-1.jpg",
+        "rager-2.jpg"
+      ],
+      "title": "Rager",
+      "points": 10,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 1486,
+      "images": [
+        "ruin-1.jpg",
+        "ruin-2.jpg"
+      ],
+      "title": "Ruin",
+      "points": 17,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1489,
+      "images": [
+        "spriggan-1.jpg",
+        "spriggan-2.jpg"
+      ],
+      "title": "Spriggan",
+      "points": 17,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 1504,
+      "images": [
+        "torch-1.jpg",
+        "torch-2.jpg"
+      ],
+      "title": "Torch",
+      "points": 18,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1510,
+      "images": [
+        "victor-1.jpg",
+        "victor-2.jpg",
+        "victor-3.jpg",
+        "victor-4.jpg"
+      ],
+      "title": "Victor",
+      "points": 34,
+      "fieldAllowance": 2
+    }
+  ],
+  "units": [
+    {
+      "id": 1300,
+      "images": [
+        "assault-kommando-flame-thrower-1.jpg",
+        "assault-kommando-flame-thrower-2.jpg"
+      ],
+      "title": "Assault Kommando Flame Thrower",
+      "attachment": true,
+      "points": 2,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 1303,
+      "images": [
+        "assault-kommandos-1.jpg",
+        "assault-kommandos-2.jpg"
+      ],
+      "title": "Assault Kommandos",
+      "pointsMinimum": 10,
+      "pointsMaximum": 16,
+      "sizeMinimum": 6,
+      "sizeMaximum": 10,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 1306,
+      "images": [
+        "battle-mechanik-officer-1.jpg",
+        "battle-mechanik-officer-2.jpg"
+      ],
+      "title": "Battle Mechanik Officer",
+      "attachment": true,
+      "points": 3,
+      "fieldAllowance": 3
+    },
+    {
+      "id": 1309,
+      "images": [
+        "battle-mechaniks-1.jpg",
+        "battle-mechaniks-2.jpg"
+      ],
+      "title": "Battle Mechaniks",
+      "pointsMinimum": 3,
+      "pointsMaximum": 5,
+      "sizeMinimum": 4,
+      "sizeMaximum": 6,
+      "fieldAllowance": 3
+    },
+    {
+      "id": 1321,
+      "images": [
+        "black-dragon-officer-standard-1.jpg",
+        "black-dragon-officer-standard-2.jpg"
+      ],
+      "title": "Black Dragon Officer & Standard",
+      "attachment": true,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 1324,
+      "images": [
+        "black-dragons-1.jpg",
+        "black-dragons-2.jpg"
+      ],
+      "title": "Black Dragons",
+      "pointsMinimum": 10,
+      "pointsMaximum": 17,
+      "sizeMinimum": 6,
+      "sizeMaximum": 10,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 1347,
+      "images": [
+        "doom-reaver-swordsmen-1.jpg",
+        "doom-reaver-swordsmen-2.jpg"
+      ],
+      "title": "Doom Reaver Swordsmen",
+      "points": 13,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 1358,
+      "images": [
+        "great-bears-of-the-gallowswood-1.jpg",
+        "great-bears-of-the-gallowswood-2.jpg"
+      ],
+      "title": "Great Bears of the Gallowswood",
+      "points": 9,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1361,
+      "images": [
+        "greylord-escort-1.jpg",
+        "greylord-escort-2.jpg"
+      ],
+      "title": "Greylord Escort",
+      "attachment": true,
+      "points": 3,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 1364,
+      "images": [
+        "greylord-outriders-1.jpg",
+        "greylord-outriders-2.jpg"
+      ],
+      "title": "Greylord Outriders",
+      "pointsMinimum": 12,
+      "pointsMaximum": 20,
+      "sizeMinimum": 3,
+      "sizeMaximum": 5,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 1367,
+      "images": [
+        "greylord-ternion-1.jpg",
+        "greylord-ternion-2.jpg"
+      ],
+      "title": "Greylord Ternion",
+      "points": 7,
+      "fieldAllowance": 3
+    },
+    {
+      "id": 1373,
+      "images": [
+        "iron-fang-pikemen-1.jpg",
+        "iron-fang-pikemen-2.jpg"
+      ],
+      "title": "Iron Fang Pikemen",
+      "pointsMinimum": 9,
+      "pointsMaximum": 15,
+      "sizeMinimum": 6,
+      "sizeMaximum": 10,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 1376,
+      "images": [
+        "iron-fang-pikemen-officer-standard-1.jpg",
+        "iron-fang-pikemen-officer-standard-2.jpg"
+      ],
+      "title": "Iron Fang Pikemen Officer & Standard",
+      "attachment": true,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 1379,
+      "images": [
+        "iron-fang-uhlans-1.jpg",
+        "iron-fang-uhlans-2.jpg"
+      ],
+      "title": "Iron Fang Uhlans",
+      "pointsMinimum": 12,
+      "pointsMaximum": 20,
+      "sizeMinimum": 3,
+      "sizeMaximum": 5,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 1390,
+      "images": [
+        "koldun-kapitan-valachev-1.jpg",
+        "koldun-kapitan-valachev-2.jpg"
+      ],
+      "title": "Koldun Kapitan Valachev",
+      "attachment": true,
+      "points": 4,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 4040,
+      "images": [
+        "kommandant-atanas-arconovich-standard-1.jpg",
+        "kommandant-atanas-arconovich-standard-2.jpg"
+      ],
+      "title": "Kommandant Atanas Arconovich & Standard",
+      "points": 7,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1433,
+      "images": [
+        "kossite-woodsmen-1.jpg",
+        "kossite-woodsmen-2.jpg"
+      ],
+      "title": "Kossite Woodsmen",
+      "pointsMinimum": 7,
+      "pointsMaximum": 11,
+      "sizeMinimum": 6,
+      "sizeMaximum": 10,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 4046,
+      "images": [
+        "man-o-war-bombardier-officer-1.jpg",
+        "man-o-war-bombardier-officer-2.jpg"
+      ],
+      "title": "Man-O-War Bombardier Officer",
+      "attachment": true,
+      "points": 5,
+      "fieldAllowance": 3
+    },
+    {
+      "id": 1453,
+      "images": [
+        "man-o-war-bombardiers-1.jpg",
+        "man-o-war-bombardiers-2.jpg"
+      ],
+      "title": "Man-O-War Bombardiers",
+      "pointsMinimum": 10,
+      "pointsMaximum": 16,
+      "sizeMinimum": 3,
+      "sizeMaximum": 5,
+      "fieldAllowance": 3
+    },
+    {
+      "id": 1456,
+      "images": [
+        "man-o-war-demolition-corps-1.jpg",
+        "man-o-war-demolition-corps-2.jpg"
+      ],
+      "title": "Man-O-War Demolition Corps",
+      "pointsMinimum": 8,
+      "pointsMaximum": 14,
+      "sizeMinimum": 3,
+      "sizeMaximum": 5,
+      "fieldAllowance": 3
+    },
+    {
+      "id": 1462,
+      "images": [
+        "man-o-war-shocktrooper-officer-1.jpg",
+        "man-o-war-shocktrooper-officer-2.jpg"
+      ],
+      "title": "Man-O-War Shocktrooper Officer",
+      "attachment": true,
+      "points": 4,
+      "fieldAllowance": 3
+    },
+    {
+      "id": 1465,
+      "images": [
+        "man-o-war-shocktroopers-1.jpg",
+        "man-o-war-shocktroopers-2.jpg"
+      ],
+      "title": "Man-O-War Shocktroopers",
+      "pointsMinimum": 10,
+      "pointsMaximum": 16,
+      "sizeMinimum": 3,
+      "sizeMaximum": 5,
+      "fieldAllowance": 3
+    },
+    {
+      "id": 4005,
+      "images": [
+        "sergeant-dragos-dragadovich-1.jpg",
+        "sergeant-dragos-dragadovich-2.jpg"
+      ],
+      "title": "Sergeant Dragos Dragadovich",
+      "attachment": true,
+      "points": 6,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1536,
+      "images": [
+        "widowmaker-scouts-1.jpg",
+        "widowmaker-scouts-2.jpg"
+      ],
+      "title": "Widowmaker Scouts",
+      "points": 8,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1542,
+      "images": [
+        "winter-guard-field-gun-crew-1.jpg",
+        "winter-guard-field-gun-crew-2.jpg"
+      ],
+      "title": "Winter Guard Field Gun Crew",
+      "points": 4,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 1548,
+      "images": [
+        "winter-guard-infantry-1.jpg",
+        "winter-guard-infantry-2.jpg"
+      ],
+      "title": "Winter Guard Infantry",
+      "pointsMinimum": 6,
+      "pointsMaximum": 10,
+      "sizeMinimum": 6,
+      "sizeMaximum": 10,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 1551,
+      "images": [
+        "winter-guard-infantry-officer-standard-1.jpg",
+        "winter-guard-infantry-officer-standard-2.jpg"
+      ],
+      "title": "Winter Guard Infantry Officer & Standard",
+      "attachment": true,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 1554,
+      "images": [
+        "winter-guard-mortar-crew-1.jpg",
+        "winter-guard-mortar-crew-2.jpg"
+      ],
+      "title": "Winter Guard Mortar Crew",
+      "points": 5,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 1557,
+      "images": [
+        "winter-guard-rifle-corps-1.jpg",
+        "winter-guard-rifle-corps-2.jpg"
+      ],
+      "title": "Winter Guard Rifle Corps",
+      "pointsMinimum": 8,
+      "pointsMaximum": 13,
+      "sizeMinimum": 6,
+      "sizeMaximum": 10,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 1560,
+      "images": [
+        "winter-guard-rocketeer-1.jpg",
+        "winter-guard-rocketeer-2.jpg"
+      ],
+      "title": "Winter Guard Rocketeer",
+      "attachment": true,
+      "points": 2,
+      "fieldAllowance": 999
+    }
+  ],
+  "solos": [
+    {
+      "id": 590,
+      "images": [
+        "fenris-1.jpg",
+        "fenris-2.jpg",
+        "fenris-3.jpg",
+        "fenris-4.jpg"
+      ],
+      "title": "Fenris",
+      "points": 7,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 476,
+      "images": [
+        "greylord-forge-seer-1.jpg",
+        "greylord-forge-seer-2.jpg"
+      ],
+      "title": "Greylord Forge Seer",
+      "points": 4,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 1370,
+      "images": [
+        "iron-fang-kovnik-1.jpg",
+        "iron-fang-kovnik-2.jpg"
+      ],
+      "title": "Iron Fang Kovnik",
+      "points": 4,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3890,
+      "images": [
+        "kapitan-sofya-skirova-1.jpg",
+        "kapitan-sofya-skirova-2.jpg"
+      ],
+      "title": "Kapitan Sofya Skirova",
+      "points": 5,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1398,
+      "images": [
+        "koldun-lord-1.jpg",
+        "koldun-lord-2.jpg"
+      ],
+      "title": "Koldun Lord",
+      "points": 4,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 1436,
+      "images": [
+        "kovnik-andrei-malakov-1.jpg",
+        "kovnik-andrei-malakov-2.jpg"
+      ],
+      "title": "Kovnik Andrei Malakov",
+      "points": 4,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1439,
+      "images": [
+        "kovnik-jozef-grigorovich-1.jpg",
+        "kovnik-jozef-grigorovich-2.jpg"
+      ],
+      "title": "Kovnik Jozef Grigorovich",
+      "points": 4,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 528,
+      "images": [
+        "man-o-war-drakhun-1.jpg",
+        "man-o-war-drakhun-2.jpg",
+        "man-o-war-drakhun-3.jpg",
+        "man-o-war-drakhun-4.jpg"
+      ],
+      "title": "Man-O-War Drakhun",
+      "points": 7,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 1459,
+      "images": [
+        "man-o-war-kovnik-1.jpg",
+        "man-o-war-kovnik-2.jpg"
+      ],
+      "title": "Man-O-War Kovnik",
+      "points": 4,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 4049,
+      "images": [
+        "man-o-war-strike-tanker-1.jpg",
+        "man-o-war-strike-tanker-2.jpg"
+      ],
+      "title": "Man-O-War Strike Tanker",
+      "points": 5,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 4052,
+      "images": [
+        "man-o-war-suppression-tanker-1.jpg",
+        "man-o-war-suppression-tanker-2.jpg"
+      ],
+      "title": "Man-O-War Suppression Tanker",
+      "points": 6,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 1450,
+      "images": [
+        "manhunter-1.jpg",
+        "manhunter-2.jpg"
+      ],
+      "title": "Manhunter",
+      "points": 4,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 1507,
+      "images": [
+        "uhlan-kovnik-markov-1.jpg",
+        "uhlan-kovnik-markov-2.jpg"
+      ],
+      "title": "Uhlan Kovnik Markov",
+      "points": 7,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1530,
+      "images": [
+        "war-dog-1.jpg",
+        "war-dog-2.jpg"
+      ],
+      "title": "War Dog",
+      "points": 3,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 1533,
+      "images": [
+        "widowmaker-marksman-1.jpg",
+        "widowmaker-marksman-2.jpg"
+      ],
+      "title": "Widowmaker Marksman",
+      "points": 4,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 442,
+      "images": [
+        "winter-guard-artillery-kapitan-1.jpg",
+        "winter-guard-artillery-kapitan-2.jpg"
+      ],
+      "title": "Winter Guard Artillery Kapitan",
+      "points": 3,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 1563,
+      "images": [
+        "yuri-the-axe-1.jpg",
+        "yuri-the-axe-2.jpg"
+      ],
+      "title": "Yuri the Axe",
+      "points": 6,
+      "fieldAllowance": 1
+    }
+  ],
+  "factionType": "Warmachine"
+}

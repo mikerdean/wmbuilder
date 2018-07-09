@@ -1,1 +1,313 @@
-{"factionName":"Grymkin: The Wicked Harvest","warlocks":[{"images":["the-child-1.jpg","the-child-2.jpg","the-child-3.jpg","the-child-4.jpg","the-child-5.jpg","the-child-6.jpg"],"title":"The Child","bonusPoints":29,"points":0,"fieldAllowance":1},{"images":["the-dreamer-1.jpg","the-dreamer-2.jpg","the-dreamer-3.jpg","the-dreamer-4.jpg","the-dreamer-5.jpg","the-dreamer-6.jpg","the-dreamer-7.jpg","the-dreamer-8.jpg"],"title":"The Dreamer","bonusPoints":28,"points":0,"fieldAllowance":1},{"images":["the-heretic-1.jpg","the-heretic-2.jpg","the-heretic-3.jpg","the-heretic-4.jpg","the-heretic-5.jpg","the-heretic-6.jpg"],"title":"The Heretic","bonusPoints":28,"points":0,"fieldAllowance":1},{"images":["the-king-of-nothing-1.jpg","the-king-of-nothing-2.jpg","the-king-of-nothing-3.jpg","the-king-of-nothing-4.jpg","the-king-of-nothing-5.jpg","the-king-of-nothing-6.jpg"],"title":"The King of Nothing","bonusPoints":28,"points":0,"fieldAllowance":1},{"images":["the-wanderer-1.jpg","the-wanderer-2.jpg","the-wanderer-3.jpg","the-wanderer-4.jpg","the-wanderer-5.jpg","the-wanderer-6.jpg"],"title":"The Wanderer","bonusPoints":28,"points":0,"fieldAllowance":1},{"images":["zevanna-agha-the-fate-keeper-1.jpg","zevanna-agha-the-fate-keeper-2.jpg","zevanna-agha-the-fate-keeper-3.jpg","zevanna-agha-the-fate-keeper-4.jpg"],"title":"Zevanna Agha, the Fate Keeper","bonusPoints":27,"points":0,"fieldAllowance":1}],"warbeasts":[{"images":["cage-rager-1.jpg","cage-rager-2.jpg"],"title":"Cage Rager","points":14,"fieldAllowance":999},{"images":["crabbit-1.jpg","crabbit-2.jpg"],"title":"Crabbit","fieldAllowance":999},{"images":["frightmare-1.jpg","frightmare-2.jpg"],"title":"Frightmare","points":9,"fieldAllowance":999},{"images":["gorehound-1.jpg","gorehound-2.jpg"],"title":"Gorehound","points":6,"fieldAllowance":999},{"images":["rattler-1.jpg","rattler-2.jpg"],"title":"Rattler","points":8,"fieldAllowance":999},{"images":["skin-moans-1.jpg","skin-moans-2.jpg"],"title":"Skin & Moans","points":15,"fieldAllowance":999}],"units":[{"images":["dread-rots-1.jpg","dread-rots-2.jpg"],"title":"Dread Rots","pointsMinimum":7,"pointsMaximum":12,"sizeMinimum":6,"sizeMaximum":10,"fieldAllowance":3},{"images":["hollowmen-1.jpg","hollowmen-2.jpg"],"title":"Hollowmen","pointsMinimum":8,"pointsMaximum":13,"sizeMinimum":6,"sizeMaximum":10,"fieldAllowance":2},{"images":["lantern-man-1.jpg","lantern-man-2.jpg"],"title":"Lantern Man","attachment":true,"points":3,"fieldAllowance":2},{"images":["mad-caps-1.jpg","mad-caps-2.jpg"],"title":"Mad Caps","points":4,"fieldAllowance":2},{"images":["murder-crows-1.jpg","murder-crows-2.jpg"],"title":"Murder Crows","points":9,"fieldAllowance":2},{"images":["neigh-slayers-1.jpg","neigh-slayers-2.jpg"],"title":"Neigh Slayers","pointsMinimum":7,"pointsMaximum":12,"sizeMinimum":3,"sizeMaximum":5,"fieldAllowance":2},{"images":["piggybacks-1.jpg","piggybacks-2.jpg"],"title":"Piggybacks","pointsMinimum":9,"pointsMaximum":15,"sizeMinimum":3,"sizeMaximum":5,"fieldAllowance":2},{"images":["twilight-sisters-1.jpg","twilight-sisters-2.jpg"],"title":"Twilight Sisters","points":7,"fieldAllowance":1}],"solos":[{"images":["cask-imp-1.jpg","cask-imp-2.jpg"],"title":"Cask Imp","fieldAllowance":3},{"images":["glimmer-imp-1.jpg","glimmer-imp-2.jpg"],"title":"Glimmer Imp","points":4,"fieldAllowance":2},{"images":["lady-karianna-rose-1.jpg","lady-karianna-rose-2.jpg"],"title":"Lady Karianna Rose","points":4,"fieldAllowance":1},{"images":["lord-longfellow-1.jpg","lord-longfellow-2.jpg"],"title":"Lord Longfellow","points":6,"fieldAllowance":1},{"images":["trapperkin-1.jpg","trapperkin-2.jpg"],"title":"Trapperkin","points":3,"fieldAllowance":2},{"images":["witchwood-1.jpg","witchwood-2.jpg"],"title":"Witchwood","points":5,"fieldAllowance":2}],"factionType":"Hordes"}
+{
+  "factionName": "Grymkin: The Wicked Harvest",
+  "warlocks": [
+    {
+      "id": 3696,
+      "images": [
+        "the-child-1.jpg",
+        "the-child-2.jpg",
+        "the-child-3.jpg",
+        "the-child-4.jpg",
+        "the-child-5.jpg",
+        "the-child-6.jpg"
+      ],
+      "title": "The Child",
+      "bonusPoints": 29,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3703,
+      "images": [
+        "the-dreamer-1.jpg",
+        "the-dreamer-2.jpg",
+        "the-dreamer-3.jpg",
+        "the-dreamer-4.jpg",
+        "the-dreamer-5.jpg",
+        "the-dreamer-6.jpg",
+        "the-dreamer-7.jpg",
+        "the-dreamer-8.jpg"
+      ],
+      "title": "The Dreamer",
+      "bonusPoints": 28,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3712,
+      "images": [
+        "the-heretic-1.jpg",
+        "the-heretic-2.jpg",
+        "the-heretic-3.jpg",
+        "the-heretic-4.jpg",
+        "the-heretic-5.jpg",
+        "the-heretic-6.jpg"
+      ],
+      "title": "The Heretic",
+      "bonusPoints": 28,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3719,
+      "images": [
+        "the-king-of-nothing-1.jpg",
+        "the-king-of-nothing-2.jpg",
+        "the-king-of-nothing-3.jpg",
+        "the-king-of-nothing-4.jpg",
+        "the-king-of-nothing-5.jpg",
+        "the-king-of-nothing-6.jpg"
+      ],
+      "title": "The King of Nothing",
+      "bonusPoints": 28,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3726,
+      "images": [
+        "the-wanderer-1.jpg",
+        "the-wanderer-2.jpg",
+        "the-wanderer-3.jpg",
+        "the-wanderer-4.jpg",
+        "the-wanderer-5.jpg",
+        "the-wanderer-6.jpg"
+      ],
+      "title": "The Wanderer",
+      "bonusPoints": 28,
+      "points": 0,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3742,
+      "images": [
+        "zevanna-agha-the-fate-keeper-1.jpg",
+        "zevanna-agha-the-fate-keeper-2.jpg",
+        "zevanna-agha-the-fate-keeper-3.jpg",
+        "zevanna-agha-the-fate-keeper-4.jpg"
+      ],
+      "title": "Zevanna Agha, the Fate Keeper",
+      "bonusPoints": 27,
+      "points": 0,
+      "fieldAllowance": 1
+    }
+  ],
+  "warbeasts": [
+    {
+      "id": 3642,
+      "images": [
+        "cage-rager-1.jpg",
+        "cage-rager-2.jpg"
+      ],
+      "title": "Cage Rager",
+      "points": 14,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 3648,
+      "images": [
+        "crabbit-1.jpg",
+        "crabbit-2.jpg"
+      ],
+      "title": "Crabbit",
+      "fieldAllowance": 999
+    },
+    {
+      "id": 3657,
+      "images": [
+        "frightmare-1.jpg",
+        "frightmare-2.jpg"
+      ],
+      "title": "Frightmare",
+      "points": 9,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 3663,
+      "images": [
+        "gorehound-1.jpg",
+        "gorehound-2.jpg"
+      ],
+      "title": "Gorehound",
+      "points": 6,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 3690,
+      "images": [
+        "rattler-1.jpg",
+        "rattler-2.jpg"
+      ],
+      "title": "Rattler",
+      "points": 8,
+      "fieldAllowance": 999
+    },
+    {
+      "id": 3693,
+      "images": [
+        "skin-moans-1.jpg",
+        "skin-moans-2.jpg"
+      ],
+      "title": "Skin & Moans",
+      "points": 15,
+      "fieldAllowance": 999
+    }
+  ],
+  "units": [
+    {
+      "id": 3654,
+      "images": [
+        "dread-rots-1.jpg",
+        "dread-rots-2.jpg"
+      ],
+      "title": "Dread Rots",
+      "pointsMinimum": 7,
+      "pointsMaximum": 12,
+      "sizeMinimum": 6,
+      "sizeMaximum": 10,
+      "fieldAllowance": 3
+    },
+    {
+      "id": 3666,
+      "images": [
+        "hollowmen-1.jpg",
+        "hollowmen-2.jpg"
+      ],
+      "title": "Hollowmen",
+      "pointsMinimum": 8,
+      "pointsMaximum": 13,
+      "sizeMinimum": 6,
+      "sizeMaximum": 10,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3672,
+      "images": [
+        "lantern-man-1.jpg",
+        "lantern-man-2.jpg"
+      ],
+      "title": "Lantern Man",
+      "attachment": true,
+      "points": 3,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3678,
+      "images": [
+        "mad-caps-1.jpg",
+        "mad-caps-2.jpg"
+      ],
+      "title": "Mad Caps",
+      "points": 4,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3681,
+      "images": [
+        "murder-crows-1.jpg",
+        "murder-crows-2.jpg"
+      ],
+      "title": "Murder Crows",
+      "points": 9,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3684,
+      "images": [
+        "neigh-slayers-1.jpg",
+        "neigh-slayers-2.jpg"
+      ],
+      "title": "Neigh Slayers",
+      "pointsMinimum": 7,
+      "pointsMaximum": 12,
+      "sizeMinimum": 3,
+      "sizeMaximum": 5,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3687,
+      "images": [
+        "piggybacks-1.jpg",
+        "piggybacks-2.jpg"
+      ],
+      "title": "Piggybacks",
+      "pointsMinimum": 9,
+      "pointsMaximum": 15,
+      "sizeMinimum": 3,
+      "sizeMaximum": 5,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3736,
+      "images": [
+        "twilight-sisters-1.jpg",
+        "twilight-sisters-2.jpg"
+      ],
+      "title": "Twilight Sisters",
+      "points": 7,
+      "fieldAllowance": 1
+    }
+  ],
+  "solos": [
+    {
+      "id": 3645,
+      "images": [
+        "cask-imp-1.jpg",
+        "cask-imp-2.jpg"
+      ],
+      "title": "Cask Imp",
+      "fieldAllowance": 3
+    },
+    {
+      "id": 3660,
+      "images": [
+        "glimmer-imp-1.jpg",
+        "glimmer-imp-2.jpg"
+      ],
+      "title": "Glimmer Imp",
+      "points": 4,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3669,
+      "images": [
+        "lady-karianna-rose-1.jpg",
+        "lady-karianna-rose-2.jpg"
+      ],
+      "title": "Lady Karianna Rose",
+      "points": 4,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3675,
+      "images": [
+        "lord-longfellow-1.jpg",
+        "lord-longfellow-2.jpg"
+      ],
+      "title": "Lord Longfellow",
+      "points": 6,
+      "fieldAllowance": 1
+    },
+    {
+      "id": 3733,
+      "images": [
+        "trapperkin-1.jpg",
+        "trapperkin-2.jpg"
+      ],
+      "title": "Trapperkin",
+      "points": 3,
+      "fieldAllowance": 2
+    },
+    {
+      "id": 3739,
+      "images": [
+        "witchwood-1.jpg",
+        "witchwood-2.jpg"
+      ],
+      "title": "Witchwood",
+      "points": 5,
+      "fieldAllowance": 2
+    }
+  ],
+  "factionType": "Hordes"
+}
