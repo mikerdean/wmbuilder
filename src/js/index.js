@@ -640,8 +640,6 @@
 
 					// process the faction units to add a semantic type property
 
-					var id = 0;
-
 					var addUnitType = function(faction, propertyName, type) {
 						
 						if (!faction.hasOwnProperty(propertyName)) {
@@ -649,7 +647,6 @@
 						}
 
 						$.each(faction[propertyName], function(i, u) {
-							u.id = ++id;
 							u.type = type;
 						});
 
@@ -668,7 +665,7 @@
 
 					// remove me
 					// ###
-					self.selected.faction(factions[9]);
+					self.selected.faction(factions[10]);
 					self.selected.points(self.lookups.points[3]);
 					self.listCreate();
 					// ###
