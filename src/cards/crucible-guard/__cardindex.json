@@ -128,11 +128,11 @@
       "id": 4151,
       "title": "Combat Alchemists",
       "images": [
-	"combat-alchemists-1.jpg",
-	"combat-alchemists-2.jpg"
+        "combat-alchemists-1.jpg",
+        "combat-alchemists-2.jpg"
       ],
       "points": 7,
-      "fieldAllowance": 3,
+      "fieldAllowance": 3
     },
     {
       "id": 4152,
