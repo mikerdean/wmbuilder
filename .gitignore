@@ -2,3 +2,4 @@ node_modules/
 .npm
 /src/cards/*/*.jpg
 /dist/cards/*.jpg
+.vscode/

@@ -57,6 +57,6 @@ gulp.task('default', ['css', 'js', 'cardindex', 'cardimage']);
 gulp.task('watch', function() {
 	gulp.watch('./src/js/**/*.js', ['js']);
 	gulp.watch('./src/scss/**/*.scss', ['css']);
-	gulp.watch('./src/cards/**/*.json', ['cardindex']);
+	gulp.watch('./src/cards*/**/*.json', ['cardindex']);
 	gulp.watch('./src/cards/**/*.jpg', ['cardimage']);
 });

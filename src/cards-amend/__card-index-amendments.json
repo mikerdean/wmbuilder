@@ -48,7 +48,7 @@
 			"attachTo": 4156
 		},
 		"4158": {
-			"attachToType": 2
+			"attachToType": 130
 		},
 		"4160": {
 			"attachTo": 4156
@@ -71,6 +71,37 @@
 			],
 			"points": 3,
 			"fieldAllowance": 4
+		}
+	},
+	"protectorate": {
+		"1037": {
+			"battlegroup": false
+		},
+		"1034": {
+			"attachToType": 130
+		},
+		"1070": {
+			"attachTo": 1076,
+			"points": 4
+		},
+		"1485": {
+			"attachTo": 1067
+		},
+		"1106": {
+			"attachTo": 1109
+		},
+		"1236": {
+			"attachTo": 1233,
+			"points": 4
+		},
+		"3904": {
+			"points": 8
+		},
+		"1128": {
+			"attachToType": 16
+		},
+		"1182": {
+			"attachTo": 1149
 		}
 	}
 }

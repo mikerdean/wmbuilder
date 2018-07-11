@@ -18,6 +18,10 @@ $list-group-item-padding-x: .5rem;
 
 @import "./node_modules/bootstrap/scss/bootstrap";
 
+.overflow-hidden {
+	overflow: hidden;
+}
+
 .sticky-top {
 	top: 1rem;
 }

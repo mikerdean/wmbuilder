@@ -47,7 +47,9 @@
 		WARBEAST: 8,
 		WARCASTER: 16,
 		WARJACK: 32,
-		WARLOCK: 64
+		WARLOCK: 64,
+		MERCENARY: 128,
+		MINION: 256
 	};
 
 	// ######################################################
@@ -247,30 +249,6 @@
 
 		})(_faction);
 
-		var _unitAttachmentLocator = function(unit, attachTo) {
-
-			if (!_unitEntries.hasOwnProperty(attachTo)) {
-				throw new Error('Error 00002: Could not attach unit to a viable entry. Validation must have gone awry.');
-			}
-
-			var entries = ko.unwrap(_unitEntries[attachTo]);
-
-			if (attachTo & (UnitType.WARCASTER | UnitType.WARLOCK)) {
-
-				if (entries.length === 0) {
-					throw new Error('Error 00003: Could not attach unit to a viable warcaster/warlock. Validation must have gone awry.');
-				} else {
-					return entries[0];
-				}
-
-			} else {
-
-				return undefined;
-
-			}
-
-		};
-
 		var _enableDisableUnits = function() {
 
 			// disable/enable units in the faction
@@ -341,6 +319,8 @@
 						u.disabled(true);
 					} else if (fa.hasOwnProperty(u.id) && fa[u.id] >= u.fieldAllowance) {
 						u.disabled(true);
+					} else if (u.hasOwnProperty('attachTo') && (!fa.hasOwnProperty(u.attachTo) || (fa.hasOwnProperty(u.id) && fa[u.id] >= fa[u.attachTo]))) {
+						u.disabled(true);
 					} else if (u.hasOwnProperty('points') && u.points > pointsRemaining) {
 						u.disabled(true);
 					} else if (u.hasOwnProperty('pointsMinimum')) {
@@ -352,6 +332,36 @@
 
 				});
 
+			}
+
+		};
+
+		var _unitAttachmentLocator = function(unit, unitType) {
+
+			if (!_unitEntries.hasOwnProperty(unitType)) {
+				throw new Error('Error 00002: Could not attach unit to a viable entry. Validation must have gone awry.');
+			}
+
+			var entries = ko.unwrap(_unitEntries[unitType]);
+
+			if (entries.length === 0) {
+				throw new Error('Error 00003: Could not attach unit to a viable entry. Validation must have gone awry.');
+			} else if (unit.hasOwnProperty('attachTo')) {
+
+				var entry = ko.utils.arrayFirst(entries, function(e) {
+					return e.id === unit.attachTo && ko.unwrap(e.attachments).length === 0;
+				});
+
+				if (entry) {
+					return entry;
+				} else {
+					throw new Error('Error 00004: Could not attach unit to a viable entry. Validation must have gone awry.');
+				}
+
+			} else if (entries.length > 0) {
+				return entries[0];
+			} else {
+				return undefined;
 			}
 
 		};
@@ -368,8 +378,10 @@
 				toAttach = _unitAttachmentLocator(unit, UnitType.WARCASTER);
 			} else if (unit.type & UnitType.WARBEAST) {
 				toAttach = _unitAttachmentLocator(unit, UnitType.WARLOCK);
-			} else if (unit.type & UnitType.UNITATTACHMENT) {
-				toAttach = _unitAttachmentLocator(unit, UnitType.UNITATTACHMENT);
+			} else if (unit.hasOwnProperty('attachToType')) {
+				toAttach = _unitAttachmentLocator(unit, unit.attachToType);
+			} else if (unit.hasOwnProperty('attachTo')) {
+				toAttach = _unitAttachmentLocator(unit, UnitType.UNIT);
 			}
 
 			var unitEntry = new WMUnitEntry(unit, unitSize);
@@ -510,6 +522,13 @@
 			_enableDisableUnits();
 		};
 
+		self.unitRemoveAll = function() {
+			for(var key in _unitEntries) {
+				_unitEntries[key].removeAll();
+			}
+			_enableDisableUnits();
+		};
+
 		self.unitRemoveAttachment = function(unitEntry, unitAttachment) {
 			unitEntry.remove(unitAttachment);
 			_enableDisableUnits();
@@ -535,7 +554,76 @@
 			loading: ko.observable(true)
 		};
 
-		self.images = ko.observableArray();
+		self.imageDisplay = (function() {
+
+			var pageSize = 2;
+			var current = ko.observable(0);
+			var images = ko.observableArray();
+
+			var clear = function() {
+				images.removeAll();
+				current(0);
+				document.body.classList.remove('overflow-hidden');
+			};
+
+			var hasPreviousPage = ko.pureComputed(function() {
+
+				var i = ko.unwrap(images).length;
+				var c = ko.unwrap(current);
+
+				if (i === 0) {
+					return false;
+				} else {
+					return c > 1;
+				}
+
+			});
+
+			var hasNextPage = ko.pureComputed(function() {
+				var i = ko.unwrap(images).length;
+				var c = ko.unwrap(current);
+				return (i / pageSize) !== c;
+			});
+
+			var pages = ko.pureComputed(function() {
+
+				var c = ko.unwrap(current);
+				var i = ko.unwrap(images);
+
+				if (c === 0) {
+					return [];
+				}
+
+				var start = (c - 1) * pageSize;
+				return i.slice(start, start + pageSize);
+
+			});
+
+			var previous = function() {
+				current(current() - 1);
+			};
+
+			var next = function() {
+				current(current() + 1);
+			};
+
+			var update = function(unitImages) {
+				current(1);
+				Utils.arrayPushAndNotify(images, unitImages, true);
+				document.body.classList.add('overflow-hidden');
+			};
+
+			return {
+				clear: clear,
+				hasNextPage: hasNextPage,
+				hasPreviousPage : hasPreviousPage,
+				next: next,
+				pages: pages,
+				previous: previous,
+				update: update
+			};
+
+		})();
 
 		self.lookups = {
 			factions: ko.observableArray(),
@@ -628,14 +716,12 @@
 				return;
 			}
 
-			Utils.arrayPushAndNotify(self.images, unit.images, true);
-			document.body.style.overflow = 'hidden';
+			self.imageDisplay.update(unit.images);
 
 		};
 
 		self.unitDisplayClear = function() {
-			self.images.removeAll();
-			document.body.style.overflow = 'visible';	
+			self.imageDisplay.clear();
 		};
 
 		(function init() {
@@ -670,7 +756,7 @@
 
 					// remove me
 					// ###
-					self.selected.faction(factions[7]);
+					self.selected.faction(factions.find(function(f) { return f.factionName === 'Protectorate of Menoth' }));
 					self.selected.points(self.lookups.points[3]);
 					self.listCreate();
 					// ###

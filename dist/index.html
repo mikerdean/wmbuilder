@@ -15,16 +15,10 @@
 			<article class="d-none" data-bind="css: { 'd-none': $root.indicators.loading }">
 				
 				<header class="navbar navbar-dark bg-dark text-light mb-3">
-					<div class="container">
-						<div class="row">
-							<div class="col">
-								<span class="navbar-brand">wmbuilder</span>
-							</div>
-						</div>
-					</div>
+					<span class="navbar-brand ml-0">wmbuilder</span>
 				</header>
 
-				<div class="container">
+				<div class="container-fluid">
 					<div class="row">
 						<div class="col">
 
@@ -88,7 +82,7 @@
 													<div class="unit-card-wrapper" data-bind="foreach: $parent.faction[propertyName]">
 														<div class="d-flex unit-card-set" data-bind="css: { disabled: disabled }">
 															<div class="flex-grow-1 unit-card-details" data-bind="click: $root.unitDisplayCards">
-																<div data-bind="text: title"></div>
+																<div data-bind="text: title + ' (' + id + ')'"></div>
 																<div>
 																	<span class="badge badge-primary" data-bind="attr: { title: 'Bonus Points'}, visible: $data.bonusPoints"><span class="sr-only" aria-hidden="true">Bonus Points:</span><span data-bind="text: '+' + $data.bonusPoints"></span></span>
 																	<span class="badge badge-primary" data-bind="attr: { title: 'Points'}, visible: $data.points"><span class="sr-only" aria-hidden="true">Points:</span><span data-bind="text: $data.points"></span></span>
@@ -126,6 +120,9 @@
 
 												<aside class="alert alert-success">
 													<strong>Points Remaining</strong>: <span data-bind="text: pointsRemaining"></span>
+													<button type="button" class="close" aria-label="Clear All Units" title="Clear All Units" data-bind="click: unitRemoveAll">
+														<span aria-hidden="true">&times;</span>
+													</button>
 												</aside>
 		
 												<!-- ko if: unitsSelected().length > 0 -->
@@ -143,7 +140,7 @@
 														</div>
 														<!-- ko foreach: attachments -->
 														<div class="d-flex unit-card-set-indent">
-															<div class="flex-grow-1 unit-card-details" data-bind="text: title"></div>
+															<div class="flex-grow-1 unit-card-details" data-bind="click: $root.unitDisplayCards, text: title"></div>
 															<div class="unit-card-button">
 																<div class="align-self-center" data-bind="text: points"></div>
 															</div>
@@ -173,12 +170,29 @@
 
 			<footer class="mb-5"></footer>
 
-			<!-- ko if: $root.images().length > 0 -->
-			<div class="card-image-overlay" data-bind="click: $root.unitDisplayClear">
-				<div class="container-fluid mt-3 mb-3">
-					<div class="row" data-bind="foreach: $root.images">
+			<!-- ko with: $root.imageDisplay -->
+			<div class="card-image-overlay" data-bind="visible: pages().length > 0">
+				<div class="container mt-3 mb-3">
+					<div class="row mb-2">
+						<div class="col text-right">
+							<button type="button" class="btn btn-light" data-bind="click: $root.unitDisplayClear">
+								Close
+							</button>
+						</div>
+					</div>
+					<div class="row mb-2" data-bind="foreach: pages">
 						<div class="col">
 							<img data-bind="attr: { src: 'cards/' + $data }" class="img-fluid" />
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<button type="button" class="btn btn-light" data-bind="click: previous, enable: hasPreviousPage">
+								&laquo; Previous
+							</button>
+							<button type="button" class="btn btn-light float-right" data-bind="click: next, enable: hasNextPage">
+								Next &raquo;
+							</button>
 						</div>
 					</div>
 				</div>
