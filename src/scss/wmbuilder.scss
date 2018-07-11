@@ -35,7 +35,10 @@ $list-group-item-padding-x: .5rem;
 
 .disabled {
 	color: $gray-800;
-	opacity: .25;
+	
+	> * {
+		opacity: .25;
+	}
 }
 
 .card-image-overlay {
