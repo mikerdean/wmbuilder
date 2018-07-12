@@ -408,7 +408,18 @@
 
 		};
 
-		self.name = ko.observable('#Untitled');
+		var _shortenFactionName = function(factionName) {
+			var split = factionName.split(' ');
+			if (split.length === 1 || split.length === 2) {
+				return split[0];
+			} else if (split.length === 3) {
+				return split[0].substr(0, 1).toUpperCase() + split[1].substr(0, 1).toLowerCase() + split[2].substr(0, 1).toUpperCase();
+			} else {
+				return factionName.substr(0, 7);
+			}
+		};
+
+		self.name = ko.observable(_shortenFactionName(_faction.factionName) + ' ' + _points.points + 'pts');
 		self.unitTypeSelected = ko.observable(_unitTypes[0]);
 
 		// getters
