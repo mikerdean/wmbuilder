@@ -73,6 +73,52 @@
 			"fieldAllowance": 4
 		}
 	},
+	"cygnar": {
+		"665": {
+			"attachTo": 662
+		},
+		"847": {
+			"attachToType": 130
+		},
+		"372": {
+			"attachTo": 369,
+			"points": 4
+		},
+		"698": {
+			"attachTo": 695,
+			"points": 5
+		},
+		"701": {
+			"attachTo": 695,
+			"weaponAttachment": true
+		},
+		"671": {
+			"attachTo": 668,
+			"points": 4
+		},
+		"3781": {
+			"attachTo": 683
+		},
+		"686": {
+			"attachTo": 683
+		},
+		"677": {
+			"attachTo": 674,
+			"points": 5
+		},
+		"680": {
+			"attachTo": 674
+		},
+		"3804": {
+			"attachTo": 3801
+		},
+		"390": {
+			"points": 8
+		},
+		"716": {
+			"points": 5
+		}
+	},
 	"protectorate": {
 		"1037": {
 			"battlegroup": false

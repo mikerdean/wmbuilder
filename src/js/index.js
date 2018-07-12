@@ -349,7 +349,13 @@
 			} else if (unit.hasOwnProperty('attachTo')) {
 
 				var entry = ko.utils.arrayFirst(entries, function(e) {
-					return e.id === unit.attachTo && ko.unwrap(e.attachments).length === 0;
+
+					var attachmentType = ko.utils.arrayFirst(ko.unwrap(e.attachments), function(a) {
+						return unit.id === a.id;
+					});
+
+					return e.id === unit.attachTo && !attachmentType;
+
 				});
 
 				if (entry) {
