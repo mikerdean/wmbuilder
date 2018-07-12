@@ -173,24 +173,26 @@
 			<!-- ko with: $root.imageDisplay -->
 			<div class="card-image-overlay" data-bind="visible: pages().length > 0">
 				<div class="container mt-3 mb-3">
-					<div class="row mb-2">
-						<div class="col text-right">
+					<div class="row justify-content-center mb-2">
+						<div class="col-12 col-md-10 text-right">
 							<button type="button" class="btn btn-light" data-bind="click: $root.unitDisplayClear">
 								Close
 							</button>
 						</div>
 					</div>
-					<div class="row mb-2" data-bind="foreach: pages">
-						<div class="col">
+					<div class="row justify-content-center mb-2" data-bind="foreach: pages">
+						<div class="col-6 col-md-5">
 							<img data-bind="attr: { src: 'cards/' + $data }" class="img-fluid" />
 						</div>
 					</div>
-					<div class="row">
-						<div class="col">
+					<div class="row justify-content-center">
+						<div class="col-6 col-md-5">
 							<button type="button" class="btn btn-light" data-bind="click: previous, enable: hasPreviousPage">
 								&laquo; Previous
 							</button>
-							<button type="button" class="btn btn-light float-right" data-bind="click: next, enable: hasNextPage">
+						</div>
+						<div class="col-6 col-md-5 text-right">
+							<button type="button" class="btn btn-light" data-bind="click: next, enable: hasNextPage">
 								Next &raquo;
 							</button>
 						</div>
