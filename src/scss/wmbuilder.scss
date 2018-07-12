@@ -139,3 +139,21 @@ $list-group-item-padding-x: .5rem;
 .font-sm {
 	font-size: $font-size-base - 0.15;
 }
+
+.icon-plus {
+	border: 3px solid $light;
+	border-radius: .5rem;
+	color: $light;
+	font-size: 1.25rem;
+	float: right;
+	line-height: 1;
+	padding: .25rem .5rem;
+	transition: background .125s ease-in;
+	text-decoration: none;
+
+	&:hover {
+		background: $gray-600;
+		color: $light;
+		text-decoration: none;
+	}
+}

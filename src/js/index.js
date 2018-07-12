@@ -643,6 +643,7 @@
 		self.selected = {
 			faction: ko.observable(),
 			list: ko.observable(),
+			listNew: ko.observable(false),
 			points: ko.observable()
 		};
 
@@ -676,7 +677,20 @@
 			var list = new WMList(faction, points);
 			self.lookups.lists.push(list);
 			self.listDisplay(list);
+			self.listCancel();
 
+		};
+
+		self.listAdd = function() {
+			self.selected.listNew(true);
+			self.selected.faction(undefined);
+			self.selected.points(undefined);
+		};
+
+		self.listCancel = function() {
+			self.selected.listNew(false);
+			self.selected.faction(undefined);
+			self.selected.points(undefined);
 		};
 
 		self.listDisplay = function(list) {
@@ -698,9 +712,22 @@
 			}
 
 			self.lookups.lists.remove(list);
-			self.selected.list(undefined);
+
+			var lists = ko.unwrap(self.lookups.lists);
+			if (lists.length > 0) {
+				self.selected.list(lists[lists.length - 1]);
+			} else {
+				self.listAdd();
+			}
 
 		};
+
+		self.listRequired = ko.pureComputed(function() {
+
+			var lists = ko.unwrap(self.lookups.lists);
+			return lists.length === 0;
+
+		});
 
 		self.noop = function() {
 			// no operation for disabling links
@@ -753,13 +780,7 @@
 					});
 
 					Utils.arrayPushAndNotify(self.lookups.factions, factions, true);
-
-					// remove me
-					// ###
-					self.selected.faction(factions.find(function(f) { return f.factionName === 'Protectorate of Menoth' }));
-					self.selected.points(self.lookups.points[3]);
-					self.listCreate();
-					// ###
+					self.listAdd();
 
 				})
 				.fail(function() {

@@ -16,18 +16,19 @@
 				
 				<header class="navbar navbar-dark bg-dark text-light mb-3">
 					<span class="navbar-brand ml-0">wmbuilder</span>
+					<a href="#" class="icon-plus" aria-label="Add New List" title="Add New List" data-bind="click: $root.listAdd, visible: !$root.listRequired()">+</a>
 				</header>
 
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col">
 
-							<!-- ko if: $root.lookups.lists().length > 0 -->
+							<!-- ko ifnot: $root.listRequired -->
 							<nav class="mb-3">
 								<ul class="nav nav-pills" data-bind="foreach: $root.lookups.lists">
 									<li class="nav-item">
 										<a href="#" class="nav-link" data-bind="click: $root.listDisplay, css: { active: $root.selected.list() === $data }">
-											<button class="close ml-3 text-white" data-bind="click: $root.listRemove, clickBubble: false">
+											<button class="close ml-3" data-bind="click: $root.listRemove, clickBubble: false, css: { 'text-white': $root.selected.list() === $data, 'text-dark': $root.selected.list() !== $data}">
 												<span aria-hidden="true">&times;</span>
 											</button>
 											<span data-bind="text: name"></span>
@@ -37,7 +38,7 @@
 							</nav>
 							<!-- /ko -->
 
-							<!-- ko if: $root.lookups.lists().length === 0 -->
+							<!-- ko if: $root.selected.listNew -->
 							<form data-bind="submit: $root.listCreate">
 								<div class="border p-4">
 									<h1 class="h4">Create New List</h1>
@@ -52,6 +53,9 @@
 											<button type="submit" class="btn btn-primary" data-bind="enable: $root.selected.points() && $root.selected.faction()">
 												Begin
 											</button>
+											<button type="submit" class="btn btn-primary" data-bind="click: $root.listCancel, visible: !$root.listRequired()">
+												Cancel
+											</button>
 										</div>
 									</div>
 								</div>
@@ -59,7 +63,7 @@
 							<!-- /ko -->
 
 							<!-- ko with: $root.selected.list -->
-							<section>
+							<section data-bind="visible: !$root.selected.listNew()">
 
 								<h1 class="h4 mb-3">
 									<span data-bind="text: faction.factionName"></span>
