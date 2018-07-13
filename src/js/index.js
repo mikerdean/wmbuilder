@@ -249,18 +249,21 @@
 
 		})(_faction);
 
+		var _updateCounter = function(unit, counter) {
+			if (counter.hasOwnProperty(unit.id)) {
+				counter[unit.id] += 1;
+			} else {
+				counter[unit.id] = 1;
+			}
+
+			return counter[unit.id];
+		};
+
 		var _enableDisableUnits = function() {
 
 			// disable/enable units in the faction
 
-			var selected = $.map(ko.unwrap(self.unitsSelected), function(u) {
-				var output = [ u ];
-				$.each(ko.unwrap(u.attachments), function(i, a) {
-					output.push(a);
-				});
-				return output;
-			});
-
+			var selected = ko.unwrap(self.unitsSelected);
 			var pointsRemaining = ko.unwrap(self.pointsRemaining);
 			var allow = {};
 
@@ -295,14 +298,13 @@
 
 			// 3. calculate a field allowance map from the selected units
 			
-			var fa = {};
+			var fa = {};	
 
 			$.each(selected, function(i, u) {
-				if (fa.hasOwnProperty(u.id)) {
-					fa[u.id] += 1;
-				} else {
-					fa[u.id] = 1;
-				}
+				_updateCounter(u, fa);
+				$.each(ko.unwrap(u.attachments), function(j, ua) {
+					_updateCounter(ua, fa);
+				});
 			});
 
 			// 4. loop through the units and enable/disable them based on the settings, FA and points remaining
@@ -319,7 +321,9 @@
 						u.disabled(true);
 					} else if (fa.hasOwnProperty(u.id) && fa[u.id] >= u.fieldAllowance) {
 						u.disabled(true);
-					} else if (u.hasOwnProperty('attachTo') && (!fa.hasOwnProperty(u.attachTo) || (fa.hasOwnProperty(u.id) && fa[u.id] >= fa[u.attachTo]))) {
+					} else if (u.hasOwnProperty('attachTo') && u.weaponAttachment && (!fa.hasOwnProperty(u.attachTo) || (fa.hasOwnProperty(u.id) && fa[u.id] >= (fa[u.attachTo] * 3)))) {
+						u.disabled(true);
+					} else if (u.hasOwnProperty('attachTo') && !u.weaponAttachment && (!fa.hasOwnProperty(u.attachTo) || (fa.hasOwnProperty(u.id) && fa[u.id] >= fa[u.attachTo]))) {
 						u.disabled(true);
 					} else if (u.hasOwnProperty('points') && u.points > pointsRemaining) {
 						u.disabled(true);
@@ -350,11 +354,15 @@
 
 				var entry = ko.utils.arrayFirst(entries, function(e) {
 
-					var attachmentType = ko.utils.arrayFirst(ko.unwrap(e.attachments), function(a) {
+					var attachmentsOfType = ko.utils.arrayFilter(ko.unwrap(e.attachments), function(a) {
 						return unit.id === a.id;
 					});
 
-					return e.id === unit.attachTo && !attachmentType;
+					if (unit.weaponAttachment) {
+						return e.id === unit.attachTo && attachmentsOfType.length < 3;
+					} else {
+						return e.id === unit.attachTo && attachmentsOfType.length === 0;
+					}
 
 				});
 
