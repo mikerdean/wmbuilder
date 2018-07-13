@@ -133,11 +133,11 @@
 			"jackMarshal": true
 		},
 		"719": {
-			"battlegroup": true,
+			"battlegroup_warjacks": true,
 			"battlegroupRequired": 1
 		},
 		"756": {
-			"battlegroup": true,
+			"battlegroup_warjacks": true,
 			"battlegroupRequired": 1
 		},
 		"414": {
@@ -150,7 +150,7 @@
 			"jackMarshal": true
 		},
 		"3788": {
-			"battlegroup": true,
+			"battlegroup_warjacks": true,
 			"battlegroupRequired": 1
 		}
 	},

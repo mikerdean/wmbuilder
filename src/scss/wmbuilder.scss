@@ -18,6 +18,8 @@ $list-group-item-padding-x: .5rem;
 
 @import "./node_modules/bootstrap/scss/bootstrap";
 
+$unit-move-indicator:           str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='#{$light}' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E"), "#", "%23");
+
 .overflow-hidden {
 	overflow: hidden;
 }
@@ -106,12 +108,30 @@ $list-group-item-padding-x: .5rem;
 	}
 }
 
-.unit-card-button-red {
+.unit-card-button-danger {
 	@extend .unit-card-button;
 	background-color: $danger;
 
 	&:hover {
 		background-color: $danger - 50;
+	}
+}
+
+.unit-card-button-success {
+	@extend .unit-card-button;
+	background: $success $unit-move-indicator no-repeat center;
+	background-size: 10px 12px;
+
+	&:hover {
+		background-color: $success - 50;
+	}
+
+	&.disabled {
+		opacity: .25;
+
+		&:hover {
+			background-color: $success;
+		}
 	}
 }
 

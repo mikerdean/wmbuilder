@@ -342,43 +342,17 @@
 
 		};
 
-		var _unitAttachmentLocator = function(unit, unitType) {
+		var _unitAttachmentLocator = function(unit, locator) {
 
-			if (!_unitEntries.hasOwnProperty(unitType)) {
-				throw new Error('Error 00002: Could not attach unit to a viable entry. Validation must have gone awry.');
-			}
+			var entries = [];
 
-			var entries = ko.unwrap(_unitEntries[unitType]);
-
-			if (entries.length === 0) {
-				throw new Error('Error 00003: Could not attach unit to a viable entry. Validation must have gone awry.');
-			} else if (unit.hasOwnProperty('attachTo')) {
-
-				var entry = ko.utils.arrayFirst(entries, function(e) {
-
-					var attachmentsOfType = ko.utils.arrayFilter(ko.unwrap(e.attachments), function(a) {
-						return unit.id === a.id;
-					});
-
-					if (unit.weaponAttachment) {
-						return e.id === unit.attachTo && attachmentsOfType.length < 3;
-					} else {
-						return e.id === unit.attachTo && attachmentsOfType.length === 0;
-					}
-
+			for(var key in _unitEntries) {
+				$.each(ko.unwrap(_unitEntries[key]), function(i, e) {
+					entries.push(e);
 				});
-
-				if (entry) {
-					return entry;
-				} else {
-					throw new Error('Error 00004: Could not attach unit to a viable entry. Validation must have gone awry.');
-				}
-
-			} else if (entries.length > 0) {
-				return entries[0];
-			} else {
-				return undefined;
 			}
+
+			return ko.utils.arrayFirst(entries, locator);
 
 		};
 
@@ -391,13 +365,39 @@
 			var toAttach = undefined;
 
 			if (unit.type & UnitType.WARJACK) {
-				toAttach = _unitAttachmentLocator(unit, UnitType.WARCASTER);
+
+				toAttach = _unitAttachmentLocator(unit, function(e) {
+					return (e.type & UnitType.WARCASTER) || e.battlegroup_warjacks || e.jackMarshal;
+				});
+
 			} else if (unit.type & UnitType.WARBEAST) {
-				toAttach = _unitAttachmentLocator(unit, UnitType.WARLOCK);
+				
+				toAttach = _unitAttachmentLocator(unit, function(e) {
+					return (e.type & UnitType.WARLOCK) || e.battlegroup_warbeasts;
+				});
+
 			} else if (unit.hasOwnProperty('attachToType')) {
-				toAttach = _unitAttachmentLocator(unit, unit.attachToType);
+
+				toAttach = _unitAttachmentLocator(unit, function(e) {
+					return e.type & unit.attachToType;
+				});
+
 			} else if (unit.hasOwnProperty('attachTo')) {
-				toAttach = _unitAttachmentLocator(unit, UnitType.UNIT);
+				
+				toAttach = _unitAttachmentLocator(unit, function(e) {
+					
+					var attachmentsOfType = ko.utils.arrayFilter(ko.unwrap(e.attachments), function(a) {
+						return unit.id === a.id;
+					});
+
+					if (unit.weaponAttachment) {
+						return e.id === unit.attachTo && attachmentsOfType.length < 3;
+					} else {
+						return e.id === unit.attachTo && attachmentsOfType.length === 0;
+					}
+
+				});
+
 			}
 
 			var unitEntry = new WMUnitEntry(unit, unitSize);
@@ -513,6 +513,10 @@
 		});
 
 		// public methods
+
+		self.allowUnitMove = function(unitEntry, unitAttachment) {
+			return false;
+		};
 
 		self.unitAdd = function(unit) {
 
