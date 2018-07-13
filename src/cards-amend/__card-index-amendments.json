@@ -75,7 +75,8 @@
 	},
 	"cygnar": {
 		"665": {
-			"attachTo": 662
+			"attachTo": 662,
+			"jackMarshal": true
 		},
 		"847": {
 			"attachToType": 130
@@ -86,6 +87,7 @@
 		},
 		"698": {
 			"attachTo": 695,
+			"jackMarshal": true,
 			"points": 5
 		},
 		"701": {
@@ -94,20 +96,23 @@
 		},
 		"671": {
 			"attachTo": 668,
+			"jackMarshal": true,
 			"points": 4
 		},
 		"3781": {
 			"attachTo": 683
 		},
 		"686": {
-			"attachTo": 683
+			"attachTo": 683,
+			"weaponAttachment": true
 		},
 		"677": {
 			"attachTo": 674,
 			"points": 5
 		},
 		"680": {
-			"attachTo": 674
+			"attachTo": 674,
+			"weaponAttachment": true
 		},
 		"3804": {
 			"attachTo": 3801
@@ -117,6 +122,36 @@
 		},
 		"716": {
 			"points": 5
+		},
+		"290": {
+			"jackMarshal": true
+		},
+		"728": {
+			"jackMarshal": true
+		},
+		"3784": {
+			"jackMarshal": true
+		},
+		"719": {
+			"battlegroup": true,
+			"battlegroupRequired": 1
+		},
+		"756": {
+			"battlegroup": true,
+			"battlegroupRequired": 1
+		},
+		"414": {
+			"attachToType": 16
+		},
+		"749": {
+			"jackMarshal": true
+		},
+		"722": {
+			"jackMarshal": true
+		},
+		"3788": {
+			"battlegroup": true,
+			"battlegroupRequired": 1
 		}
 	},
 	"protectorate": {
