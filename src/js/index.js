@@ -22,14 +22,16 @@
 			obsv.valueHasMutated();
 
 		},
-		sortByTitle: function(a, b) {
-			if (a.title === b.title) {
-				return 0;
-			} else if (a.title < b.title) {
-				return -1;
-			} else {
-				return 1;
-			}
+		sortByKey: function(key) {
+			return function(a, b) {
+				if (a[key] === b[key]) {
+					return 0;
+				} else if (a[key] < b[key]) {
+					return -1;
+				} else {
+					return 1;
+				}
+			};
 		}
 	};
 
@@ -156,7 +158,7 @@
 
 			var attachments = ko.unwrap(self.attachments);
 			attachments.push(unitEntry);
-			attachments.sort(Utils.sortByTitle);
+			attachments.sort(Utils.sortByKey('title'));
 			self.attachments.valueHasMutated();
 			
 		};
@@ -417,7 +419,7 @@
 			}
 
 			var values = ko.unwrap(_unitEntries[unitType]);
-			values.sort(Utils.sortByTitle);
+			values.sort(Utils.sortByKey('title'));
 			ko.utils.arrayPushAll(arr, values);
 
 		};
@@ -804,6 +806,7 @@
 						addUnitType(f, 'units', UnitType.UNIT);
 					});
 
+					factions.sort(Utils.sortByKey('factionName'));
 					Utils.arrayPushAndNotify(self.lookups.factions, factions, true);
 					self.listAdd();
 
