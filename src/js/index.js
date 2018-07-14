@@ -375,6 +375,8 @@
 						u.disabled(true);
 					} else if (fa.hasOwnProperty(u.id) && fa[u.id] >= u.fieldAllowance) {
 						u.disabled(true);
+					} else if (u.attachToType) {
+						u.disabled(!ko.utils.arrayFirst(selected, function(s) { return s.type & u.attachToType }));
 					} else if (u.attachTo && u.weaponAttachment && (!fa.hasOwnProperty(u.attachTo) || (fa.hasOwnProperty(u.id) && fa[u.id] >= (fa[u.attachTo] * 3)))) {
 						u.disabled(true);
 					} else if (u.attachTo && !u.weaponAttachment && (!fa.hasOwnProperty(u.attachTo) || (fa.hasOwnProperty(u.id) && fa[u.id] >= fa[u.attachTo]))) {
