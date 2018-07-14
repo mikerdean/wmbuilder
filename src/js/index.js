@@ -1,6 +1,16 @@
 (function($, ko) {
 	"use strict";
 
+	ko.bindingHandlers['let'] = {
+		'init': function(element, valueAccessor, allBindings, viewModel, bindingContext) {
+			var innerContext = bindingContext.extend(valueAccessor);
+			ko.applyBindingsToDescendants(innerContext, element);
+			return { 'controlsDescendantBindings': true };
+		}
+	};
+
+	ko.virtualElements.allowedBindings['let'] = true;
+
 	// ######################################################
 
 	var Utils = {
@@ -118,6 +128,18 @@
 
 		// getters
 
+		Object.defineProperty(self, 'battlegroup_warbeasts', { 
+			get: function() {
+				return _unit.battlegroup_warbeasts;
+			}
+		});
+
+		Object.defineProperty(self, 'battlegroup_warjacks', { 
+			get: function() {
+				return _unit.battlegroup_warjacks;
+			}
+		});
+
 		Object.defineProperty(self, 'id', { 
 			get: function() {
 				return _unit.id;
@@ -127,6 +149,12 @@
 		Object.defineProperty(self, 'images', { 
 			get: function() {
 				return _unit.images;
+			}
+		});
+
+		Object.defineProperty(self, 'jackMarshal', { 
+			get: function() {
+				return _unit.jackMarshal;
 			}
 		});
 
@@ -228,6 +256,12 @@
 
 		})();
 
+		var _unitEntryRecurse = function(output, unitEntry) {
+			output.push(unitEntry);
+			$.each(ko.unwrap(unitEntry.attachments), function(i, a) {
+				_unitEntryRecurse(output, a);
+			});
+		};
 		var _unitTypeFormatName = function(key) {
 			var first = key.substr(0, 1).toUpperCase();
 			return first + key.substr(1);
@@ -342,49 +376,56 @@
 
 		};
 
-		var _unitAttachmentLocator = function(unit, locator) {
-
-			var entries = [];
-
-			for(var key in _unitEntries) {
-				$.each(ko.unwrap(_unitEntries[key]), function(i, e) {
-					entries.push(e);
-				});
-			}
-
-			return ko.utils.arrayFirst(entries, locator);
-
-		};
-
-		var _unitAdd = function(unit, unitSize) {
-
-			if (!unit || unit.disabled()) {
-				return;
-			}
+		var _unitAttachmentLocator = function(unit, unitNotAllowed) {
 
 			var toAttach = undefined;
+			var entries = ko.unwrap(self.unitEntriesFlattened);
+
+			if (unitNotAllowed) {
+				var idx = entries.indexOf(unitNotAllowed);
+				entries = $.merge(
+					entries.slice(idx + 1),
+					entries.slice(0, idx)
+				);
+			}
 
 			if (unit.type & UnitType.WARJACK) {
 
-				toAttach = _unitAttachmentLocator(unit, function(e) {
-					return (e.type & UnitType.WARCASTER) || e.battlegroup_warjacks || e.jackMarshal;
+				toAttach = ko.utils.arrayFirst(entries, function(e) {
+					if (unitNotAllowed === e) {
+						return false;
+					} else {
+						return (e.type & UnitType.WARCASTER) || e.battlegroup_warjacks || e.jackMarshal;
+					}
 				});
 
 			} else if (unit.type & UnitType.WARBEAST) {
 				
-				toAttach = _unitAttachmentLocator(unit, function(e) {
-					return (e.type & UnitType.WARLOCK) || e.battlegroup_warbeasts;
+				toAttach = ko.utils.arrayFirst(entries, function(e) {
+					if (unitNotAllowed === e) {
+						return false;
+					} else {
+						return (e.type & UnitType.WARLOCK) || e.battlegroup_warbeasts;
+					}
 				});
 
 			} else if (unit.hasOwnProperty('attachToType')) {
 
-				toAttach = _unitAttachmentLocator(unit, function(e) {
-					return e.type & unit.attachToType;
+				toAttach = ko.utils.arrayFirst(entries, function(e) {
+					if (unitNotAllowed === e) {
+						return false;
+					} else {
+						return e.type & unit.attachToType;
+					}
 				});
 
 			} else if (unit.hasOwnProperty('attachTo')) {
 				
-				toAttach = _unitAttachmentLocator(unit, function(e) {
+				toAttach = ko.utils.arrayFirst(entries, function(e) {
+
+					if (unitNotAllowed === e) {
+						return false;
+					}
 					
 					var attachmentsOfType = ko.utils.arrayFilter(ko.unwrap(e.attachments), function(a) {
 						return unit.id === a.id;
@@ -400,7 +441,18 @@
 
 			}
 
+			return toAttach;
+
+		};
+
+		var _unitAdd = function(unit, unitSize) {
+
+			if (!unit || unit.disabled()) {
+				return;
+			}
+
 			var unitEntry = new WMUnitEntry(unit, unitSize);
+			var toAttach = _unitAttachmentLocator(unit);
 
 			if (toAttach) {
 				toAttach.attach(unitEntry);
@@ -512,10 +564,25 @@
 
 		});
 
+		self.unitEntriesFlattened = ko.pureComputed(function() {
+
+			var selected = ko.unwrap(self.unitsSelected);
+			var output = [];
+
+			$.each(selected, function(i, e) {
+				_unitEntryRecurse(output, e);
+			});
+
+			return output;
+
+		});
+
 		// public methods
 
 		self.allowUnitMove = function(unitEntry, unitAttachment) {
-			return false;
+			var entries = ko.unwrap(self.unitEntriesFlattened);
+			var toAttach = _unitAttachmentLocator(unitAttachment, unitEntry);
+			return toAttach ? true : false;
 		};
 
 		self.unitAdd = function(unit) {
@@ -546,6 +613,16 @@
 
 			_unitAdd(unit, UnitSize.MIN);
 			
+		};
+
+		self.unitMove = function(unitEntry, unitAttachment) {
+			var entries = ko.unwrap(self.unitEntriesFlattened);
+			var toAttach = _unitAttachmentLocator(unitAttachment, unitEntry);
+			if (toAttach) {
+				unitEntry.remove(unitAttachment);
+				toAttach.attach(unitAttachment);
+				_enableDisableUnits();
+			}
 		};
 
 		self.unitRemove = function(unitEntry) {

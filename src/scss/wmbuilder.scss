@@ -61,13 +61,23 @@ $unit-move-indicator:           str-replace(url("data:image/svg+xml;charset=utf8
 }
 
 .unit-card-set, 
-.unit-card-set-indent {
+.unit-card-set-indent,
+.unit-card-set-indent-2 {
 	@extend .border-left;
 	@extend .border-bottom;
 }
 
 .unit-card-set-indent {
 	margin-left: 3rem;
+
+	+ .unit-card-set {
+		@extend .border-top;
+		margin-top: 1rem;
+	}
+}
+
+.unit-card-set-indent-2 {
+	margin-left: 6rem;
 
 	+ .unit-card-set {
 		@extend .border-top;

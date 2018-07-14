@@ -74,6 +74,9 @@
 		}
 	},
 	"cygnar": {
+		"303": {
+			"sameAs": [ 756 ]
+		},
 		"665": {
 			"attachTo": 662,
 			"jackMarshal": true
@@ -138,7 +141,8 @@
 		},
 		"756": {
 			"battlegroup_warjacks": true,
-			"battlegroupRequired": 1
+			"battlegroupRequired": 1,
+			"sameAs": [ 303 ]
 		},
 		"414": {
 			"attachToType": 16

@@ -132,30 +132,8 @@
 												<!-- ko if: unitsSelected().length > 0 -->
 												<div class="unit-card">
 													<div class="unit-card-header">Selected Units</div>
-													<div class="unit-card-wrapper" data-bind="foreach: unitsSelected">
-														<div class="d-flex unit-card-set">
-															<div class="flex-grow-1 unit-card-details" data-bind="click: $root.unitDisplayCards, text: title"></div>
-															<div class="unit-card-button">
-																<div class="align-self-center" data-bind="text: points"></div>
-															</div>
-															<div class="unit-card-button-danger" data-bind="click: $parent.unitRemove">
-																<div class="align-self-center">&times;</div>
-															</div>
-														</div>
-														<!-- ko foreach: attachments -->
-														<div class="d-flex unit-card-set-indent">
-															<div class="flex-grow-1 unit-card-details" data-bind="click: $root.unitDisplayCards, text: title"></div>
-															<div class="unit-card-button-success" data-bind="css: { disabled: !$parents[1].allowUnitMove($parent, $data) }">
-																<span>&nbsp;</span>
-															</div>
-															<div class="unit-card-button">
-																<div class="align-self-center" data-bind="text: points"></div>
-															</div>
-															<div class="unit-card-button-danger" data-bind="click: $parents[1].unitRemoveAttachment.bind(null, $parent, $data)">
-																<div class="align-self-center">&times;</div>
-															</div>
-														</div>
-														<!-- /ko -->
+													<div class="unit-card-wrapper" data-bind="let: { list: $data}">
+														<!-- ko template: { name: 'unitCard', data: { units: unitsSelected, indent: 0 } } --><!-- /ko -->
 													</div>
 												</div>
 												<!-- /ko -->
@@ -209,6 +187,31 @@
 			<!-- /ko -->
 
 		</div>
+
+		<script id="unitCard" type="text/html">
+			<!-- ko foreach: units -->
+			<div class="d-flex" data-bind="css: { 'unit-card-set': $parent.indent === 0, 'unit-card-set-indent': $parent.indent === 1, 'unit-card-set-indent-2': $parent.indent === 2 }">
+				<div class="flex-grow-1 unit-card-details" data-bind="click: $root.unitDisplayCards, text: title"></div>
+				<div class="unit-card-button-success" data-bind="click: list.unitMove.bind(null, $parents[1], $data), visible: list.allowUnitMove($parents[1], $data)">
+					<span>&nbsp;</span>
+				</div>
+				<div class="unit-card-button">
+					<div class="align-self-center" data-bind="text: points"></div>
+				</div>
+				<!-- ko if: $parent.indent === 0 -->
+				<div class="unit-card-button-danger" data-bind="click: list.unitRemove">
+					<div class="align-self-center">&times;</div>
+				</div>
+				<!-- /ko -->
+				<!-- ko if: $parent.indent > 0 -->
+				<div class="unit-card-button-danger" data-bind="click: list.unitRemoveAttachment.bind(null, $parents[1], $data)">
+					<div class="align-self-center">&times;</div>
+				</div>
+				<!-- /ko -->
+			</div>
+			<!-- ko template: { name: 'unitCard', data: { units: attachments, indent: $parent.indent + 1 } } --><!-- /ko -->
+			<!-- /ko -->
+		</script>
 
 		<script src="js/default.js"></script>
 
