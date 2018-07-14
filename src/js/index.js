@@ -309,14 +309,18 @@
 
 		})(_faction);
 
-		var _updateCounter = function(unit, counter) {
-			if (counter.hasOwnProperty(unit.id)) {
-				counter[unit.id] += 1;
+		var _updateCounter = function(unit, key, counter) {
+
+			if (counter.hasOwnProperty(unit[key])) {
+				counter[unit[key]] += 1;
 			} else {
-				counter[unit.id] = 1;
+				counter[unit[key]] = 1;
 			}
 
-			return counter[unit.id];
+			$.each(ko.unwrap(unit.attachments), function(j, ua) {
+				_updateCounter(ua, key, counter);
+			});
+
 		};
 
 		var _enableDisableUnits = function() {
@@ -361,10 +365,7 @@
 			var fa = {};	
 
 			$.each(selected, function(i, u) {
-				_updateCounter(u, fa);
-				$.each(ko.unwrap(u.attachments), function(j, ua) {
-					_updateCounter(ua, fa);
-				});
+				_updateCounter(u, 'id', fa);
 			});
 
 			// 4. loop through the units and enable/disable them based on the settings, FA and points remaining
@@ -382,7 +383,17 @@
 					} else if (fa.hasOwnProperty(u.id) && fa[u.id] >= u.fieldAllowance) {
 						u.disabled(true);
 					} else if (u.attachToType) {
-						u.disabled(!ko.utils.arrayFirst(selected, function(s) { return s.type & u.attachToType }));
+
+						var types = {};
+						
+						$.each(selected, function(i, s) { 
+							_updateCounter(s, 'type', types);
+						});
+
+						var unitFA = fa.hasOwnProperty(u.id) ? fa[u.id] : 0;
+						var count = (types.hasOwnProperty(u.attachToType) ? types[u.attachToType] : 0) - unitFA;
+						u.disabled(count <= unitFA);
+
 					} else if (u.attachTo && u.weaponAttachment && (!fa.hasOwnProperty(u.attachTo) || (fa.hasOwnProperty(u.id) && fa[u.id] >= (fa[u.attachTo] * 3)))) {
 						u.disabled(true);
 					} else if (u.attachTo && !u.weaponAttachment && (!fa.hasOwnProperty(u.attachTo) || (fa.hasOwnProperty(u.id) && fa[u.id] >= fa[u.attachTo]))) {
@@ -421,19 +432,25 @@
 			} else if (unit.type & UnitType.WARJACK) {
 
 				return ko.utils.arrayFirst(entries, function(e) {
-					return (e.type & UnitType.WARCASTER) || e.battlegroupWarjacks || e.jackMarshal;
+					return e !== unit && (e.type & UnitType.WARCASTER) || e.battlegroupWarjacks || e.jackMarshal;
 				});
 
 			} else if (unit.type & UnitType.WARBEAST) {
 				
 				return ko.utils.arrayFirst(entries, function(e) {
-					return (e.type & UnitType.WARLOCK) || e.battlegroupWarbeasts;
+					return e !== unit && (e.type & UnitType.WARLOCK) || e.battlegroupWarbeasts;
 				});
 
 			} else if (unit.attachToType) {
 
 				return ko.utils.arrayFirst(entries, function(e) {
-					return e.type & unit.attachToType;
+
+					var attachmentsOfSameType = ko.utils.arrayFilter(ko.unwrap(e.attachments), function(a) {
+						return unit.id === a.id;
+					});
+
+					return e !== unit && e.id !== unit.id && e.type & unit.attachToType && attachmentsOfSameType.length === 0;
+
 				});
 
 			} else if (unit.attachTo) {
@@ -445,9 +462,9 @@
 					});
 
 					if (unit.weaponAttachment) {
-						return e.id === unit.attachTo && attachmentsOfSameType.length < 3;
+						return e !== unit && e.id === unit.attachTo && attachmentsOfSameType.length < 3;
 					} else {
-						return e.id === unit.attachTo && attachmentsOfSameType.length === 0;
+						return e !== unit && e.id === unit.attachTo && attachmentsOfSameType.length === 0;
 					}
 
 				});
