@@ -128,6 +128,12 @@
 
 		// getters
 
+		Object.defineProperty(self, 'attachedToBattlegroup', { 
+			get: function() {
+				return _unit.attachedToBattlegroup;
+			}
+		});
+
 		Object.defineProperty(self, 'attachTo', { 
 			get: function() {
 				return _unit.attachTo;
@@ -398,7 +404,6 @@
 
 		var _unitAttachmentLocator = function(unit, unitNotAllowed) {
 
-			var toAttach = undefined;
 			var entries = ko.unwrap(self.unitEntriesFlattened);
 
 			if (unitNotAllowed) {
@@ -409,27 +414,31 @@
 				);
 			}
 
-			if (unit.type & UnitType.WARJACK) {
+			if (unit.attachedToBattlegroup === false) {
 
-				toAttach = ko.utils.arrayFirst(entries, function(e) {
+				return undefined;
+
+			} else if (unit.type & UnitType.WARJACK) {
+
+				return ko.utils.arrayFirst(entries, function(e) {
 					return (e.type & UnitType.WARCASTER) || e.battlegroupWarjacks || e.jackMarshal;
 				});
 
 			} else if (unit.type & UnitType.WARBEAST) {
 				
-				toAttach = ko.utils.arrayFirst(entries, function(e) {
+				return ko.utils.arrayFirst(entries, function(e) {
 					return (e.type & UnitType.WARLOCK) || e.battlegroupWarbeasts;
 				});
 
 			} else if (unit.attachToType) {
 
-				toAttach = ko.utils.arrayFirst(entries, function(e) {
+				return ko.utils.arrayFirst(entries, function(e) {
 					return e.type & unit.attachToType;
 				});
 
 			} else if (unit.attachTo) {
 				
-				toAttach = ko.utils.arrayFirst(entries, function(e) {
+				return ko.utils.arrayFirst(entries, function(e) {
 					
 					var attachmentsOfSameType = ko.utils.arrayFilter(ko.unwrap(e.attachments), function(a) {
 						return unit.id === a.id;
@@ -443,9 +452,11 @@
 
 				});
 
-			}
+			} else {
 
-			return toAttach;
+				return undefined;
+
+			}
 
 		};
 
@@ -461,7 +472,7 @@
 			if (toAttach) {
 				toAttach.attach(unitEntry);
 			} else {
-				_unitEntries[unit.type].push(unitEntry);
+				_unitEntries[unit.attachedToBattlegroup === false ? UnitType.UNIT : unit.type].push(unitEntry);
 			}
 
 			_enableDisableUnits();
@@ -642,7 +653,7 @@
 		};
 
 		self.unitRemove = function(unitEntry) {
-			_unitEntries[unitEntry.type].remove(unitEntry);
+			_unitEntries[unitEntry.attachedToBattlegroup === false ? UnitType.UNIT : unitEntry.type].remove(unitEntry);
 			_enableDisableUnits();
 		};
 
