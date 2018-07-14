@@ -266,6 +266,9 @@
 		},
 		"1197": {
 			"jackMarshal": true
+		},
+		"1171": {
+			"attachTo": 1168
 		}
 	}
 }
