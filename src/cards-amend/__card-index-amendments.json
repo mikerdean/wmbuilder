@@ -1,13 +1,49 @@
 {
 	"circle":
 	{
+		"2855": {
+			"uniqueName": "baldur"
+		},
+		"2860": {
+			"uniqueName": "baldur"
+		},
+		"2915": {
+			"uniqueName": "kaya"
+		},
+		"2922": {
+			"uniqueName": "kaya"
+		},
+		"2927": {
+			"uniqueName": "kaya"
+		},
+		"2932": {
+			"uniqueName": "kromac"
+		},
+		"2939": {
+			"uniqueName": "kromac"
+		},
+		"2944": {
+			"uniqueName": "krueger"
+		},
+		"2949": {
+			"uniqueName": "krueger"
+		},
+		"2968": {
+			"uniqueName": "morvahna"
+		},
+		"2973": {
+			"uniqueName": "morvahna"
+		},
+		"3050": {
+			"uniqueName": "una"
+		},
 		"3105": {
 			"attachTo": 2892
 		},
 		"3108": {
 			"attachTo": 3024
 		},
-		"2897": {
+		"2987": {
 			"attachTo": 2990,
 			"points": 4
 		},
@@ -26,6 +62,14 @@
 		"3093": {
 			"attachTo": 3090,
 			"points": 4
+		},
+		"572": {
+			"points": 8
+		},
+		"3048": {
+			"battlegroupWarbeasts": true,
+			"battlegroupRequired": 1,
+			"uniqueName": "una"
 		}
 	},
 	"crucible-guard": {
