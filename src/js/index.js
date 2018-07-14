@@ -382,6 +382,11 @@
 						u.disabled(true);
 					} else if (fa.hasOwnProperty(u.id) && fa[u.id] >= u.fieldAllowance) {
 						u.disabled(true);
+					} else if (u.points && u.points > pointsRemaining) {
+						u.disabled(true);
+					} else if (u.pointsMinimum) {
+						u.disabledMinimum(u.pointsMinimum > pointsRemaining);
+						u.disabledMaximum(u.pointsMaximum > pointsRemaining);
 					} else if (u.attachToType) {
 
 						var types = {};
@@ -398,11 +403,6 @@
 						u.disabled(true);
 					} else if (u.attachTo && !u.weaponAttachment && (!fa.hasOwnProperty(u.attachTo) || (fa.hasOwnProperty(u.id) && fa[u.id] >= fa[u.attachTo]))) {
 						u.disabled(true);
-					} else if (u.points && u.points > pointsRemaining) {
-						u.disabled(true);
-					} else if (u.pointsMinimum) {
-						u.disabledMinimum(u.pointsMinimum > pointsRemaining);
-						u.disabledMaximum(u.pointsMaximum > pointsRemaining);
 					} else {
 						u.disabled(false);
 					}
