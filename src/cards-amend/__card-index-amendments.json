@@ -190,6 +190,18 @@
 		},
 		"1182": {
 			"attachTo": 1149
+		},
+		"1064": {
+			"jackMarshal": true
+		},
+		"1155": {
+			"sameAs": [1225]
+		},
+		"1225": {
+			"sameAs": [1155]
+		},
+		"1197": {
+			"jackMarshal": true
 		}
 	}
 }
