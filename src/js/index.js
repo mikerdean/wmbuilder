@@ -128,15 +128,27 @@
 
 		// getters
 
-		Object.defineProperty(self, 'battlegroup_warbeasts', { 
+		Object.defineProperty(self, 'attachTo', { 
 			get: function() {
-				return _unit.battlegroup_warbeasts;
+				return _unit.attachTo;
 			}
 		});
 
-		Object.defineProperty(self, 'battlegroup_warjacks', { 
+		Object.defineProperty(self, 'attachToType', { 
 			get: function() {
-				return _unit.battlegroup_warjacks;
+				return _unit.attachToType;
+			}
+		});
+
+		Object.defineProperty(self, 'battlegroupWarbeasts', { 
+			get: function() {
+				return _unit.battlegroupWarbeasts;
+			}
+		});
+
+		Object.defineProperty(self, 'battlegroupWarjacks', { 
+			get: function() {
+				return _unit.battlegroupWarjacks;
 			}
 		});
 
@@ -173,6 +185,12 @@
 		Object.defineProperty(self, 'type', { 
 			get: function() {
 				return _unit.type;
+			}
+		});
+
+		Object.defineProperty(self, 'weaponAttachment', { 
+			get: function() {
+				return _unit.weaponAttachment;
 			}
 		});
 
@@ -392,49 +410,33 @@
 			if (unit.type & UnitType.WARJACK) {
 
 				toAttach = ko.utils.arrayFirst(entries, function(e) {
-					if (unitNotAllowed === e) {
-						return false;
-					} else {
-						return (e.type & UnitType.WARCASTER) || e.battlegroup_warjacks || e.jackMarshal;
-					}
+					return (e.type & UnitType.WARCASTER) || e.battlegroupWarjacks || e.jackMarshal;
 				});
 
 			} else if (unit.type & UnitType.WARBEAST) {
 				
 				toAttach = ko.utils.arrayFirst(entries, function(e) {
-					if (unitNotAllowed === e) {
-						return false;
-					} else {
-						return (e.type & UnitType.WARLOCK) || e.battlegroup_warbeasts;
-					}
+					return (e.type & UnitType.WARLOCK) || e.battlegroupWarbeasts;
 				});
 
 			} else if (unit.hasOwnProperty('attachToType')) {
 
 				toAttach = ko.utils.arrayFirst(entries, function(e) {
-					if (unitNotAllowed === e) {
-						return false;
-					} else {
-						return e.type & unit.attachToType;
-					}
+					return e.type & unit.attachToType;
 				});
 
 			} else if (unit.hasOwnProperty('attachTo')) {
 				
 				toAttach = ko.utils.arrayFirst(entries, function(e) {
-
-					if (unitNotAllowed === e) {
-						return false;
-					}
 					
-					var attachmentsOfType = ko.utils.arrayFilter(ko.unwrap(e.attachments), function(a) {
+					var attachmentsOfSameType = ko.utils.arrayFilter(ko.unwrap(e.attachments), function(a) {
 						return unit.id === a.id;
 					});
 
 					if (unit.weaponAttachment) {
-						return e.id === unit.attachTo && attachmentsOfType.length < 3;
+						return e.id === unit.attachTo && attachmentsOfSameType.length < 3;
 					} else {
-						return e.id === unit.attachTo && attachmentsOfType.length === 0;
+						return e.id === unit.attachTo && attachmentsOfSameType.length === 0;
 					}
 
 				});
@@ -511,6 +513,21 @@
 		});
 
 		// computed
+		var _updateTotal = function(unit) {
+
+			var total = 0;
+
+			if (unit.points) {
+				total += unit.points;
+			}
+
+			$.each(ko.unwrap(unit.attachments), function(i, a) {
+				total += _updateTotal(a);
+			});
+
+			return total;
+
+		};
 
 		self.pointsRemaining = ko.pureComputed(function() {
 			var total = 0 + _points.points;
@@ -519,7 +536,7 @@
 			casters = $.merge(casters, (ko.unwrap(_unitEntries[UnitType.WARLOCK]) || []));
 
 			$.each(casters, function(i, caster) {
-				var bonus = parseInt(caster.points, 10);
+				var bonus = Number.parseInt(caster.points, 10);
 
 				$.each(ko.unwrap(caster.attachments), function(i, u) {
 					if (u.type & (UnitType.WARBEAST | UnitType.WARJACK)) {
@@ -542,9 +559,7 @@
 			others = $.merge(others, ko.unwrap(_unitEntries[UnitType.SOLO]) || []);
 
 			$.each(others, function(i, u) {
-				if (u.points) {
-					total -= u.points;
-				}
+				total -= _updateTotal(u);
 			});
 
 			return total;
@@ -580,7 +595,6 @@
 		// public methods
 
 		self.allowUnitMove = function(unitEntry, unitAttachment) {
-			var entries = ko.unwrap(self.unitEntriesFlattened);
 			var toAttach = _unitAttachmentLocator(unitAttachment, unitEntry);
 			return toAttach ? true : false;
 		};

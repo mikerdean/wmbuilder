@@ -81,6 +81,9 @@
 			"attachTo": 662,
 			"jackMarshal": true
 		},
+		"662": {
+			"points": 11
+		},
 		"847": {
 			"attachToType": 130
 		},
@@ -136,11 +139,11 @@
 			"jackMarshal": true
 		},
 		"719": {
-			"battlegroup_warjacks": true,
+			"battlegroupWarjacks": true,
 			"battlegroupRequired": 1
 		},
 		"756": {
-			"battlegroup_warjacks": true,
+			"battlegroupWarjacks": true,
 			"battlegroupRequired": 1,
 			"sameAs": [ 303 ]
 		},
@@ -154,13 +157,13 @@
 			"jackMarshal": true
 		},
 		"3788": {
-			"battlegroup_warjacks": true,
+			"battlegroupWarjacks": true,
 			"battlegroupRequired": 1
 		}
 	},
 	"protectorate": {
 		"1037": {
-			"battlegroup": false
+			"attachedToBattlegroup": false
 		},
 		"1034": {
 			"attachToType": 130
