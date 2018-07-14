@@ -375,13 +375,13 @@
 						u.disabled(true);
 					} else if (fa.hasOwnProperty(u.id) && fa[u.id] >= u.fieldAllowance) {
 						u.disabled(true);
-					} else if (u.hasOwnProperty('attachTo') && u.weaponAttachment && (!fa.hasOwnProperty(u.attachTo) || (fa.hasOwnProperty(u.id) && fa[u.id] >= (fa[u.attachTo] * 3)))) {
+					} else if (u.attachTo && u.weaponAttachment && (!fa.hasOwnProperty(u.attachTo) || (fa.hasOwnProperty(u.id) && fa[u.id] >= (fa[u.attachTo] * 3)))) {
 						u.disabled(true);
-					} else if (u.hasOwnProperty('attachTo') && !u.weaponAttachment && (!fa.hasOwnProperty(u.attachTo) || (fa.hasOwnProperty(u.id) && fa[u.id] >= fa[u.attachTo]))) {
+					} else if (u.attachTo && !u.weaponAttachment && (!fa.hasOwnProperty(u.attachTo) || (fa.hasOwnProperty(u.id) && fa[u.id] >= fa[u.attachTo]))) {
 						u.disabled(true);
-					} else if (u.hasOwnProperty('points') && u.points > pointsRemaining) {
+					} else if (u.points && u.points > pointsRemaining) {
 						u.disabled(true);
-					} else if (u.hasOwnProperty('pointsMinimum')) {
+					} else if (u.pointsMinimum) {
 						u.disabledMinimum(u.pointsMinimum > pointsRemaining);
 						u.disabledMaximum(u.pointsMaximum > pointsRemaining);
 					} else {
@@ -419,13 +419,13 @@
 					return (e.type & UnitType.WARLOCK) || e.battlegroupWarbeasts;
 				});
 
-			} else if (unit.hasOwnProperty('attachToType')) {
+			} else if (unit.attachToType) {
 
 				toAttach = ko.utils.arrayFirst(entries, function(e) {
 					return e.type & unit.attachToType;
 				});
 
-			} else if (unit.hasOwnProperty('attachTo')) {
+			} else if (unit.attachTo) {
 				
 				toAttach = ko.utils.arrayFirst(entries, function(e) {
 					
