@@ -72,6 +72,26 @@
 			"uniqueName": "una"
 		}
 	},
+	"convergence": {
+		"2761": {
+			"attachToType": 16
+		},
+		"2847": {
+			"attachToType": 2
+		},
+		"2732": {
+			"points": 2
+		},
+		"2741": {
+			"points": 4
+		},
+		"2767": {
+			"points": 3
+		},
+		"2836": {
+			"points": 4
+		}
+	},
 	"crucible-guard": {
 		"4148": {
 			"points": 9
