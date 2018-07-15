@@ -384,6 +384,110 @@
 			"points": 1
 		}
 	},
+	"khador": {
+		"479": {
+			"uniqueName": "strakhov"
+		},
+		"1353": {
+			"uniqueName": "sorscha"
+		},
+		"1393": {
+			"uniqueName": "zerkova"
+		},
+		"1401": {
+			"uniqueName": "irusk"
+		},
+		"4035": {
+			"uniqueName": "sorscha"
+		},
+		"471": {
+			"uniqueName": "malakov"
+		},
+		"1416": {
+			"uniqueName": "butcher"
+		},
+		"1412": {
+			"uniqueName": "sorscha"
+		},
+		"1426": {
+			"uniqueName": "butcher"
+		},
+		"1471": {
+			"uniqueName": "zerkova"
+		},
+		"1478": {
+			"uniqueName": "butcher"
+		},
+		"1492": {
+			"uniqueName": "irusk"
+		},
+		"1497": {
+			"uniqueName": "oldwitch"
+		},
+		"1515": {
+			"uniqueName": "vlad"
+		},
+		"1520": {
+			"uniqueName": "vlad"
+		},
+		"1525": {
+			"uniqueName": "vlad"
+		},
+		"3747": {
+			"uniqueName": "oldwitch"
+		},
+		"1300": {
+			"attachTo": 1303,
+			"weaponAttachment": true
+		},
+		"1306": {
+			"attachTo": 1309
+		},
+		"1321": {
+			"attachTo": 1324
+		},
+		"1361": {
+			"attachTo": 1347
+		},
+		"1376": {
+			"attachTo": 1373,
+			"points": 6
+		},
+		"1390": {
+			"attachToType": 130
+		},
+		"4046": {
+			"attachTo": 1453
+		},
+		"1462": {
+			"attachTo": 1465
+		},
+		"4005": {
+			"attachTo": 1456
+		},
+		"1551": {
+			"attachTo": 1548,
+			"points": 4
+		},
+		"1560": {
+			"attachTo": [1548, 1560],
+			"weaponAttachment": true
+		},
+		"476": {
+			"jackMarshal": true
+		},
+		"1459": {
+			"jackMarshal": true
+		},
+		"1436": {
+			"battlegroupWarjacks": true,
+			"battlegroupRequired": 1,
+			"uniqueName": "malakov"
+		},
+		"1530": {
+			"attachToType": 16
+		}
+	},
 	"protectorate": {
 		"1037": {
 			"attachedToBattlegroup": false
