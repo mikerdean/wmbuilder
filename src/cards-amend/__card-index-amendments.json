@@ -115,12 +115,16 @@
 			"attachToType": 130
 		},
 		"4160": {
-			"attachTo": 4156
+			"attachTo": 4156,
+			"weaponAttachment": true
 		},
 		"4161": {
+			"attachToType": 16,
 			"points": 5
 		},
 		"4162": {
+			"battlegroupWarjacks": true,
+			"battlegroupRequired": 1,
 			"points": 2,
 			"fieldAllowance": 4
 		},
