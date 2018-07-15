@@ -370,6 +370,20 @@
 			"battlegroupRequired": 1
 		}
 	},
+	"grymkin": {
+		"3742": {
+			"uniqueName": "oldwitch"
+		},
+		"3648": {
+			"points": 7
+		},
+		"3672": {
+			"attachTo": 3666
+		},
+		"3645": {
+			"points": 1
+		}
+	},
 	"protectorate": {
 		"1037": {
 			"attachedToBattlegroup": false
