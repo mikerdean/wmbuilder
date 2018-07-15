@@ -717,5 +717,78 @@
 		"538": {
 			"points": 8
 		}
+	},
+	"skorne": {
+		"775": {
+			"uniqueName": "makeda"
+		},
+		"461": {
+			"uniqueName": "morghoul"
+		},
+		"939": {
+			"uniqueName": "hexeris"
+		},
+		"770": {
+			"uniqueName": "morghoul"
+		},
+		"785": {
+			"uniqueName": "hexeris"
+		},
+		"453": {
+			"uniqueName": "zaadesh"
+		},
+		"959": {
+			"uniqueName": "makeda"
+		},
+		"765": {
+			"uniqueName": "morghoul"
+		},
+		"795": {
+			"uniqueName": "zaal"
+		},
+		"780": {
+			"uniqueName": "makeda"
+		},
+		"790": {
+			"uniqueName": "xerxis"
+		},
+		"794": {
+			"uniqueName": "xerxis"
+		},
+		"1004": {
+			"uniqueName": "zaal"
+		},
+		"989": {
+			"points": 10
+		},
+		"1015": {
+			"attachTo": 856
+		},
+		"1018": {
+			"attachTo": 868,
+			"points": 4
+		},
+		"874": {
+			"attachTo": 871,
+			"points": 4
+		},
+		"925": {
+			"attachTo": 853
+		},
+		"911": {
+			"attachTo": 880,
+			"points": 4
+		},
+		"931": {
+			"attachToType": 64
+		},
+		"548": {
+			"points": 9
+		},
+		"1001": {
+			"battlegroupWarbeasts": true,
+			"battlegroupRequired": 1,
+			"uniqueName": "zaadesh"
+		}
 	}
 }
