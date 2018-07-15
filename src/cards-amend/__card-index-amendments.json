@@ -241,8 +241,47 @@
 		}
 	},
 	"cygnar": {
+		"293": {
+			"uniqueName": "nemo"
+		},
 		"303": {
-			"sameAs": [ 756 ]
+			"uniqueName": "allison"
+		},
+		"308": {
+			"uniqueName": "caine"
+		},
+		"330": {
+			"uniqueName": "haley"
+		},
+		"3768": {
+			"uniqueName": "seige"
+		},
+		"338": {
+			"uniqueName": "nemo"
+		},
+		"343": {
+			"uniqueName": "stryker"
+		},
+		"353": {
+			"uniqueName": "nemo"
+		},
+		"363": {
+			"uniqueName": "caine"
+		},
+		"375": {
+			"uniqueName": "stryker"
+		},
+		"380": {
+			"uniqueName": "stryker"
+		},
+		"395": {
+			"uniqueName": "seige"
+		},
+		"400": {
+			"uniqueName": "haley"
+		},
+		"409": {
+			"uniqueName": "haley"
 		},
 		"665": {
 			"attachTo": 662,
@@ -312,7 +351,7 @@
 		"756": {
 			"battlegroupWarjacks": true,
 			"battlegroupRequired": 1,
-			"sameAs": [ 303 ]
+			"uniqueName": "allison"
 		},
 		"414": {
 			"attachToType": 16
