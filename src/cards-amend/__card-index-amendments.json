@@ -663,5 +663,59 @@
 			"battlegroupRequired": 1,
 			"uniqueName": "durant"
 		}
+	},
+	"retribution": {
+		"2188": {
+			"uniqueName": "vyros"
+		},
+		"2197": {
+			"uniqueName": "elara"
+		},
+		"2299": {
+			"uniqueName": "goreshade"
+		},
+		"2367": {
+			"uniqueName": "vyros"
+		},
+		"2173": {
+			"attachTo": 2176,
+			"points": 4
+		},
+		"2179": {
+			"attachTo": 2185,
+			"points": 4
+		},
+		"2196": {
+			"attachTo": [2310, 2313, 2356],
+			"uniqueName": "eiryss"
+		},
+		"2233": {
+			"attachTo": 2236
+		},
+		"2251": {
+			"attachTo": 2254,
+			"points": 4
+		},
+		"2257": {
+			"attachTo": 2260,
+			"points": 4
+		},
+		"2316": {
+			"attachTo": 2313
+		},
+		"2350": {
+			"attachTo": [2170, 2176, 2185, 2222, 2236, 2239, 2245, 2267, 2254, 2260, 2310, 2313, 2347, 2356, 2359]
+		},
+		"2128": {
+			"jackMarshal": true
+		},
+		"2202": {
+			"battlegroupWarjacks": true,
+			"battlegroupRequired": 1,
+			"uniqueName": "elara"
+		},
+		"538": {
+			"points": 8
+		}
 	}
 }
