@@ -790,5 +790,89 @@
 			"battlegroupRequired": 1,
 			"uniqueName": "zaadesh"
 		}
+	},
+	"trollbloods": {
+		"1564": {
+			"uniqueName": "borka"
+		},
+		"1571": {
+			"uniqueName": "borka"
+		},
+		"1619": {
+			"uniqueName": "grim"
+		},
+		"1624": {
+			"uniqueName": "grissel"
+		},
+		"1629": {
+			"uniqueName": "grissel"
+		},
+		"1634": {
+			"uniqueName": "hoarluk"
+		},
+		"1641": {
+			"uniqueName": "hoarluk"
+		},
+		"1646": {
+			"uniqueName": "hoarluk"
+		},
+		"1654": {
+			"uniqueName": "horgle"
+		},
+		"1659": {
+			"uniqueName": "grim"
+		},
+		"1686": {
+			"uniqueName": "madrak"
+		},
+		"1691": {
+			"uniqueName": "madrak"
+		},
+		"1696": {
+			"uniqueName": "madrak"
+		},
+		"1674": {
+			"attachTo": 1680,
+			"weaponAttachment": true
+		},
+		"1677": {
+			"attachTo": 1680,
+			"points": 3
+		},
+		"3855": {
+			"attachTo": 1683
+		},
+		"1718": {
+			"fieldAllowance": 1
+		},
+		"1721": {
+			"attachTo": 1724,
+			"points": 5
+		},
+		"2115": {
+			"attachTo": 1738,
+			"points": 4
+		},
+		"2118": {
+			"points": 5
+		},
+		"1747": {
+			"fieldAllowance": 1
+		},
+		"1774": {
+			"attachTo": 1777,
+			"points": 5
+		},
+		"1651": {
+			"battlegroupWarbeasts": true,
+			"battlegroupRequired": 1,
+			"uniqueName": "horgle"
+		},
+		"543": {
+			"points": 8
+		},
+		"1765": {
+			"points": 4
+		}
 	}
 }
