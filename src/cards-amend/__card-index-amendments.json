@@ -141,6 +141,102 @@
 			"fieldAllowance": 4
 		}
 	},
+	"cryx": {
+		"1815": {
+			"uniqueName": "asphyxious"
+		},
+		"1885": {
+			"uniqueName": "deneghra"
+		},
+		"1899": {
+			"uniqueName": "goreshade"
+		},
+		"1906": {
+			"uniqueName": "goreshade"
+		},
+		"1911": {
+			"uniqueName": "goreshade"
+		},
+		"1926": {
+			"uniqueName": "asphyxious"
+		},
+		"1942": {
+			"uniqueName": "asphyxious"
+		},
+		"1957": {
+			"uniqueName": "mortenebra"
+		},
+		"491": {
+			"uniqueName": "mortenebra"
+		},
+		"1990": {
+			"uniqueName": "skarre"
+		},
+		"3963": {
+			"uniqueName": "skarre"
+		},
+		"2054": {
+			"uniqueName": "skarre"
+		},
+		"2088": {
+			"uniqueName": "deneghra"
+		},
+		"2099": {
+			"uniqueName": "deneghra"
+		}, 
+		"1829": {
+			"attachTo": 1832,
+			"points": 5
+		},
+		"1861": {
+			"attachTo": 1975,
+			"weaponAttachment": true
+		},
+		"3938": {
+			"attachTo": [ 1858, 4015 ]
+		},
+		"2007": {
+			"attachTo": 2004,
+			"weaponAttachment": true
+		},
+		"2013": {
+			"attachTo": 2016
+		},
+		"2025": {
+			"attachTo": 2028
+		},
+		"3947": {
+			"attachTo": 3944
+		},
+		"2048": {
+			"attachTo": [ 1843, 1975]
+		},
+		"2083": {
+			"attachToType": 16
+		},
+		"3909": {
+			"battlegroupWarcaster": true,
+			"battlegroupRequired": 1,
+			"uniqueName": "aiakos"
+		},
+		"3953": {
+			"attachToType": 16
+		},
+		"2034": {
+			"points": 2
+		},
+		"2051": {
+			"attachToType": 16
+		},
+		"2093": {
+			"fieldAllowance": 2,
+			"images": [
+				"warwitch-siren-1.jpg",
+				"warwitch-siren-2.jpg"
+			],
+			"points": 4
+		}
+	},
 	"cygnar": {
 		"303": {
 			"sameAs": [ 756 ]

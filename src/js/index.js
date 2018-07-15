@@ -399,10 +399,47 @@
 						var count = (types.hasOwnProperty(u.attachToType) ? types[u.attachToType] : 0) - unitFA;
 						u.disabled(count <= unitFA);
 
-					} else if (u.attachTo && u.weaponAttachment && (!fa.hasOwnProperty(u.attachTo) || (fa.hasOwnProperty(u.id) && fa[u.id] >= (fa[u.attachTo] * 3)))) {
-						u.disabled(true);
-					} else if (u.attachTo && !u.weaponAttachment && (!fa.hasOwnProperty(u.attachTo) || (fa.hasOwnProperty(u.id) && fa[u.id] >= fa[u.attachTo]))) {
-						u.disabled(true);
+					} else if (u.attachTo && u.weaponAttachment) {
+
+						var arr = u.attachTo;
+
+						if ($.isArray(arr) === false) {
+							arr = [ u.attachTo ];
+						}
+
+						var disabled = true;
+						var unitFA = fa.hasOwnProperty(u.id) ? fa[u.id] : 0;
+
+						$.each(arr, function(i, uid) {
+							if (fa.hasOwnProperty(uid) && unitFA < (fa[uid] * 3)) {
+								disabled = false;
+								return false; // break
+							}
+						});
+
+						u.disabled(disabled);
+
+
+					} else if (u.attachTo && !u.weaponAttachment) {
+						
+						var arr = u.attachTo;
+
+						if ($.isArray(arr) === false) {
+							arr = [ u.attachTo ];
+						}
+
+						var disabled = true;
+						var unitFA = fa.hasOwnProperty(u.id) ? fa[u.id] : 0;
+
+						$.each(arr, function(i, uid) {
+							if (fa.hasOwnProperty(uid) && unitFA < fa[uid]) {
+								disabled = false;
+								return false; // break
+							}
+						});
+
+						u.disabled(disabled);
+
 					} else {
 						u.disabled(false);
 					}
@@ -454,6 +491,12 @@
 				});
 
 			} else if (unit.attachTo) {
+
+				var arr = unit.attachTo;
+
+				if ($.isArray(arr) === false) {
+					arr = [ unit.attachTo ];
+				}
 				
 				return ko.utils.arrayFirst(entries, function(e) {
 					
@@ -462,9 +505,9 @@
 					});
 
 					if (unit.weaponAttachment) {
-						return e !== unit && e.id === unit.attachTo && attachmentsOfSameType.length < 3;
+						return e !== unit && arr.indexOf(e.id) > -1 && attachmentsOfSameType.length < 3;
 					} else {
-						return e !== unit && e.id === unit.attachTo && attachmentsOfSameType.length === 0;
+						return e !== unit && arr.indexOf(e.id) > -1 && attachmentsOfSameType.length === 0;
 					}
 
 				});
