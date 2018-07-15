@@ -581,6 +581,45 @@
 		}
 	},
 	"protectorate": {
+		"1085": {
+			"uniqueName": "feora"
+		},
+		"1090": {
+			"uniqueName": "feora"
+		},
+		"1095": {
+			"uniqueName": "feora"
+		},
+		"1112": {
+			"uniqueName": "kreoss"
+		},
+		"1289": {
+			"uniqueName": "severius"
+		},
+		"1123": {
+			"uniqueName": "severius"
+		},
+		"1136": {
+			"uniqueName": "reznik"
+		},
+		"1141": {
+			"uniqueName": "kreoss"
+		},
+		"1158": {
+			"uniqueName": "kreoss"
+		},
+		"1220": {
+			"uniqueName": "reznik"
+		},
+		"1225": {
+			"uniqueName": "durant"
+		},
+		"1239": {
+			"uniqueName": "testabeef"
+		},
+		"1249": {
+			"uniqueName": "testabeef"
+		},
 		"1037": {
 			"attachedToBattlegroup": false
 		},
@@ -613,17 +652,16 @@
 		"1064": {
 			"jackMarshal": true
 		},
-		"1155": {
-			"sameAs": [1225]
-		},
-		"1225": {
-			"sameAs": [1155]
-		},
 		"1197": {
 			"jackMarshal": true
 		},
 		"1171": {
 			"attachTo": 1168
+		},
+		"1155": {
+			"battlegroupWarjacks": true,
+			"battlegroupRequired": 1,
+			"uniqueName": "durant"
 		}
 	}
 }
