@@ -470,7 +470,7 @@
 			"points": 4
 		},
 		"1560": {
-			"attachTo": [1548, 1560],
+			"attachTo": [1548, 1557],
 			"weaponAttachment": true
 		},
 		"476": {
@@ -486,6 +486,98 @@
 		},
 		"1530": {
 			"attachToType": 16
+		}
+	},
+	"legion": {
+		"3119": {
+			"uniqueName": "absylonia"
+		},
+		"3124": {
+			"uniqueName": "absylonia"
+		},
+		"3215": {
+			"uniqueName": "fyanna"
+		},
+		"3235": {
+			"uniqueName": "kallus"
+		},
+		"3245": {
+			"uniqueName": "kallus"
+		},
+		"3250": {
+			"uniqueName": "lylyth"
+		},
+		"3255": {
+			"uniqueName": "lylyth"
+		},
+		"3260": {
+			"uniqueName": "lylyth"
+		},
+		"3292": {
+			"uniqueName": "rhyas"
+		},
+		"3297": {
+			"uniqueName": ["rhyas", "saeryn"]
+		},
+		"3304": {
+			"uniqueName": "saeryn"
+		},
+		"3345": {
+			"uniqueName": "thagrosh"
+		},
+		"3350": {
+			"uniqueName": "thagrosh"
+		},
+		"3364": {
+			"uniqueName": "vayl"
+		},
+		"3369": {
+			"uniqueName": "vayl"
+		},
+		"3162": {
+			"points": 8
+		},
+		"3146": {
+			"attachTo": 3176
+		},
+		"3170": {
+			"attachTo": 3173,
+			"points": 5
+		},
+		"3194": {
+			"attachTo": 3197,
+			"points": 6
+		},
+		"3382": {
+			"attachTo": 3179,
+			"points": 5
+		},
+		"3988": {
+			"attachTo": 3203
+		},
+		"3333": {
+			"attachTo": 3336,
+			"points": 4
+		},
+		"3385": {
+			"attachTo": 3206
+		},
+		"3212": {
+			"uniqueName": "fyanna"
+		},
+		"3232": {
+			"points": 6
+		},
+		"3339": {
+			"fieldAllowance": 1
+		},
+		"3374": {
+			"images": [
+				"warmonger-war-chief-1.jpg",
+				"warmonger-war-chief-2.jpg"
+			],
+			"fieldAllowance": 2,
+			"points": 5
 		}
 	},
 	"protectorate": {
