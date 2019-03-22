@@ -1,15 +1,14 @@
 const fs = require('fs');
 const path = require('path');
 const through = require('through2');
-const util = require('gulp-util');
-const vinyl = require('vinyl');
+const {vinyl} = require('gulp');
 
 module.exports = function(amendmentsPath, file) {
 
 	let filename;
 
 	if (typeof amendmentsPath !== 'string') {
-		throw new util.PluginError('cardIndexer', 'Missing amendments path in file options');
+		throw new Error('cardIndexer', 'Missing amendments path in file options');
 	}
 
 	if (typeof file === 'string') {
@@ -17,7 +16,7 @@ module.exports = function(amendmentsPath, file) {
 	} else if (typeof file.path === 'string') {
 		filename = path.basename(file.path);
 	} else {
-		throw new util.PluginError('cardIndexer', 'Missing path in file options');
+		throw new Error('cardIndexer', 'Missing path in file options');
 	}
 
 	let amendmentsData;
@@ -78,7 +77,7 @@ module.exports = function(amendmentsPath, file) {
 			try {
 				faction = JSON.parse(Buffer.from(file.contents).toString('utf8'));
 			} catch(e) {
-				throw new util.PluginError('cardIndexer', `Error parsing faction file: ${file.path}.`);
+				throw new Error('cardIndexer', `Error parsing faction file: ${file.path}.`);
 			}
 
 			_addAmendments(path.dirname(file.relative), faction);
@@ -123,7 +122,7 @@ module.exports = function(amendmentsPath, file) {
 				try {
 					amendmentsData = JSON.parse(json);
 				} catch(e) {
-					throw new util.PluginError('cardIndexer', `Error parsing faction file: ${amendmentsPath}.`);
+					throw new Error('cardIndexer', `Error parsing faction file: ${amendmentsPath}.`);
 				}
 
 				_bufferContents(file, encoding, callback);
