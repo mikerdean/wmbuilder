@@ -148,7 +148,7 @@ $unit-move-indicator: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xm
 	transition: background-color .125s ease-in;
 
 	&:hover {
-		background-color: $info - 50;
+		background-color: darken($info, 20%);
 	}
 
 	&:last-child {
@@ -165,7 +165,7 @@ $unit-move-indicator: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xm
 	background-color: $danger;
 
 	&:hover {
-		background-color: $danger - 50;
+		background-color: darken($danger, 20%);
 	}
 }
 
@@ -175,7 +175,7 @@ $unit-move-indicator: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xm
 	background-size: 10px 12px;
 
 	&:hover {
-		background-color: $success - 50;
+		background-color: darken($success, 20%);
 	}
 
 	&.disabled {
