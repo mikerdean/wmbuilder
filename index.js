@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const compression = require('compression');
-const path = require('path');
 
 const port = 4555;
 
