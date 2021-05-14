@@ -13,24 +13,24 @@
     "wargames"
   ],
   "dependencies": {
-    "async": "^2.6.2",
+    "async": "^2.6.3",
     "compression": "^1.7.4",
-    "express": "^4.16.4"
+    "express": "^4.17.1"
   },
   "license": "MIT",
   "devDependencies": {
-    "bootstrap": "^4.3.1",
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-clean-css": "^4.0.0",
+    "bootstrap": "^4.6.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^5.0.3",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
-    "jquery": "^3.3.1",
-    "knockout": "^3.5.0",
-    "popper.js": "^1.14.7"
+    "jquery": "^3.6.0",
+    "knockout": "^3.5.1",
+    "popper.js": "^1.16.1"
   },
   "repository": {
     "type": "git",
